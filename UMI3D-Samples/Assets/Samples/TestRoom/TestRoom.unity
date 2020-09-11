@@ -13321,19 +13321,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   preloadedScenes: []
   skyboxImage:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: public\skybox.jpg
-      format: standard
-      extension: .jpg
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 3.88
-      isInLibrary: 0
-      libraryKey: 
+    variants: []
 --- !u!114 &1274528701
 MonoBehaviour:
   m_ObjectHideFlags: 0
