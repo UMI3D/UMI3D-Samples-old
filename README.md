@@ -8,8 +8,8 @@ For more information about UMI3D, visit the [UMI3D Consortium's website](https:/
 ### Version And Documentation
 
 The Current UMI3D-SDK version is 2.0.
-The documentation can be found in the Documentation folder. open the ./Documentation/html/index file with a web browser.
+The documentation can be found [here](https://umi3d.github.io/UMI3D-SDK/index.html).
 
-* [The UMI3D SDK for Unity](https://github.com/Gfi-Innovation/UMI3D-SDK)
-* [A UMI3D desktop browser](https://github.com/Gfi-Innovation/UMI3D-Desktop-Browser)
-* [A UMI3D SteamVR browser](url)
+* [The UMI3D SDK for Unity](https://github.com/UMI3D/UMI3D-SDK)
+* [A UMI3D desktop browser](https://github.com/UMI3D/UMI3D-Desktop-Browser)
+* A UMI3D SteamVR browser (Coming soon)
