@@ -23,16 +23,16 @@ public class ConnectionParameters : MonoBehaviour
 {
 
     public PinIdentifierWithParameter pinIdentifier;
-    AbstractInteraction[] interactions;
+    AbstractParameter[] interactions;
     // Start is called before the first frame update
     void Start()
     {
         pinIdentifier.GetParameter = GetParameter;
-        interactions = GetComponents<AbstractInteraction>();
+        interactions = GetComponents<AbstractParameter>();
     }
 
     FormDto GetParameter(string login) {
-        FormDto form = new FormDto() { name = "Connection Form", interactions = interactions.Select(i => i.ToDto(null)).ToList() };
+        FormDto form = new FormDto() { name = "Connection Form", Fields = interactions.Select(i => i.ToDto(null) as AbstractParameterDto).ToList() };
         return form;
     }
 }
