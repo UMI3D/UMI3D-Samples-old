@@ -20,7 +20,7 @@ using UnityEngine;
 public class ChangeColorOnTrigger : MonoBehaviour
 {
 
-    public void OnTrigger(UMI3DUser user, string boneId)
+    public void OnTrigger(UMI3DUser user, string boneId, string toolId, string interactionId)
     {
         updateColor();
     }

@@ -30,7 +30,7 @@ public class TrackHoverPosition : MonoBehaviour
         return $"{user.Id()}:{boneId}";
     }
 
-    public void OnHoverEnter(UMI3DUser user, string boneId) {
+    public void OnHoverEnter(UMI3DUser user, string boneId, string toolId, string interactionId) {
         if (!trackers.ContainsKey(ToName(user, boneId)))
         {
             trackers[ToName(user, boneId)] = Instantiate(prefab, transform).gameObject.GetOrAddComponent<UMI3DModel>();
@@ -40,7 +40,7 @@ public class TrackHoverPosition : MonoBehaviour
             UMI3DServer.Dispatch(transaction);
         }
     }
-    public void OnHoverExit(UMI3DUser user, string boneId) {
+    public void OnHoverExit(UMI3DUser user, string boneId, string toolId, string interactionId) {
         if (trackers.ContainsKey(ToName(user, boneId)))
         {
             var transaction = new Transaction();

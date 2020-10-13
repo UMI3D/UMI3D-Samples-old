@@ -35,7 +35,7 @@ public class MoveForward : MonoBehaviour
         return $"{user.Id()}:{boneId}";
     }
 
-    public void Forward(UMI3DUser user, string bone)
+    public void Forward(UMI3DUser user, string bone, string toolId, string interactionId)
     {
         var name = ToName(user, bone);
         if(!users.Contains(name))
@@ -43,7 +43,7 @@ public class MoveForward : MonoBehaviour
         if (users.Count > 0) transform.localPosition = localPos + Vector3.right * ForwardDelta;
     }
 
-    public void Backward(UMI3DUser user, string bone)
+    public void Backward(UMI3DUser user, string bone, string toolId, string interactionId)
     {
         var name = ToName(user, bone);
         if (users.Contains(name))

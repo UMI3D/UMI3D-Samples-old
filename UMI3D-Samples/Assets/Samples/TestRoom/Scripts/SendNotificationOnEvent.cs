@@ -22,11 +22,11 @@ public class SendNotificationOnEvent : MonoBehaviour
 {
     public UMI3DNode Node;
 
-    public void Global(UMI3DUser user, string boneType) {
+    public void Global(UMI3DUser user, string boneType, string toolId, string interactionId) {
         var notif = new UMI3DNotification("Global", "This is a global notif", 5f, null, null);
         Dispatch(notif);
     }
-    public void Local(UMI3DUser user, string boneType)
+    public void Local(UMI3DUser user, string boneType, string toolId, string interactionId)
     {
         var notif = new UMI3DNotificationOnObject("Global", "This is a global notif", 5f, null, null, Node);
         Dispatch(notif);

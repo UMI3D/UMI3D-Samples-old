@@ -27,14 +27,14 @@ public class ChangeColorOnHover : MonoBehaviour
         return $"{user.Id()}:{boneType}";
     }
 
-    public void OnHoverEnter(UMI3DUser user, string boneId)
+    public void OnHoverEnter(UMI3DUser user, string boneId, string toolId, string interactionId)
     {
         var name = ToName(user, boneId);
         if (!trackers.Contains(name))
             trackers.Add(name);
         updateColor();
     }
-    public void OnHoverExit(UMI3DUser user, string boneId)
+    public void OnHoverExit(UMI3DUser user, string boneId, string toolId, string interactionId)
     {
         var name = ToName(user, boneId);
         if (trackers.Contains(name))
