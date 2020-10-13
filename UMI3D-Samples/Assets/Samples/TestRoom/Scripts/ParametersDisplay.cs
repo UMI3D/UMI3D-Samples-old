@@ -40,7 +40,7 @@ public class ParametersDisplay : MonoBehaviour
         boolText.text = booleanParameter.value.ToString();
 
         stringEnum.onChange.AddListener(EnumParameterChange);
-        stringParameter.onChange.AddListener(EnumParameterChange);
+        stringParameter.onChange.AddListener(StringParameterChange);
         booleanParameter.onChange.AddListener(BoolParameterChange);
         rangeParameter.onChange.AddListener(RangeParameterChange);
     }
