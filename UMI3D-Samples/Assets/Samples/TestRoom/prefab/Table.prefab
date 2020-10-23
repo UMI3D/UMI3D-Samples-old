@@ -116,7 +116,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -180,7 +179,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -194,13 +192,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -208,9 +210,8 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
   areSubobjectsTracked: 0
 --- !u!1 &3733969041529805003
 GameObject:
@@ -262,7 +263,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -276,13 +276,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\icosphere.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -290,9 +294,8 @@ MonoBehaviour:
         resolution: 0
         size: 6.956
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
   areSubobjectsTracked: 0
 --- !u!114 &4546299323553703968
 MonoBehaviour:
@@ -419,6 +422,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -452,7 +456,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -516,7 +519,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -530,13 +532,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\table1.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -544,9 +550,8 @@ MonoBehaviour:
         resolution: 0
         size: 570.21
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
   areSubobjectsTracked: 0
 --- !u!1001 &203850007015755447
 PrefabInstance:

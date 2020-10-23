@@ -329,13 +329,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -343,13 +347,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &12411764
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,8 +374,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12411764}
-  m_LocalRotation: {x: -0, y: 0.17364821, z: -0, w: -0.9848078}
-  m_LocalPosition: {x: -4.6984634, y: 0, z: -1.7101}
+  m_LocalRotation: {x: -0, y: -0.17364813, z: -0, w: -0.9848078}
+  m_LocalPosition: {x: -4.6984625, y: 0, z: 1.7101018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1562998270}
@@ -542,13 +542,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -556,13 +560,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &25655242
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,13 +765,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\globeHolder.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -779,13 +783,9 @@ MonoBehaviour:
         resolution: 0
         size: 46.929
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &39339658
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,13 +914,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -928,13 +932,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &46122662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1077,13 +1077,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\UMI3D_logo3D_text.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -1091,13 +1095,9 @@ MonoBehaviour:
         resolution: 0
         size: 928.935
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &49873177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,68 +1112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   axis: {x: 0, y: 0, z: 1}
---- !u!1 &52055427
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 52055428}
-  - component: {fileID: 52055429}
-  m_Layer: 0
-  m_Name: Manipulation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &52055428
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52055427}
-  m_LocalRotation: {x: -0, y: -0.6156614, z: -0, w: -0.7880108}
-  m_LocalPosition: {x: -1.2096071, y: 0, z: 4.851479}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 816956683}
-  - {fileID: 946774438}
-  m_Father: {fileID: 452904069}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &52055429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52055427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
 --- !u!1001 &71655243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1273,11 +1211,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76787173}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49583d8078eef914fab648923fef0ef2, type: 3}
+  m_Script: {fileID: 11500000, guid: a001158263df49e41bca38dc87a278c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Spacialized: 0
 --- !u!4 &76787175
 Transform:
   m_ObjectHideFlags: 0
@@ -1420,13 +1359,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -1434,88 +1377,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &99164326
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1601164102}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &99164327 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 99164326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &99973692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1591,155 +1455,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 99973692}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &102156661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102156662}
-  - component: {fileID: 102156665}
-  - component: {fileID: 102156664}
-  - component: {fileID: 102156663}
-  m_Layer: 0
-  m_Name: Cube (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102156662
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102156661}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1932206604}
-  m_Father: {fileID: 819784993}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &102156663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102156661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &102156664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102156661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 10
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 102156663}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 102156663}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &102156665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102156661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &118957843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +1900,7 @@ MonoBehaviour:
   materialIds: []
   animationIds: []
   materialSOs: []
+  PreloadedMaterials: []
 --- !u!1 &133971195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,8 +1925,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133971195}
-  m_LocalRotation: {x: -0, y: -0.104528405, z: -0, w: -0.9945219}
-  m_LocalPosition: {x: -4.890737, y: 0, z: 1.0395601}
+  m_LocalRotation: {x: -0, y: -0.50000006, z: -0, w: -0.8660254}
+  m_LocalPosition: {x: -2.5, y: 0, z: 4.3301277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27448916}
@@ -2313,13 +2029,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -2327,13 +2047,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &134761186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2698,13 +2414,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -2712,13 +2432,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &166518871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3011,13 +2727,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3025,13 +2745,9 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &223080074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3363,13 +3079,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\TV.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3377,13 +3097,9 @@ MonoBehaviour:
         resolution: 0
         size: 6.015
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &278249412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,13 +3467,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3765,13 +3485,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &326592199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4093,13 +3809,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -4107,13 +3827,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &348269743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4175,13 +3891,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 0
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\ground.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -4189,162 +3909,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.368
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 0
-  receiveShadow: 1
---- !u!1 &363718312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 363718313}
-  - component: {fileID: 363718316}
-  - component: {fileID: 363718315}
-  - component: {fileID: 363718314}
-  m_Layer: 0
-  m_Name: Cube (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &363718313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363718312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 859822598}
-  m_Father: {fileID: 1752003041}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &363718314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363718312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &363718315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363718312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 0
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 363718314}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 363718314}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &363718316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363718312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &379265052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4664,13 +4231,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\UMI3D_logo3D_text.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -4678,13 +4249,9 @@ MonoBehaviour:
         resolution: 0
         size: 928.935
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &389781994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4809,8 +4376,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411654111}
-  m_LocalRotation: {x: -0, y: 0.8480481, z: -0, w: -0.52991927}
-  m_LocalPosition: {x: 2.191855, y: 0, z: -4.493971}
+  m_LocalRotation: {x: -0, y: 0.7660445, z: -0, w: -0.64278764}
+  m_LocalPosition: {x: 0.8682406, y: 0, z: -4.924039}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765442240}
@@ -4847,240 +4414,6 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
---- !u!1 &413381424
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 413381425}
-  - component: {fileID: 413381428}
-  - component: {fileID: 413381427}
-  - component: {fileID: 413381426}
-  m_Layer: 0
-  m_Name: Cube (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &413381425
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413381424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1596187848}
-  m_Father: {fileID: 819784993}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &413381426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413381424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &413381427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413381424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 14
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 413381426}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 413381426}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &413381428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413381424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &416543656
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 877667378}
-    m_Modifications:
-    - target: {fileID: 1439097542601985228, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_Text
-      value: Multy Event 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180876, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_Name
-      value: Table
-      objectReference: {fileID: 0}
-    - target: {fileID: 7867688311116601099, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9036f5e33cc1b344d8bc63d6a57a1669, type: 3}
---- !u!4 &416543657 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-    type: 3}
-  m_PrefabInstance: {fileID: 416543656}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &425432706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5233,13 +4566,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -5247,13 +4584,9 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &442326012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5362,8 +4695,6 @@ Transform:
   - {fileID: 907630343}
   - {fileID: 12411765}
   - {fileID: 133971196}
-  - {fileID: 877667378}
-  - {fileID: 52055428}
   - {fileID: 2131503141}
   m_Father: {fileID: 133817798}
   m_RootOrder: 0
@@ -5810,81 +5141,6 @@ MonoBehaviour:
   onChangeFalse:
     m_PersistentCalls:
       m_Calls: []
---- !u!1001 &501071310
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2074538961}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &501071311 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 501071310}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &518248734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5960,155 +5216,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 518248734}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &519213548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 519213549}
-  - component: {fileID: 519213552}
-  - component: {fileID: 519213551}
-  - component: {fileID: 519213550}
-  m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &519213549
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519213548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1057528940}
-  m_Father: {fileID: 1752003041}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519213550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519213548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &519213551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519213548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 1
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 519213550}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 519213550}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &519213552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519213548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &569678209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6687,13 +5794,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -6701,13 +5812,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &617298791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7299,13 +6406,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\cubicZone.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -7313,13 +6424,9 @@ MonoBehaviour:
         resolution: 0
         size: 5.817
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &687007373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7523,13 +6630,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -7537,13 +6648,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &713356418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8128,13 +7235,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\torus.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -8142,13 +7253,9 @@ MonoBehaviour:
         resolution: 0
         size: 65.432
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &765322012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8287,13 +7394,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cone.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -8301,13 +7412,9 @@ MonoBehaviour:
         resolution: 0
         size: 4.426
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &765442239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8376,13 +7483,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -8390,13 +7501,9 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &765442242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8565,155 +7672,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hoveringBones: []
---- !u!1 &765524794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 765524795}
-  - component: {fileID: 765524798}
-  - component: {fileID: 765524797}
-  - component: {fileID: 765524796}
-  m_Layer: 0
-  m_Name: Cube (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &765524795
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765524794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1020641311}
-  m_Father: {fileID: 2100155522}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &765524796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765524794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &765524797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765524794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 8
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 765524796}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 765524796}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &765524798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 765524794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &791911616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8794,302 +7752,6 @@ MonoBehaviour:
   Scene: {fileID: 0}
   tools:
   - {fileID: 791911618}
---- !u!1 &816956682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 816956683}
-  - component: {fileID: 816956684}
-  m_Layer: 0
-  m_Name: Model_obj
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &816956683
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816956682}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children:
-  - {fileID: 1867420531}
-  m_Father: {fileID: 52055428}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
---- !u!114 &816956684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816956682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.test_room\default\UMI3D_logo3D_text.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 928.935
-      isInLibrary: 1
-      libraryKey: com.gfi.test_room
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1 &819784992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 819784993}
-  - component: {fileID: 819784994}
-  m_Layer: 0
-  m_Name: raw (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &819784993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819784992}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4000015, y: 6, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 102156662}
-  - {fileID: 2074538961}
-  - {fileID: 1062821766}
-  - {fileID: 1646060531}
-  - {fileID: 413381425}
-  m_Father: {fileID: 1769569072}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &819784994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819784992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
---- !u!1 &832361272
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 832361273}
-  - component: {fileID: 832361276}
-  - component: {fileID: 832361275}
-  - component: {fileID: 832361274}
-  m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &832361273
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832361272}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1944195724}
-  m_Father: {fileID: 2100155522}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &832361274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832361272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &832361275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832361272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 6
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 832361274}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 832361274}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &832361276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832361272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &842232381
 GameObject:
   m_ObjectHideFlags: 0
@@ -9218,13 +7880,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -9232,88 +7898,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &859822597
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 363718313}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &859822598 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 859822597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &866900349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9389,68 +7976,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 866900349}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &877667377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 877667378}
-  - component: {fileID: 877667379}
-  m_Layer: 0
-  m_Name: MultyEvent2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &877667378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877667377}
-  m_LocalRotation: {x: -0, y: -0.3746065, z: -0, w: -0.9271839}
-  m_LocalPosition: {x: -3.596698, y: 0, z: 3.4732928}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1606052006}
-  - {fileID: 416543657}
-  m_Father: {fileID: 452904069}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &877667379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877667377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
 --- !u!1 &907630342
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,8 +8000,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907630342}
-  m_LocalRotation: {x: -0, y: 0.43837118, z: -0, w: -0.89879405}
-  m_LocalPosition: {x: -3.0783086, y: 0, z: -3.9400532}
+  m_LocalRotation: {x: -0, y: 0.17364821, z: -0, w: -0.9848078}
+  m_LocalPosition: {x: -4.6984634, y: 0, z: -1.7101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1844647778}
@@ -9663,310 +8188,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 918598825}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &931805330
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1134288212}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &931805331 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 931805330}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &946774437
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 52055428}
-    m_Modifications:
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5740664943267180876, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_Name
-      value: Table
-      objectReference: {fileID: 0}
-    - target: {fileID: 7867688311116601099, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9036f5e33cc1b344d8bc63d6a57a1669, type: 3}
---- !u!4 &946774438 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5740664943267180875, guid: 9036f5e33cc1b344d8bc63d6a57a1669,
-    type: 3}
-  m_PrefabInstance: {fileID: 946774437}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &951570952
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 951570953}
-  - component: {fileID: 951570956}
-  - component: {fileID: 951570955}
-  - component: {fileID: 951570954}
-  m_Layer: 0
-  m_Name: Cube (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &951570953
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951570952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2144162152}
-  m_Father: {fileID: 1752003041}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &951570954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951570952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &951570955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951570952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 4
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 951570954}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 951570954}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &951570956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951570952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &955216755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10103,13 +8324,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -10117,13 +8342,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &975902843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10323,13 +8544,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -10337,13 +8562,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &998256512
 GameObject:
   m_ObjectHideFlags: 0
@@ -10464,6 +8685,7 @@ MonoBehaviour:
   materialIds: []
   animationIds: []
   materialSOs: []
+  PreloadedMaterials: []
 --- !u!1 &1003581601
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,81 +8842,6 @@ MonoBehaviour:
   OnServerStop:
     m_PersistentCalls:
       m_Calls: []
---- !u!1001 &1020641310
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 765524795}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1020641311 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1020641310}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036543025
 GameObject:
   m_ObjectHideFlags: 0
@@ -10756,13 +8903,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -10770,13 +8921,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1046571799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10913,230 +9060,6 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
---- !u!1001 &1057528939
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 519213549}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1057528940 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1057528939}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1062821765
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1062821766}
-  - component: {fileID: 1062821769}
-  - component: {fileID: 1062821768}
-  - component: {fileID: 1062821767}
-  m_Layer: 0
-  m_Name: Cube (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1062821766
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062821765}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1430979281}
-  m_Father: {fileID: 819784993}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1062821767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062821765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1062821768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062821765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 12
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1062821767}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1062821767}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1062821769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062821765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1078006853
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,13 +9124,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cone.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -11215,13 +9142,9 @@ MonoBehaviour:
         resolution: 0
         size: 4.426
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &1078006856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11538,13 +9461,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -11552,13 +9479,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1100864748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11837,13 +9760,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -11851,13 +9778,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1114583557
 GameObject:
   m_ObjectHideFlags: 0
@@ -11981,13 +9904,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -11995,162 +9922,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1 &1134288211
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1134288212}
-  - component: {fileID: 1134288215}
-  - component: {fileID: 1134288214}
-  - component: {fileID: 1134288213}
-  m_Layer: 0
-  m_Name: Cube (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1134288212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 931805331}
-  m_Father: {fileID: 2100155522}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1134288213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1134288214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 9
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134288213}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1134288213}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1134288215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134288211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1147409690
 GameObject:
   m_ObjectHideFlags: 0
@@ -12279,13 +10053,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -12293,13 +10071,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1147968302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12507,6 +10281,7 @@ MonoBehaviour:
   materialIds: []
   animationIds: []
   materialSOs: []
+  PreloadedMaterials: []
 --- !u!4 &1183297984
 Transform:
   m_ObjectHideFlags: 0
@@ -12809,13 +10584,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\torus.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -12823,13 +10602,9 @@ MonoBehaviour:
         resolution: 0
         size: 65.432
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &1234291670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13240,13 +11015,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -13254,13 +11033,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1269359222
 GameObject:
   m_ObjectHideFlags: 0
@@ -13285,8 +11060,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269359222}
-  m_LocalRotation: {x: -0, y: 0.9612617, z: -0, w: -0.27563733}
-  m_LocalPosition: {x: 4.24024, y: 0, z: -2.6495967}
+  m_LocalRotation: {x: -0, y: 0.9396927, z: -0, w: -0.34202012}
+  m_LocalPosition: {x: 3.8302221, y: 0, z: -3.2139382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 134761184}
@@ -13354,7 +11129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1274528699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7faf06b321832a44dbe5d2eceef68306, type: 3}
+  m_Script: {fileID: 11500000, guid: 9958806fc2c1a1048b389b7c85dc71a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   environmentName: test
@@ -13546,13 +11321,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -13560,13 +11339,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1300337828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13717,155 +11492,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1300726151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1304793503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1304793504}
-  - component: {fileID: 1304793507}
-  - component: {fileID: 1304793506}
-  - component: {fileID: 1304793505}
-  m_Layer: 0
-  m_Name: Cube (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1304793504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304793503}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1391455763}
-  m_Father: {fileID: 2100155522}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1304793505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304793503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1304793506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304793503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 5
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1304793505}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1304793505}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1304793507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304793503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1324949853
 GameObject:
   m_ObjectHideFlags: 0
@@ -14012,81 +11638,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1337820902}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1338784637
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2134487646}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1338784638 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1338784637}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1347306706
 GameObject:
   m_ObjectHideFlags: 0
@@ -14148,13 +11699,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -14162,13 +11717,9 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1357739351
 GameObject:
   m_ObjectHideFlags: 0
@@ -14452,13 +12003,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -14466,13 +12021,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1373408663
 GameObject:
   m_ObjectHideFlags: 0
@@ -14581,81 +12132,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373408663}
   m_CullTransparentMesh: 0
---- !u!1001 &1391455762
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1304793504}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1391455763 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1391455762}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1391763820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14730,156 +12206,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
     type: 3}
   m_PrefabInstance: {fileID: 1391763820}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1406047076
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1955069868}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1406047077 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1406047076}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1406288484
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1606052006}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 3af7c2f22839e304badce70c51a80fe4,
-        type: 3}
-      propertyPath: m_Name
-      value: icosphere
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3af7c2f22839e304badce70c51a80fe4, type: 3}
---- !u!4 &1406288485 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3af7c2f22839e304badce70c51a80fe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1406288484}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1422038461
 PrefabInstance:
@@ -15158,13 +12484,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -15172,88 +12502,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &1430979280
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1062821766}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1430979281 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1430979280}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1434847445
 GameObject:
   m_ObjectHideFlags: 0
@@ -15316,13 +12567,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\globeHolder.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -15330,13 +12585,9 @@ MonoBehaviour:
         resolution: 0
         size: 46.929
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1442899558
 GameObject:
   m_ObjectHideFlags: 0
@@ -15537,13 +12788,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\UMI3D_logo3D_text.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -15551,13 +12806,9 @@ MonoBehaviour:
         resolution: 0
         size: 928.935
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1460561731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15779,13 +13030,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -15793,13 +13048,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1509708251
 GameObject:
   m_ObjectHideFlags: 0
@@ -16036,13 +13287,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -16050,13 +13305,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1528412416
 GameObject:
   m_ObjectHideFlags: 0
@@ -16127,8 +13378,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532318486}
-  m_LocalRotation: {x: -0, y: 0.6691306, z: -0, w: -0.7431448}
-  m_LocalPosition: {x: -0.52264273, y: 0, z: -4.9726095}
+  m_LocalRotation: {x: -0, y: 0.4999999, z: -0, w: -0.86602545}
+  m_LocalPosition: {x: -2.5000005, y: 0, z: -4.330127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2095405620}
@@ -16226,13 +13477,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -16240,13 +13495,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1537361796
 GameObject:
   m_ObjectHideFlags: 0
@@ -16577,13 +13828,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -16591,13 +13846,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1544520446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16801,13 +14052,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -16815,13 +14070,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1562998269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17035,13 +14286,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -17049,88 +14304,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &1596187847
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 413381425}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1596187848 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1596187847}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1599687253
 GameObject:
   m_ObjectHideFlags: 0
@@ -17192,13 +14368,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -17206,162 +14386,9 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1 &1601164101
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1601164102}
-  - component: {fileID: 1601164105}
-  - component: {fileID: 1601164104}
-  - component: {fileID: 1601164103}
-  m_Layer: 0
-  m_Name: Cube (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1601164102
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601164101}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 99164327}
-  m_Father: {fileID: 1752003041}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1601164103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601164101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1601164104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601164101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 2
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1601164103}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1601164103}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1601164105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601164101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1601705781
 GameObject:
   m_ObjectHideFlags: 0
@@ -17424,13 +14451,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\cubicZone.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -17438,13 +14469,9 @@ MonoBehaviour:
         resolution: 0
         size: 5.817
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1606043620
 GameObject:
   m_ObjectHideFlags: 0
@@ -17553,173 +14580,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606043620}
   m_CullTransparentMesh: 0
---- !u!1 &1606052005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1606052006}
-  - component: {fileID: 1606052009}
-  - component: {fileID: 1606052008}
-  - component: {fileID: 1606052007}
-  m_Layer: 0
-  m_Name: MultyEventContainer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1606052006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606052005}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.474, y: 1.52, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children:
-  - {fileID: 1406288485}
-  - {fileID: 1769569072}
-  m_Father: {fileID: 877667378}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1606052007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606052005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1606052008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606052005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Display:
-    name: MultyEvent
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Interactions:
-  - {fileID: 363718315}
-  - {fileID: 519213551}
-  - {fileID: 1601164104}
-  - {fileID: 2134487648}
-  - {fileID: 951570955}
-  - {fileID: 1304793506}
-  - {fileID: 832361275}
-  - {fileID: 1955069870}
-  - {fileID: 765524797}
-  - {fileID: 1134288214}
-  - {fileID: 102156664}
-  - {fileID: 2074538963}
-  - {fileID: 1062821768}
-  - {fileID: 1646060533}
-  - {fileID: 413381427}
-  NotifyHoverPosition: 0
-  NotifySubObject: 0
-  Node: {fileID: 1606052009}
-  onHoverEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1606052007}
-        m_MethodName: OnHoverEnter
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onHovered:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1606052007}
-        m_MethodName: OnHoverExit
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  hoveringBones: []
---- !u!114 &1606052009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606052005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 1
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\icosphere.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 6.956
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1610920860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17870,155 +14730,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1624988298}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1646060530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1646060531}
-  - component: {fileID: 1646060534}
-  - component: {fileID: 1646060533}
-  - component: {fileID: 1646060532}
-  m_Layer: 0
-  m_Name: Cube (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1646060531
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646060530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2014156389}
-  m_Father: {fileID: 819784993}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1646060532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646060530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1646060533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646060530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 13
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1646060532}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1646060532}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1646060534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646060530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1647018237
 GameObject:
   m_ObjectHideFlags: 0
@@ -18080,13 +14791,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -18094,13 +14809,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1663566020
 GameObject:
   m_ObjectHideFlags: 0
@@ -18271,13 +14982,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 0
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\room_white.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -18285,13 +15000,9 @@ MonoBehaviour:
         resolution: 0
         size: 3429.389
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 0
-  receiveShadow: 1
 --- !u!1 &1672571740
 GameObject:
   m_ObjectHideFlags: 0
@@ -18689,13 +15400,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -18703,13 +15418,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &1680773428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19228,71 +15939,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750897278}
   m_CullTransparentMesh: 0
---- !u!1 &1752003040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1752003041}
-  - component: {fileID: 1752003042}
-  m_Layer: 0
-  m_Name: raw (0)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1752003041
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752003040}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4000015, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 363718313}
-  - {fileID: 519213549}
-  - {fileID: 1601164102}
-  - {fileID: 2134487646}
-  - {fileID: 951570953}
-  m_Father: {fileID: 1769569072}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1752003042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752003040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
 --- !u!1 &1760600941
 GameObject:
   m_ObjectHideFlags: 0
@@ -19371,69 +16017,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760600941}
   m_CullTransparentMesh: 0
---- !u!1 &1769569071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1769569072}
-  - component: {fileID: 1769569073}
-  m_Layer: 0
-  m_Name: node
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1769569072
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769569071}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1752003041}
-  - {fileID: 2100155522}
-  - {fileID: 819784993}
-  m_Father: {fileID: 1606052006}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1769569073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769569071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
 --- !u!1 &1772183019
 GameObject:
   m_ObjectHideFlags: 0
@@ -19626,13 +16209,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\UMI3D_logo3D_text.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -19640,13 +16227,9 @@ MonoBehaviour:
         resolution: 0
         size: 928.935
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1794545303
 GameObject:
   m_ObjectHideFlags: 0
@@ -20038,13 +16621,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\icosphere.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -20052,13 +16639,9 @@ MonoBehaviour:
         resolution: 0
         size: 6.956
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!114 &1844647780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20353,81 +16936,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
     type: 3}
   m_PrefabInstance: {fileID: 1859288752}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1867420530
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 816956683}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 796365c2798ec434087680cabde4bb9a,
-        type: 3}
-      propertyPath: m_Name
-      value: UMI3D_logo3D_text
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 796365c2798ec434087680cabde4bb9a, type: 3}
---- !u!4 &1867420531 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 796365c2798ec434087680cabde4bb9a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1867420530}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1874601096
 GameObject:
@@ -20745,13 +17253,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -20759,13 +17271,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1907152573
 GameObject:
   m_ObjectHideFlags: 0
@@ -20947,13 +17455,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\globeHolder.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -20961,13 +17473,9 @@ MonoBehaviour:
         resolution: 0
         size: 46.929
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1915568800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21171,13 +17679,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -21185,13 +17697,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1919571397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21440,156 +17948,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931890227}
   m_CullTransparentMesh: 0
---- !u!1001 &1932206603
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 102156662}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1932206604 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1932206603}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1944195723
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 832361273}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &1944195724 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1944195723}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1946197400
 GameObject:
   m_ObjectHideFlags: 0
@@ -21806,13 +18164,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -21820,13 +18182,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1946345055
 GameObject:
   m_ObjectHideFlags: 0
@@ -21955,13 +18313,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -21969,13 +18331,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1951587529
 GameObject:
   m_ObjectHideFlags: 0
@@ -22054,155 +18412,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951587529}
   m_CullTransparentMesh: 0
---- !u!1 &1955069867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1955069868}
-  - component: {fileID: 1955069871}
-  - component: {fileID: 1955069870}
-  - component: {fileID: 1955069869}
-  m_Layer: 0
-  m_Name: Cube (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1955069868
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955069867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1406047077}
-  m_Father: {fileID: 2100155522}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1955069869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955069867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &1955069870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955069867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 7
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1955069869}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1955069869}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1955069871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955069867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1 &1956868533
 GameObject:
   m_ObjectHideFlags: 0
@@ -22264,13 +18473,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -22278,13 +18491,9 @@ MonoBehaviour:
         resolution: 0
         size: 741.468
       isInLibrary: 1
-      libraryKey: com.gfi.test_room
+      libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &1964561012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22544,81 +18753,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &2014156388
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1646060531}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &2014156389 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2014156388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2045561204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22832,13 +18966,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\cube.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -22846,13 +18984,9 @@ MonoBehaviour:
         resolution: 0
         size: 0.952
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
   areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &2072000318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22928,155 +19062,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2072000318}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2074538960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2074538961}
-  - component: {fileID: 2074538964}
-  - component: {fileID: 2074538963}
-  - component: {fileID: 2074538962}
-  m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2074538961
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074538960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 501071311}
-  m_Father: {fileID: 819784993}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2074538962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074538960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &2074538963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074538960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 11
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2074538962}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2074538962}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2074538964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074538960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
 --- !u!1001 &2075691487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23379,71 +19364,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5740664943319919487}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2100155521
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2100155522}
-  - component: {fileID: 2100155523}
-  m_Layer: 0
-  m_Name: raw (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2100155522
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100155521}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4000015, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1304793504}
-  - {fileID: 832361273}
-  - {fileID: 1955069868}
-  - {fileID: 765524795}
-  - {fileID: 1134288212}
-  m_Father: {fileID: 1769569072}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2100155523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100155521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1b8f010a6494546a92b9e4cb66b65e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
 --- !u!1001 &2103676931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23851,15 +19771,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131503140}
-  m_LocalRotation: {x: -0, y: -0.80901706, z: -0, w: -0.58778524}
-  m_LocalPosition: {x: 1.5450859, y: 0, z: 4.7552824}
+  m_LocalRotation: {x: -0, y: -0.76604444, z: -0, w: -0.6427877}
+  m_LocalPosition: {x: 0.868243, y: 0, z: 4.924039}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765322013}
   - {fileID: 46122663}
   - {fileID: 752258430}
   m_Father: {fileID: 452904069}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2131503142
 MonoBehaviour:
@@ -23903,230 +19823,6 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
---- !u!1 &2134487645
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2134487646}
-  - component: {fileID: 2134487649}
-  - component: {fileID: 2134487648}
-  - component: {fileID: 2134487647}
-  m_Layer: 0
-  m_Name: Cube (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2134487646
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134487645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1338784638}
-  m_Father: {fileID: 1752003041}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2134487647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134487645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aff08bf84e23814499d0ccf38a138cd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ForwardDelta: 0.5
---- !u!114 &2134487648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134487645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Cube 3
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Hold: 1
-  onHold:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2134487647}
-        m_MethodName: Forward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRelease:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2134487647}
-        m_MethodName: Backward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2134487649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134487645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 0
-  colliderType: 3
-  convex: 0
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.primitive\default\cube.obj
-      format: standard
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.952
-      isInLibrary: 1
-      libraryKey: com.gfi.primitive
-  idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
-  materialsOverider: []
-  areSubobjectsTracked: 0
-  castShadow: 1
-  receiveShadow: 1
---- !u!1001 &2144162151
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 951570953}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: b827906fee43e384a9dd190d76d90fe2,
-        type: 3}
-      propertyPath: m_Name
-      value: cube
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b827906fee43e384a9dd190d76d90fe2, type: 3}
---- !u!4 &2144162152 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b827906fee43e384a9dd190d76d90fe2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2144162151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5740664943319919487
 PrefabInstance:
   m_ObjectHideFlags: 0

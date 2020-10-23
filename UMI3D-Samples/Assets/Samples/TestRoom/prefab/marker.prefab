@@ -48,7 +48,6 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 1
-  preview: {fileID: 0}
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -62,14 +61,17 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  interactable: {fileID: 0}
+  overrideModelMaterials: 0
+  materialsOverider: []
+  castShadow: 1
+  receiveShadow: 1
   lockColliders: 0
   model:
     variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.primitive\default\capsule.obj
-      format: standard
+      format: gltf
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -77,9 +79,8 @@ MonoBehaviour:
         resolution: 0
         size: 70.542
       isInLibrary: 1
-      libraryKey: com.gfi.primitive
+      libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
-  overrideModelMaterials: 0
   areSubobjectsTracked: 0
 --- !u!1001 &4473443577385877711
 PrefabInstance:
