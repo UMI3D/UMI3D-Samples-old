@@ -35,17 +35,17 @@ public class MoveForward : MonoBehaviour
         return $"{user.Id()}:{boneId}";
     }
 
-    public void Forward(UMI3DUser user, string bone, string toolId, string interactionId)
+    public void Forward(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, bone);
+        var name = ToName(content.user, content.boneType);
         if(!users.Contains(name))
             users.Add(name);
         if (users.Count > 0) transform.localPosition = localPos + Vector3.right * ForwardDelta;
     }
 
-    public void Backward(UMI3DUser user, string bone, string toolId, string interactionId)
+    public void Backward(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, bone);
+        var name = ToName(content.user, content.boneType);
         if (users.Contains(name))
             users.Remove(name);
         if (users.Count <= 0) ResetPosition();

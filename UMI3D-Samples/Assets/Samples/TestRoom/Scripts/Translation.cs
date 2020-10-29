@@ -26,9 +26,9 @@ public class Translation : MonoBehaviour
     /// <param name="user">The who performed the manipulation</param>
     /// <param name="trans">The position delta of the manipulation</param>
     /// <param name="rot">The rotation delta of the manipulation</param>
-    public void OnUserManipulation(UMI3DUser user, Vector3 trans, Quaternion rot)
+    public void OnUserManipulation(umi3d.edk.interaction.UMI3DManipulation.ManipulationEventContent content)
     {
-        this.transform.position += frameOfReference.transform.TransformDirection(trans);
+        this.transform.position += frameOfReference.transform.TransformDirection(content.translation);
     }
 
 }
