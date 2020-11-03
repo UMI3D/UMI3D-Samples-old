@@ -9033,6 +9033,10 @@ MonoBehaviour:
   websocketPort: 50201
   useRandomHttpPort: 0
   httpPort: 50200
+  useRandomFakeRTCReliablePort: 0
+  fakeRTCReliablePort: 0
+  useRandomFakeRTCUnreliablePort: 0
+  fakeRTCUnreliablePort: 0
   Authentication: 0
   OnServerStart:
     m_PersistentCalls:
@@ -15246,7 +15250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStatic: 0
-  active: 1
+  active: 0
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
   xBillboard: 0
