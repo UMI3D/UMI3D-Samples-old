@@ -265,6 +265,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 8307174}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 8307176}
@@ -1583,6 +1589,12 @@ MonoBehaviour:
   - {fileID: 118957851}
   - {fileID: 118957850}
   - {fileID: 118957849}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &118957848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,6 +2124,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 134761186}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 134761185}
@@ -2350,6 +2368,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 141607882}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 141607884}
@@ -3120,6 +3144,12 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 1
   NotifySubObject: 0
   Node: {fileID: 278249411}
@@ -4167,6 +4197,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 389781991}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 389781993}
@@ -4611,6 +4647,12 @@ MonoBehaviour:
   - {fileID: 20045062}
   - {fileID: 2053054718}
   - {fileID: 1147409693}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 442326011}
@@ -5761,6 +5803,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 617298788}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 617298790}
@@ -6059,6 +6107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2416733968201007103, guid: d08d9a7714f4f9b49b9e625a2d73c314,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d08d9a7714f4f9b49b9e625a2d73c314,
         type: 3}
@@ -7224,6 +7277,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 752258431}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 752258433}
@@ -7383,6 +7442,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 765322014}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 765322016}
@@ -7690,6 +7755,12 @@ MonoBehaviour:
   - {fileID: 765442244}
   - {fileID: 765442243}
   - {fileID: 765442242}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 765442241}
@@ -7759,6 +7830,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 484575149}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &791911619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7806,6 +7883,12 @@ MonoBehaviour:
   - {fileID: 879101402}
   - {fileID: 879101401}
   - {fileID: 879101400}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &842232381
 GameObject:
   m_ObjectHideFlags: 0
@@ -9027,6 +9110,9 @@ MonoBehaviour:
   OnUserLeave:
     m_PersistentCalls:
       m_Calls: []
+  iceServers: {fileID: 11400000, guid: 023c55d8f8a813e4e918ab6006bc274b, type: 2}
+  useIp: 0
+  encoderType: 0
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
   useRandomWebsocketPort: 0
@@ -9038,6 +9124,8 @@ MonoBehaviour:
   useRandomFakeRTCUnreliablePort: 0
   fakeRTCUnreliablePort: 0
   Authentication: 0
+  WaitTimeForPingAnswer: 1
+  MaxPingingTry: 3
   OnServerStart:
     m_PersistentCalls:
       m_Calls: []
@@ -9368,6 +9456,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1078006857}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1078006855}
@@ -10827,6 +10921,12 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1234291669}
@@ -12622,6 +12722,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1429462361}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1429462363}
@@ -12926,6 +13032,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1442899562}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1442899564}
@@ -13966,6 +14078,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1538675617}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1538675619}
@@ -16347,6 +16465,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1772183023}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1772183025}
@@ -16879,6 +17003,12 @@ MonoBehaviour:
   - {fileID: 1594774789}
   - {fileID: 1946345058}
   - {fileID: 1254613035}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1844647779}
@@ -17391,6 +17521,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1896244841}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1896244843}
@@ -18302,6 +18438,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1946197405}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1946197407}

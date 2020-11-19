@@ -52,7 +52,7 @@ namespace test
 
             UMI3DServer.Instance.Init();
 
-            Ip.text = UMI3DServer.Instance.ip;
+            Ip.text = UMI3DServer.GetHttpUrl();
             Port.text = UMI3DCollaborationServer.Instance.httpPort.ToString();
         }
 
