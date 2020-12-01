@@ -21,25 +21,14 @@ using UnityEngine.UI;
 
 namespace test
 {
-    public class Launcher : MonoBehaviour
+    public class Launcher : UMI3DLauncher
     {
         public InputField Name;
         public InputField Pin;
         public Button StartButton;
         public Button StopButton;
+        public Button IpButton;
         public Text Ip;
-        public Text Port;
-
-        private void Start()
-        {
-            StartButton.interactable = true;
-            StopButton.interactable = false;
-            StartButton.onClick.AddListener(OnStart);
-            StopButton.onClick.AddListener(OnStop);
-            if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
-                Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).Pin;
-            Name.text = UMI3DEnvironment.Instance.environmentName;
-        }
 
         void OnStart()
         {
@@ -53,16 +42,32 @@ namespace test
             UMI3DServer.Instance.Init();
 
             Ip.text = UMI3DServer.GetHttpUrl();
-            Port.text = UMI3DCollaborationServer.Instance.httpPort.ToString();
         }
 
         void OnStop()
         {
             UMI3DCollaborationServer.Stop();
             Ip.text = "_";
-            Port.text = "_";
             StartButton.interactable = true;
             StopButton.interactable = false;
+        }
+
+        public override void LaunchServer()
+        {
+            OnStart();
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+            StartButton.interactable = !LaunchServerOnStart;
+            StopButton.interactable = LaunchServerOnStart;
+            StartButton.onClick.AddListener(OnStart);
+            StopButton.onClick.AddListener(OnStop);
+            IpButton.onClick.AddListener(() => GUIUtility.systemCopyBuffer = Ip.text);
+            if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
+                Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).Pin;
+            Name.text = UMI3DEnvironment.Instance.environmentName;
         }
     }
 }
