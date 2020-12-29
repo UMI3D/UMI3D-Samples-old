@@ -40,14 +40,14 @@ public class ParametersDisplay : MonoBehaviour
         boolText.text = booleanParameter.value.ToString();
 
         stringEnum.onChange.AddListener(EnumParameterChange);
-        stringParameter.onChange.AddListener(EnumParameterChange);
+        stringParameter.onChange.AddListener(StringParameterChange);
         booleanParameter.onChange.AddListener(BoolParameterChange);
         rangeParameter.onChange.AddListener(RangeParameterChange);
     }
 
-    void StringParameterChange(UMI3DUser user,string value) { stringText.text = value; }
-    void EnumParameterChange(UMI3DUser user, string value) { enumText.text = value; }
-    void BoolParameterChange(UMI3DUser user, bool value) { boolText.text = value.ToString(); }
-    void RangeParameterChange(UMI3DUser user, Single value) { rangeText.text = value.ToString(); }
+    void StringParameterChange(AbstractParameter.ParameterEventContent<string> content) { stringText.text = content.value; }
+    void EnumParameterChange(AbstractParameter.ParameterEventContent<string> content) { enumText.text = content.value; }
+    void BoolParameterChange(AbstractParameter.ParameterEventContent<bool> content) { boolText.text = content.value.ToString(); }
+    void RangeParameterChange(AbstractParameter.ParameterEventContent<float> content) { rangeText.text = content.value.ToString(); }
 
 }

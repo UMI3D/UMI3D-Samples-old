@@ -27,19 +27,19 @@ public class ChangeColorOnHold : MonoBehaviour
         return $"{user.Id()}:{boneId}";
     }
 
-    public void OnHold(UMI3DUser user, string boneId)
+    public void OnHold(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, boneId);
+        var name = ToName(content.user, content.boneType);
         if (!trackers.Contains(name))
             trackers.Add(name);
         updateColor();
     }
-    public void OnRelease(UMI3DUser user, string boneId)
+    public void OnRelease(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, boneId);
+        var name = ToName(content.user, content.boneType);
         if (trackers.Contains(name))
         {
-            trackers.Remove(ToName(user, boneId));
+            trackers.Remove(ToName(content.user, content.boneType));
         }
         updateColor();
     }

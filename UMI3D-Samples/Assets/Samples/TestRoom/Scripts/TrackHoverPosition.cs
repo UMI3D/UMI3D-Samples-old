@@ -25,31 +25,31 @@ public class TrackHoverPosition : MonoBehaviour
     public Transform prefab;
     Dictionary<string, UMI3DModel> trackers = new Dictionary<string, UMI3DModel>();
 
-    string ToName(UMI3DUser user, string boneId)
+    string ToName(UMI3DUser user, string boneType)
     {
-        return $"{user.Id()}:{boneId}";
+        return $"{user.Id()}:{boneType}";
     }
 
-    public void OnHoverEnter(UMI3DUser user, string boneId) {
-        if (!trackers.ContainsKey(ToName(user, boneId)))
+    public void OnHoverEnter(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content) {
+        if (!trackers.ContainsKey(ToName(content.user, content.boneType)))
         {
-            trackers[ToName(user, boneId)] = Instantiate(prefab, transform).gameObject.GetOrAddComponent<UMI3DModel>();
+            trackers[ToName(content.user, content.boneType)] = Instantiate(prefab, transform).gameObject.GetOrAddComponent<UMI3DModel>();
             var transaction = new Transaction();
             transaction.reliable = true;
-            transaction += trackers[ToName(user, boneId)].Register();
+            transaction += trackers[ToName(content.user, content.boneType)].Register();
             UMI3DServer.Dispatch(transaction);
         }
     }
-    public void OnHoverExit(UMI3DUser user, string boneId) {
-        if (trackers.ContainsKey(ToName(user, boneId)))
+    public void OnHoverExit(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content) {
+        if (trackers.ContainsKey(ToName(content.user, content.boneType)))
         {
             var transaction = new Transaction();
-            transaction.Operations = new List<Operation>() { new DeleteEntity() { entityId = trackers[ToName(user, boneId)].Id(), users = new HashSet<UMI3DUser>(UMI3DEnvironment.GetEntities<UMI3DUser>()) } };
+            transaction.Operations = new List<Operation>() { new DeleteEntity() { entityId = trackers[ToName(content.user, content.boneType)].Id(), users = new HashSet<UMI3DUser>(UMI3DEnvironment.GetEntities<UMI3DUser>()) } };
             transaction.reliable = true;
             UMI3DServer.Dispatch(transaction);
 
-            Destroy(trackers[ToName(user, boneId)].gameObject);
-            trackers.Remove(ToName(user, boneId));
+            Destroy(trackers[ToName(content.user, content.boneType)].gameObject);
+            trackers.Remove(ToName(content.user, content.boneType));
         }
     }
     public void OnHovered(HoverEventContent content) {

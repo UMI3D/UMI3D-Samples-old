@@ -27,9 +27,10 @@ public class Rotation : MonoBehaviour
     /// <param name="trans">The position delta of the manipulation</param>
     /// <param name="rot">The rotation delta of the manipulation</param>
     [System.Obsolete("TODO : Does not work properly, must be fixed !")]
-    public void OnUserManipulation(UMI3DUser user, Vector3 trans, Quaternion rot)
+    public void OnUserManipulation(umi3d.edk.interaction.UMI3DManipulation.ManipulationEventContent content)
     {
-        Vector3 localRotation = rot.eulerAngles;
+        Vector3 localRotation = content.rotation.eulerAngles;
+        Debug.Log(localRotation);
         Vector3 localRotationRemapped = new Vector3(
                     (localRotation.x > 180) ? localRotation.x - 360 : localRotation.x,
                     (localRotation.y > 180) ? localRotation.y - 360 : localRotation.y,

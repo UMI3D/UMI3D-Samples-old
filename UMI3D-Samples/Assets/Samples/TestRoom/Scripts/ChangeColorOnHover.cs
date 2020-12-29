@@ -27,19 +27,19 @@ public class ChangeColorOnHover : MonoBehaviour
         return $"{user.Id()}:{boneType}";
     }
 
-    public void OnHoverEnter(UMI3DUser user, string boneId)
+    public void OnHoverEnter(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, boneId);
+        var name = ToName(content.user, content.boneType);
         if (!trackers.Contains(name))
             trackers.Add(name);
         updateColor();
     }
-    public void OnHoverExit(UMI3DUser user, string boneId)
+    public void OnHoverExit(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
-        var name = ToName(user, boneId);
+        var name = ToName(content.user, content.boneType);
         if (trackers.Contains(name))
         {
-            trackers.Remove(ToName(user, boneId));
+            trackers.Remove(ToName(content.user, content.boneType));
         }
         updateColor();
     }

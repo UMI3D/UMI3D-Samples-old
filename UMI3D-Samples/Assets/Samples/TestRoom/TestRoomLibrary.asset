@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: com.gfi.test_room
   date:
-    _dateTime: 10/09/2020 10:24:27
-    day: 10
+    _dateTime: 24/09/2020 15:08:33
+    day: 24
     month: 9
     year: 2020
-    hours: 10
-    minutes: 24
-    seconds: 27
+    hours: 15
+    minutes: 8
+    seconds: 33
     setNow: 0
   variants:
   - name: default
