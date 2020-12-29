@@ -1473,19 +1473,18 @@ GameObject:
   - component: {fileID: 118957848}
   - component: {fileID: 118957847}
   - component: {fileID: 118957846}
-  - component: {fileID: 118957845}
-  - component: {fileID: 118957853}
   - component: {fileID: 118957852}
   - component: {fileID: 118957851}
   - component: {fileID: 118957850}
   - component: {fileID: 118957849}
+  - component: {fileID: 118957845}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Super Toolbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &118957844
 Transform:
   m_ObjectHideFlags: 0
@@ -1509,7 +1508,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 118957843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567969ba5f3535746b521d55239abbd9, type: 3}
+  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &118957846
@@ -1537,7 +1536,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 118957845}
-        m_MethodName: OnHold
+        m_MethodName: DebugEventHold
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1551,7 +1550,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 118957845}
-        m_MethodName: OnRelease
+        m_MethodName: DebugEventRelease
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1563,7 +1562,18 @@ MonoBehaviour:
         m_CallState: 2
   onTrigger:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 118957845}
+        m_MethodName: DebugEventTrigger
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &118957847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1641,8 +1651,8 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957853}
-        m_MethodName: DebugS
+      - m_Target: {fileID: 118957845}
+        m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1681,8 +1691,8 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957853}
-        m_MethodName: DebugS
+      - m_Target: {fileID: 118957845}
+        m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1719,8 +1729,8 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957853}
-        m_MethodName: DebugF
+      - m_Target: {fileID: 118957845}
+        m_MethodName: DebugFloat
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1754,8 +1764,8 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957853}
-        m_MethodName: DebugB
+      - m_Target: {fileID: 118957845}
+        m_MethodName: DebugBoolean
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1771,18 +1781,6 @@ MonoBehaviour:
   onChangeFalse:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &118957853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118957843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &131374285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1888,8 +1886,9 @@ Transform:
   m_Children:
   - {fileID: 452904069}
   - {fileID: 118957844}
+  - {fileID: 791911617}
   m_Father: {fileID: 1274528702}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133817799
 MonoBehaviour:
@@ -5213,6 +5212,7 @@ GameObject:
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
   - component: {fileID: 484575145}
+  - component: {fileID: 484575150}
   m_Layer: 0
   m_Name: ConnectionParameters
   m_TagString: Untagged
@@ -5262,7 +5262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSubInteraction: 0
   Display:
-    name: Name
+    name: stringy
     description: 
     icon2D:
       variants: []
@@ -5410,7 +5410,30 @@ MonoBehaviour:
   - {fileID: 484575145}
   onFormCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 484575150}
+        m_MethodName: DebugForm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &484575150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484575141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &518248734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7997,14 +8020,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791911616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484575143}
   - {fileID: 879101398}
-  m_Father: {fileID: 1274528702}
-  m_RootOrder: 0
+  m_Father: {fileID: 133817798}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &791911618
 MonoBehaviour:
@@ -8080,6 +8103,8 @@ MonoBehaviour:
   - {fileID: 879101402}
   - {fileID: 879101401}
   - {fileID: 879101400}
+  - {fileID: 879101404}
+  - {fileID: 879101399}
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8323,6 +8348,9 @@ GameObject:
   - component: {fileID: 879101402}
   - component: {fileID: 879101401}
   - component: {fileID: 879101400}
+  - component: {fileID: 879101404}
+  - component: {fileID: 879101399}
+  - component: {fileID: 879101405}
   m_Layer: 0
   m_Name: OtherParameters
   m_TagString: Untagged
@@ -8344,6 +8372,41 @@ Transform:
   m_Father: {fileID: 791911617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879101399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879101397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b33942ea52b94486e809a14d72454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsSubInteraction: 0
+  Display:
+    name: Name
+    description: 
+    icon2D:
+      variants: []
+    icon3D:
+      variants: []
+  value: 
+  onChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugString
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &879101400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8372,7 +8435,18 @@ MonoBehaviour:
   - "D la r\xE9ponse D"
   onChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugString
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &879101401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8399,7 +8473,18 @@ MonoBehaviour:
   increment: 0
   onChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugFloat
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &879101402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8423,7 +8508,18 @@ MonoBehaviour:
   value: 0
   onChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugBoolean
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onChangeTrue:
     m_PersistentCalls:
       m_Calls: []
@@ -8453,7 +8549,65 @@ MonoBehaviour:
   value: 
   onChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugString
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &879101404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879101397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b33942ea52b94486e809a14d72454, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsSubInteraction: 0
+  Display:
+    name: hello
+    description: 
+    icon2D:
+      variants: []
+    icon3D:
+      variants: []
+  value: a
+  onChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 879101405}
+        m_MethodName: DebugString
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &879101405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879101397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907630342
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,7 +9295,7 @@ Transform:
   - {fileID: 1537361797}
   - {fileID: 1820844105}
   m_Father: {fileID: 1274528702}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &999676846
 MonoBehaviour:
@@ -9315,7 +9469,7 @@ MonoBehaviour:
   useRandomWebsocketPort: 0
   websocketPort: 50201
   useRandomHttpPort: 0
-  httpPort: 50200
+  httpPort: 50202
   useRandomFakeRTCReliablePort: 0
   fakeRTCReliablePort: 0
   useRandomFakeRTCUnreliablePort: 0
@@ -10787,7 +10941,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1274528702}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1216226464
 PrefabInstance:
@@ -11635,9 +11789,11 @@ MonoBehaviour:
   globalLibraries:
   - {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   defaultStartPosition: {x: 0, y: 0, z: 0}
-  defaultStartOrentation: {x: 0, y: 0, z: 0}
+  defaultStartOrientation: {x: 0, y: 0, z: 0}
   preloadedScenes: []
   skyboxImage:
+    variants: []
+  defaultMaterial:
     variants: []
 --- !u!114 &1274528701
 MonoBehaviour:
@@ -11662,7 +11818,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 791911617}
   - {fileID: 133817798}
   - {fileID: 999676845}
   - {fileID: 1183297984}
