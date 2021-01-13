@@ -356,6 +356,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &12411764
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +571,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &25655242
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +796,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &39339658
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +947,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &46122662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1104,6 +1112,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &49873177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,7 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a001158263df49e41bca38dc87a278c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Spacialized: 0
+  _Spacialized: 1
 --- !u!4 &76787175
 Transform:
   m_ObjectHideFlags: 0
@@ -1386,6 +1396,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &99973692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1624,7 +1636,7 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  Scene: {fileID: 0}
+  Scene: {fileID: 133817799}
   tools:
   - {fileID: 118957847}
 --- !u!114 &118957849
@@ -2061,6 +2073,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &134761186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,6 +2472,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &149866579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,6 +2865,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &223080074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3201,6 +3219,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &278249412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3595,6 +3615,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &326592199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3937,6 +3959,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &348269743
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,6 +4043,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &379265052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4365,6 +4391,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &389781994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4819,6 +4847,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &442326012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6114,6 +6144,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &617298791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6731,6 +6763,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &687007373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6955,6 +6989,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &713356418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7566,6 +7602,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &765322012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7731,6 +7769,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &765442239
 GameObject:
   m_ObjectHideFlags: 0
@@ -7820,6 +7860,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &765442242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8075,7 +8117,7 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  Scene: {fileID: 0}
+  Scene: {fileID: 133817799}
   tools:
   - {fileID: 791911618}
   - {fileID: 791911620}
@@ -8260,6 +8302,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &866900349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8977,6 +9021,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &975902843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9197,6 +9243,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &998256512
 GameObject:
   m_ObjectHideFlags: 0
@@ -9461,19 +9509,18 @@ MonoBehaviour:
   OnUserLeave:
     m_PersistentCalls:
       m_Calls: []
-  iceServers: {fileID: 11400000, guid: 023c55d8f8a813e4e918ab6006bc274b, type: 2}
   useIp: 0
-  encoderType: 0
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
-  useRandomWebsocketPort: 0
-  websocketPort: 50201
+  useRandomForgePort: 0
+  forgePort: 0
+  forgeMasterServerHost: 
+  forgeMasterServerPort: 0
+  forgeNatServerHost: 
+  forgeNatServerPort: 0
+  forgeMaxNbPlayer: 32
   useRandomHttpPort: 0
   httpPort: 50202
-  useRandomFakeRTCReliablePort: 0
-  fakeRTCReliablePort: 0
-  useRandomFakeRTCUnreliablePort: 0
-  fakeRTCUnreliablePort: 0
   Authentication: 0
   WaitTimeForPingAnswer: 1
   MaxPingingTry: 3
@@ -9565,6 +9612,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1046571799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9786,6 +9835,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &1078006856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10129,6 +10180,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1100864748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10428,6 +10481,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1114583557
 GameObject:
   m_ObjectHideFlags: 0
@@ -10572,6 +10627,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1147409690
 GameObject:
   m_ObjectHideFlags: 0
@@ -10721,6 +10778,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1147968302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11252,6 +11311,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &1234291670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11688,6 +11749,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1269359222
 GameObject:
   m_ObjectHideFlags: 0
@@ -11995,6 +12058,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1300337828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12373,6 +12438,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1372722094
 GameObject:
   m_ObjectHideFlags: 0
@@ -12522,6 +12589,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1373408663
 GameObject:
   m_ObjectHideFlags: 0
@@ -13009,6 +13078,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1434847445
 GameObject:
   m_ObjectHideFlags: 0
@@ -13092,6 +13163,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1442899558
 GameObject:
   m_ObjectHideFlags: 0
@@ -13319,6 +13392,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1460561731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13561,6 +13636,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1509708251
 GameObject:
   m_ObjectHideFlags: 0
@@ -13818,6 +13895,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1528412416
 GameObject:
   m_ObjectHideFlags: 0
@@ -13827,7 +13906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528412417}
-  - component: {fileID: 1528412419}
+  - component: {fileID: 1528412418}
   m_Layer: 0
   m_Name: Embodiment manager
   m_TagString: Untagged
@@ -13849,7 +13928,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1528412419
+--- !u!114 &1528412418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13858,12 +13937,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1528412416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5ccadf13429124fb53d355665efc31, type: 3}
+  m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  max: 0
+  dispatchTrackingData: 1
+  reliableTransaction: 0
+  targetDispatchFPS: 30
   embodimentsScene: {fileID: 1183297983}
+  startingDispatchingTrackingData:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1532318486
 GameObject:
   m_ObjectHideFlags: 0
@@ -14008,6 +14091,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1537361796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14365,6 +14450,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1544520446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14589,6 +14676,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1562998269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14823,6 +14912,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1599687253
 GameObject:
   m_ObjectHideFlags: 0
@@ -14905,6 +14996,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1601705781
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,6 +15081,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1606043620
 GameObject:
   m_ObjectHideFlags: 0
@@ -15328,6 +15423,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1663566020
 GameObject:
   m_ObjectHideFlags: 0
@@ -15519,6 +15616,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1672571740
 GameObject:
   m_ObjectHideFlags: 0
@@ -15937,6 +16036,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &1680773428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16600,6 +16701,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1794545303
 GameObject:
   m_ObjectHideFlags: 0
@@ -17012,6 +17115,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &1844647780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17656,6 +17761,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1907152573
 GameObject:
   m_ObjectHideFlags: 0
@@ -17858,6 +17965,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1915568800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18082,6 +18191,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1919571397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18573,6 +18684,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1946345055
 GameObject:
   m_ObjectHideFlags: 0
@@ -18722,6 +18835,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &1951587529
 GameObject:
   m_ObjectHideFlags: 0
@@ -18882,6 +18997,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &1964561012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19375,6 +19492,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &2072000318
 PrefabInstance:
   m_ObjectHideFlags: 0
