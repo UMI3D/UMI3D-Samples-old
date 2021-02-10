@@ -16,6 +16,7 @@ limitations under the License.
 
 using System.Linq;
 using umi3d.common.interaction;
+using umi3d.edk.collaboration;
 using umi3d.edk.interaction;
 using UnityEngine;
 
@@ -30,7 +31,7 @@ public class ConnectionParameters : MonoBehaviour
         pinIdentifier.GetParameter = GetParameter;
     }
 
-    FormDto GetParameter(string login) {
-        return form.ToDto(null) as FormDto;
+    FormDto GetParameter(UMI3DCollaborationUser user) {
+        return form.ToDto(user) as FormDto;
     }
 }

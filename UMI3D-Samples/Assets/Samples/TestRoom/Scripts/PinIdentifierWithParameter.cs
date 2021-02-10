@@ -24,11 +24,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PinIdentifierWithForm", menuName = "UMI3D/Test/Pin Identifier")]
 public class PinIdentifierWithParameter : PinIdentifierApi
 {
-    public Func<string, FormDto> GetParameter;
+    public Func<UMI3DCollaborationUser, FormDto> GetParameter;
 
-    public override FormDto GetParameterDtosFor(string login)
+    public override FormDto GetParameterDtosFor(UMI3DCollaborationUser user)
     {
-        return GetParameter != null ? GetParameter(login) : null;
+        return GetParameter != null ? GetParameter(user) : null;
     }
 
     public override StatusType UpdateIdentity(UMI3DCollaborationUser user, UserConnectionDto identity)

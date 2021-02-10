@@ -37,7 +37,7 @@ namespace test
 
             UMI3DEnvironment.Instance.environmentName = Name.text;
             if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
-                (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).Pin = Pin.text;
+                (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin = Pin.text;
 
             UMI3DServer.Instance.Init();
 
@@ -66,7 +66,7 @@ namespace test
             StopButton.onClick.AddListener(OnStop);
             IpButton.onClick.AddListener(() => GUIUtility.systemCopyBuffer = Ip.text);
             if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
-                Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).Pin;
+                Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin;
             Name.text = UMI3DEnvironment.Instance.environmentName;
         }
     }
