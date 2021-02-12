@@ -193,7 +193,7 @@ MonoBehaviour:
   customMeshCollider:
     variants: []
   overrideModelMaterials: 0
-  materialsOverider: []
+  materialsOverrider: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -213,6 +213,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1 &3733969041529805003
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +279,7 @@ MonoBehaviour:
   customMeshCollider:
     variants: []
   overrideModelMaterials: 0
-  materialsOverider: []
+  materialsOverrider: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -297,6 +299,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!114 &4546299323553703968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +322,12 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 7297656407201046655}
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1525141651802397168}
@@ -420,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -430,7 +440,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -533,7 +543,7 @@ MonoBehaviour:
   customMeshCollider:
     variants: []
   overrideModelMaterials: 0
-  materialsOverider: []
+  materialsOverrider: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -553,6 +563,8 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &203850007015755447
 PrefabInstance:
   m_ObjectHideFlags: 0
