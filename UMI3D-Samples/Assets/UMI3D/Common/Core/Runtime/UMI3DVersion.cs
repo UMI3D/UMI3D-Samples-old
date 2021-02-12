@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2019 Gfi Informatique
+Copyright 2019 - 2021 Inetum
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ namespace umi3d
         public readonly static string major = "2";
         public readonly static string minor = "2";
         public readonly static string status = "b";
-        public readonly static string date = "210208";
+        public readonly static string date = "210212";
 
     }
 }
