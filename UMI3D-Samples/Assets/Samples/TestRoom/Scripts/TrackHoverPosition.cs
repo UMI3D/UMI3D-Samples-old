@@ -36,7 +36,7 @@ public class TrackHoverPosition : MonoBehaviour
             trackers[ToName(content.user, content.boneType)] = Instantiate(prefab, transform).gameObject.GetOrAddComponent<UMI3DModel>();
             var transaction = new Transaction();
             transaction.reliable = true;
-            transaction += trackers[ToName(content.user, content.boneType)].Register();
+            transaction += trackers[ToName(content.user, content.boneType)].GetLoadEntity();
             UMI3DServer.Dispatch(transaction);
         }
     }
