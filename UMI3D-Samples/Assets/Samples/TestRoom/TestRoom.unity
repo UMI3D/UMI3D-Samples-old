@@ -265,6 +265,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 8307174}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -356,6 +357,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &12411764
@@ -571,6 +573,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &25655242
@@ -796,6 +799,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &39339658
@@ -947,6 +951,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &46122662
@@ -1045,6 +1050,7 @@ GameObject:
   - component: {fileID: 49873175}
   - component: {fileID: 49873176}
   - component: {fileID: 49873177}
+  - component: {fileID: 49873178}
   m_Layer: 0
   m_Name: Model_obj
   m_TagString: Untagged
@@ -1117,6 +1123,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &49873177
@@ -1131,8 +1138,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7929f814e041ca04daf05131d7357668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  lapPerSec: 0.1
   axis: {x: 0, y: 0, z: 1}
+  lapSubdivision: 10
+--- !u!114 &49873178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49873174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 1
+  looping: 1
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
 --- !u!1001 &71655243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1401,6 +1427,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &91137215
@@ -1771,6 +1798,7 @@ MonoBehaviour:
   - {fileID: 118957851}
   - {fileID: 118957850}
   - {fileID: 118957849}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -1799,6 +1827,7 @@ MonoBehaviour:
   Scene: {fileID: 133817799}
   tools:
   - {fileID: 118957847}
+  Active: 0
 --- !u!114 &118957849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2234,6 +2263,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &134761186
@@ -2298,6 +2328,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 134761186}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -2575,6 +2606,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 141607882}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -2666,6 +2698,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &149866579
@@ -3059,6 +3092,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &223080074
@@ -3413,6 +3447,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &278249412
@@ -3435,6 +3470,7 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -3809,6 +3845,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &326592199
@@ -4153,6 +4190,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &348269743
@@ -4237,6 +4275,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &379265052
@@ -4494,6 +4533,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 389781991}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -4585,6 +4625,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &389781994
@@ -5041,6 +5082,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &442326012
@@ -5067,6 +5109,7 @@ MonoBehaviour:
   - {fileID: 20045062}
   - {fileID: 2053054718}
   - {fileID: 1147409693}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -6323,6 +6366,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 617298788}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -6414,6 +6458,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &617298791
@@ -7033,6 +7078,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &687007373
@@ -7259,6 +7305,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &713356418
@@ -7803,6 +7850,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 752258431}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -7872,6 +7920,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &765322012
@@ -7970,6 +8019,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 765322014}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8039,6 +8089,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &765442239
@@ -8130,6 +8181,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &765442242
@@ -8287,6 +8339,7 @@ MonoBehaviour:
   - {fileID: 765442244}
   - {fileID: 765442243}
   - {fileID: 765442242}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8362,6 +8415,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 484575149}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8391,6 +8445,7 @@ MonoBehaviour:
   tools:
   - {fileID: 791911618}
   - {fileID: 791911620}
+  Active: 0
 --- !u!114 &791911620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,6 +8472,7 @@ MonoBehaviour:
   - {fileID: 879101400}
   - {fileID: 879101404}
   - {fileID: 879101399}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8572,6 +8628,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &866900349
@@ -9296,6 +9353,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &975902843
@@ -9518,6 +9576,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &998256512
@@ -9884,6 +9943,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1046571799
@@ -10107,6 +10167,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1078006856
@@ -10130,6 +10191,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1078006857}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -10452,6 +10514,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1100864748
@@ -10753,6 +10816,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1114583557
@@ -10899,6 +10963,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1147409690
@@ -11050,6 +11115,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1147968302
@@ -11583,6 +11649,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1234291670
@@ -11605,6 +11672,7 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -12021,6 +12089,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1269359222
@@ -12330,6 +12399,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1300337828
@@ -12710,6 +12780,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1372722094
@@ -12861,6 +12932,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1373408663
@@ -13337,6 +13409,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1429462361}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13428,6 +13501,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1434138841
@@ -13526,6 +13600,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1434138843}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13595,6 +13670,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1434847445
@@ -13680,6 +13756,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1439604874
@@ -13778,6 +13855,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1439604876}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13847,6 +13925,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1442899558
@@ -13985,6 +14064,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1442899562}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -14076,6 +14156,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1460561731
@@ -14320,6 +14401,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1509708251
@@ -14579,6 +14661,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1528412416
@@ -14769,6 +14852,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1538675612
@@ -14915,6 +14999,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1538675617}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -15006,6 +15091,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1544520446
@@ -15232,6 +15318,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1562998269
@@ -15468,6 +15555,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1599687253
@@ -15552,6 +15640,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1601705781
@@ -15637,6 +15726,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1606043620
@@ -16042,6 +16132,7 @@ MonoBehaviour:
   - {fileID: 1639039347}
   - {fileID: 1639039346}
   - {fileID: 1639039351}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -16111,6 +16202,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1639039351
@@ -16236,6 +16328,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1663566020
@@ -16429,6 +16522,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1672571740
@@ -16849,6 +16943,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1680773428
@@ -17423,6 +17518,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1772183023}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -17514,6 +17610,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1809250204
@@ -17684,6 +17781,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1844647780
@@ -17721,6 +17819,7 @@ MonoBehaviour:
   - {fileID: 1594774789}
   - {fileID: 1946345058}
   - {fileID: 1254613035}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -18314,6 +18413,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1896244841}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -18405,6 +18505,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1907152573
@@ -18609,6 +18710,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1915568800
@@ -18835,6 +18937,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1919571397
@@ -19237,6 +19340,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1946197405}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -19328,6 +19432,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1946345055
@@ -19479,6 +19584,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1951587529
@@ -19641,6 +19747,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1964561012
@@ -20136,6 +20243,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &2072000318
