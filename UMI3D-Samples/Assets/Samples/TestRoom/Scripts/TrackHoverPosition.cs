@@ -25,7 +25,7 @@ public class TrackHoverPosition : MonoBehaviour
     public Transform prefab;
     Dictionary<string, UMI3DModel> trackers = new Dictionary<string, UMI3DModel>();
 
-    string ToName(UMI3DUser user, string boneType)
+    string ToName(UMI3DUser user, uint boneType)
     {
         return $"{user.Id()}:{boneType}";
     }

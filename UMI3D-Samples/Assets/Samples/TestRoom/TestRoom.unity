@@ -1146,8 +1146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lapPerSec: 0.1
-  axis: {x: 0, y: 0, z: 1}
-  lapSubdivision: 10
+  axis: {x: 0, y: 1, z: 0}
+  lapSubdivision: 500
 --- !u!114 &49873178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,8 +2118,8 @@ MonoBehaviour:
   VolumeId: 
   libraries:
   - {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &133971195
@@ -5508,7 +5508,6 @@ GameObject:
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
   - component: {fileID: 484575145}
-  - component: {fileID: 484575150}
   m_Layer: 0
   m_Name: ConnectionParameters
   m_TagString: Untagged
@@ -5707,7 +5706,7 @@ MonoBehaviour:
   onFormCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484575150}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugForm
         m_Mode: 0
         m_Arguments:
@@ -5718,18 +5717,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &484575150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484575141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9745,8 +9732,8 @@ MonoBehaviour:
   immersiveOnly: 0
   VolumeId: 
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &1003581601
@@ -11387,8 +11374,8 @@ MonoBehaviour:
   immersiveOnly: 0
   VolumeId: 
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!4 &1183297984
