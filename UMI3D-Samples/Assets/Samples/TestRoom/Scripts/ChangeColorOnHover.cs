@@ -22,7 +22,7 @@ public class ChangeColorOnHover : MonoBehaviour
 {
     List<string> trackers = new List<string>();
 
-    string ToName(UMI3DUser user, string boneType)
+    string ToName(UMI3DUser user, uint boneType)
     {
         return $"{user.Id()}:{boneType}";
     }
