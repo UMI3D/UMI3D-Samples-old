@@ -4322,8 +4322,8 @@ MonoBehaviour:
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
   isRightHanded: 1
-  isPartOfNavmesh: 0
-  isTraversable: 1
+  isPartOfNavmesh: 1
+  isTraversable: 0
 --- !u!1001 &379265052
 PrefabInstance:
   m_ObjectHideFlags: 0
