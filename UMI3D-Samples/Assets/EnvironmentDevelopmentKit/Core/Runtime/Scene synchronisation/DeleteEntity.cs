@@ -26,15 +26,10 @@ namespace umi3d.edk
 
         public ulong entityId;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            int size = sizeof(uint) + sizeof(ulong);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.DeleteEntity, b, i);
-                i += UMI3DNetworkingHelper.Write(entityId, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.DeleteEntity)
+                + UMI3DNetworkingHelper.Write(entityId);
         }
 
         ///<inheritdoc/>

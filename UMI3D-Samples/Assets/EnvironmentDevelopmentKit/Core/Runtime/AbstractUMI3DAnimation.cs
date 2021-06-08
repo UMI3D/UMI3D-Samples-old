@@ -162,33 +162,19 @@ namespace umi3d.edk
             return ToAnimationDto(user);
         }
 
-        public (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public Bytable ToBytes(UMI3DUser user)
         {
-            var aux = ToBytesAux(user);
-
-            int size = 2*sizeof(ulong) + 2*sizeof(bool)+sizeof(long)+aux.Item1;
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(Id(), b, i);
-                i += UMI3DNetworkingHelper.Write(objectPlaying.GetValue(user), b, i);
-                i += UMI3DNetworkingHelper.Write(objectLooping.GetValue(user), b, i);
-                i += UMI3DNetworkingHelper.Write(objectStartTime.GetValue(user), b, i);
-                i += UMI3DNetworkingHelper.Write(objectPauseFrame.GetValue(user), b, i);
-                i += aux.Item2(b, i);
-                return size;
-            };
-            return (size, func);
-
+            return UMI3DNetworkingHelper.Write(Id())
+                + UMI3DNetworkingHelper.Write(objectPlaying.GetValue(user))
+                + UMI3DNetworkingHelper.Write(objectLooping.GetValue(user))
+                + UMI3DNetworkingHelper.Write(objectStartTime.GetValue(user))
+                + UMI3DNetworkingHelper.Write(objectPauseFrame.GetValue(user))
+                + ToBytesAux(user);
         }
 
-        protected virtual (int, Func<byte[], int, int>) ToBytesAux(UMI3DUser user)
+        protected virtual Bytable ToBytesAux(UMI3DUser user)
         {
-
-            int size = 0;
-            Func<byte[], int, int> func = (b, i) => {
-                return size;
-            };
-            return (size, func);
-
+            return new Bytable();
         }
 
         #region filter

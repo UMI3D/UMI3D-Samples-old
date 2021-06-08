@@ -36,24 +36,16 @@ namespace umi3d.common.interaction
 
         protected override uint GetOperationId() { return UMI3DOperationKeys.ManipulationRequest; }
 
-        public override (int, Func<byte[], int, int>) ToByteArray(params object[] parameters)
+        public override Bytable ToByteArray(params object[] parameters)
         {
             if (translation == null)
                 translation = new SerializableVector3();
             if (rotation == null)
                 rotation = new SerializableVector4();
 
-            var fb = base.ToByteArray(parameters);
-
-            int size = UMI3DNetworkingHelper.GetSize(translation) + UMI3DNetworkingHelper.GetSize(rotation) + fb.Item1;
-            Func<byte[], int, int> func = (b, i) =>
-            {
-                i += fb.Item2(b, i);
-                i += UMI3DNetworkingHelper.Write(translation, b, i);
-                i += UMI3DNetworkingHelper.Write(rotation, b, i);
-                return size;
-            };
-            return (size, func);
+            return base.ToByteArray(parameters) 
+                + UMI3DNetworkingHelper.Write(translation) 
+                + UMI3DNetworkingHelper.Write(rotation);
         }
     }
 }
