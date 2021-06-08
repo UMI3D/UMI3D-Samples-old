@@ -76,18 +76,11 @@ namespace umi3d.edk
             return new EntityGroupDto() { id = Id(), entitiesId = entities.GetValue(user).Select(e => e.Id()).ToList() };
         }
 
-        public (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public  Bytable ToBytes(UMI3DUser user)
         {
-            var ids = entities.GetValue(user).Select(e => e.Id()).ToList();
-
-            int size = sizeof(ulong) + UMI3DNetworkingHelper.GetSizeArray(ids);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty, b, i);
-                i += UMI3DNetworkingHelper.Write(entityId, b, i);
-                i += UMI3DNetworkingHelper.WriteArray(ids, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty)
+                + UMI3DNetworkingHelper.Write(entityId)
+                + UMI3DNetworkingHelper.WriteArray(entities.GetValue(user).Select(e => e.Id()).ToList());
         }
 
         public void Destroy()

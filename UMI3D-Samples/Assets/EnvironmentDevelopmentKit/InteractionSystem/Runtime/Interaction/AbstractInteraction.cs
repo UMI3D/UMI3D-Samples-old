@@ -168,7 +168,7 @@ namespace umi3d.edk.interaction
         /// <param name="request">Interaction request</param>
         public abstract void OnUserInteraction(UMI3DUser user, InteractionRequestDto request);
 
-        public abstract void OnUserInteraction(UMI3DUser user, ulong operationId, ulong toolId, ulong interactionId, ulong hoverredId, uint boneType, uint ParameterId, byte[] array, int position, int length);
+        public abstract void OnUserInteraction(UMI3DUser user, ulong operationId, ulong toolId, ulong interactionId, ulong hoverredId, uint boneType, byte[] array, int position, int length);
 
         /// <summary>
         /// Convert interaction to Data Transfer Object for a given user. 
@@ -203,16 +203,16 @@ namespace umi3d.edk.interaction
             dto.description = Display.description;
         }
 
-        public virtual (int, Func<byte[], int, int>) ToByte(UMI3DUser user)
+        public virtual Bytable ToByte( UMI3DUser user)
         {
             throw new NotImplementedException();
         }
 
-        (int, Func<byte[], int, int>) IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToByteArray(params object[] parameters)
         {
             if (parameters.Length < 1)
-                return ToByte(null);
-            return ToByte(parameters[0] as UMI3DUser);
+                return ToByte( null);
+            return ToByte( parameters[0] as UMI3DUser);
         }
 
         #region filter
