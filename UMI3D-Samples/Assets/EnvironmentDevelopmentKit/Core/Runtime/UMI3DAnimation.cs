@@ -30,20 +30,15 @@ namespace umi3d.edk
             public UMI3DAbstractAnimation Animation;
             public float Progress;
 
-            public (int, Func<byte[], int, int>) ToByteArray(params object[] parameters)
+            public Bytable ToByteArray(params object[] parameters)
             {
                 return ToByte(null);
             }
 
-            public (int, Func<byte[], int, int>) ToByte(UMI3DUser user)
+            public Bytable ToByte(UMI3DUser user)
             {
-                int size = sizeof(ulong) + sizeof(float);
-                Func<byte[], int, int> func = (b, i) => {
-                    i += UMI3DNetworkingHelper.Write(Animation.Id(), b, i);
-                    i += UMI3DNetworkingHelper.Write(Progress, b, i);
-                    return size;
-                };
-                return (size, func);
+                return UMI3DNetworkingHelper.Write(Animation.Id())
+                    + UMI3DNetworkingHelper.Write(Progress);
             }
 
             public UMI3DAnimationDto.AnimationChainDto Todto(UMI3DUser user)
@@ -90,20 +85,11 @@ namespace umi3d.edk
             Adto.duration = ObjectDuration.GetValue(user);
         }
 
-        protected override (int, Func<byte[], int, int>) ToBytesAux(UMI3DUser user)
+        protected override Bytable ToBytesAux(UMI3DUser user)
         {
-            var fbase = base.ToBytesAux(user);
-            var fchain = UMI3DNetworkingHelper.ToBytes(ObjectAnimationChain.GetValue(user));
-            var duration = ObjectDuration.GetValue(user);
-
-            int size = fbase.Item1 + fchain.Item1 + UMI3DNetworkingHelper.GetSize(duration);
-            Func<byte[], int, int> func = (b, i) => {
-                i += fbase.Item2(b, i);
-                i += fchain.Item2(b, i);
-                i += UMI3DNetworkingHelper.Write(duration, b, i);
-                return size;
-            };
-            return (size, func);
+            return base.ToBytesAux(user) 
+                + UMI3DNetworkingHelper.ToBytes(ObjectAnimationChain.GetValue(user)) 
+                + UMI3DNetworkingHelper.Write(ObjectDuration.GetValue(user));
         }
     }
 }

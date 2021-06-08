@@ -170,35 +170,15 @@ namespace umi3d.edk.interaction
             return dto;
         }
 
-        public (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public Bytable ToBytes(UMI3DUser user)
         {
-            var tool = UMI3DNetworkingHelper.ToBytes(objectTools?.GetValue(user).Where(t => t != null));
-            var id = Id();
-            var name = display.name;
-            var description = display.description;
-            var icon2D = display.icon2D.ToByte();
-            var icon3D = display.icon3D.ToByte();
-            var Active = objectActive.GetValue(user);
-
-            int size =
-                UMI3DNetworkingHelper.GetSize(id)
-                + UMI3DNetworkingHelper.GetSize(name)
-                + UMI3DNetworkingHelper.GetSize(description)
-                + UMI3DNetworkingHelper.GetSize(Active)
-                + tool.Item1
-                + icon2D.Item1
-                + icon3D.Item1;
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(id, b, i);
-                i += UMI3DNetworkingHelper.Write(name, b, i);
-                i += UMI3DNetworkingHelper.Write(description, b, i);
-                i += UMI3DNetworkingHelper.Write(Active, b, i);
-                i += icon2D.Item2(b, i);
-                i += icon3D.Item2(b, i);
-                i += tool.Item2(b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(Id())
+                + UMI3DNetworkingHelper.Write(display.name)
+                + UMI3DNetworkingHelper.Write(display.description)
+                + UMI3DNetworkingHelper.Write(objectActive.GetValue(user))
+                + display.icon2D.ToByte()
+                + display.icon3D.ToByte()
+                + UMI3DNetworkingHelper.ToBytes(objectTools?.GetValue(user).Where(t => t != null));
         }
 
         public IEntity ToEntityDto(UMI3DUser user)

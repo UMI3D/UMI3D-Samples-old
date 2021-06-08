@@ -26,18 +26,10 @@ namespace umi3d.edk
 
         public UMI3DLoadableEntity entity;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            //var entityFunc = entity.Id(user);
-            var id = entity.Id();
-            int size = sizeof(uint) + sizeof(ulong) /*entityFunc.Item1*/;
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.LoadEntity, b, i);
-                i += UMI3DNetworkingHelper.Write(id, b, i);
-                //i += entityFunc.Item2(b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.LoadEntity)
+                + UMI3DNetworkingHelper.Write(entity.Id());
         }
 
         ///<inheritdoc/>

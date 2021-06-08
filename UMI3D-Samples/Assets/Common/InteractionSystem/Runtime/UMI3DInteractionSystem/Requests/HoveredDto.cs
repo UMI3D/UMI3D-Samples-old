@@ -41,20 +41,12 @@ namespace umi3d.common.interaction
 
         protected override uint GetOperationId() { return UMI3DOperationKeys.Hoverred; }
 
-        public override (int, Func<byte[], int, int>) ToByteArray(params object[] parameters)
+        public override Bytable ToByteArray(params object[] parameters)
         {
-            var fb = base.ToByteArray(parameters);
-
-            int size = UMI3DNetworkingHelper.GetSize(position) + UMI3DNetworkingHelper.GetSize(normal) + UMI3DNetworkingHelper.GetSize(direction) + fb.Item1;
-            Func<byte[], int, int> func = (b, i) =>
-            {
-                i += fb.Item2(b, i);
-                i += UMI3DNetworkingHelper.Write(position, b, i);
-                i += UMI3DNetworkingHelper.Write(normal, b, i);
-                i += UMI3DNetworkingHelper.Write(direction, b, i);
-                return size;
-            };
-            return (size, func);
+            return base.ToByteArray(parameters)
+                + UMI3DNetworkingHelper.Write(position)
+                + UMI3DNetworkingHelper.Write(normal)
+                + UMI3DNetworkingHelper.Write(direction);
         }
     }
 }

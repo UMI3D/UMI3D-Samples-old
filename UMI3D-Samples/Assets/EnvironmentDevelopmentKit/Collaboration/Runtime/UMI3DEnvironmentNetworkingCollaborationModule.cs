@@ -8,17 +8,6 @@ namespace umi3d.edk.collaboration
 {
     public class UMI3DEnvironmentNetworkingCollaborationModule : Umi3dNetworkingHelperModule
     {
-        public override bool GetSize<T>(T value, out int result)
-        {
-            switch (value)
-            {
-                case UMI3DCollaborationUser user:
-                    result =  2*sizeof(uint) + 4 * sizeof(ulong);
-                    return true;
-            }
-            result = 0;
-            return false;
-        }
 
         public override bool Read<T>(byte[] array, ref int position, ref int length, out bool readable, out T result)
         {
@@ -47,32 +36,28 @@ namespace umi3d.edk.collaboration
             return false;
         }
 
-        public override bool Write<T>(T value, byte[] array, int position, out int result)
+        public override bool Write<T>(T value, out Bytable bytable)
         {
             switch (value)
             {
                 case UserDto user:
-                    Debug.Log($"{position} {array.Length} {array.ToString<byte>()}");
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.id, array, position);
-                    position += UMI3DNetworkingHelper.Write<uint>((uint)user.status, array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.avatarId, array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.audioSourceId, array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.videoSourceId, array, position);
-                    position += UMI3DNetworkingHelper.Write<uint>(user.networkId, array, position);
-                    result = 2 * sizeof(uint) + 4 * sizeof(ulong);
-                    Debug.Log($"{position} {array.Length} {array.ToString<byte>()}");
+                    bytable = UMI3DNetworkingHelper.Write<ulong>(user.id)
+                    + UMI3DNetworkingHelper.Write<uint>((uint)user.status)
+                    + UMI3DNetworkingHelper.Write<ulong>(user.avatarId)
+                    + UMI3DNetworkingHelper.Write<ulong>(user.audioSourceId)
+                    + UMI3DNetworkingHelper.Write<ulong>(user.videoSourceId)
+                    + UMI3DNetworkingHelper.Write<uint>(user.networkId);
                     return true;
                 case UMI3DCollaborationUser user:
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.Id(), array, position);
-                    position += UMI3DNetworkingHelper.Write<uint>((uint)user.status, array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.Avatar == null ? 0 : user.Avatar.Id(), array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.audioPlayer?.Id() ?? 0, array, position);
-                    position += UMI3DNetworkingHelper.Write<ulong>(user.videoPlayer?.Id() ?? 0, array, position);
-                    position += UMI3DNetworkingHelper.Write<uint>(user.networkPlayer?.NetworkId ?? 0, array, position);
-                    result = 2 * sizeof(uint) + 4 * sizeof(ulong);
+                    bytable = UMI3DNetworkingHelper.Write<ulong>(user.Id())
+                    + UMI3DNetworkingHelper.Write<uint>((uint)user.status)
+                    + UMI3DNetworkingHelper.Write<ulong>(user.Avatar == null ? 0 : user.Avatar.Id())
+                    + UMI3DNetworkingHelper.Write<ulong>(user.audioPlayer?.Id() ?? 0)
+                    + UMI3DNetworkingHelper.Write<ulong>(user.videoPlayer?.Id() ?? 0)
+                    + UMI3DNetworkingHelper.Write<uint>(user.networkPlayer?.NetworkId ?? 0);
                     return true;
             }
-            result = 0;
+            bytable = null;
             return false;
         }
     }

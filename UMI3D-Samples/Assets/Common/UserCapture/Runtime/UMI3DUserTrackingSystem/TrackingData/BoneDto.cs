@@ -35,18 +35,13 @@ namespace umi3d.common.userCapture
 
         public SerializableVector3 scale;
 
-        (int, Func<byte[], int, int>) IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToByteArray (params object[] parameters)
         {
-            int size = UMI3DNetworkingHelper.GetSize(boneType) + UMI3DNetworkingHelper.GetSize(position) + UMI3DNetworkingHelper.GetSize(rotation) + UMI3DNetworkingHelper.GetSize(scale);
-            Func<byte[], int, int> func = (b, i) =>
-            {
-                i += UMI3DNetworkingHelper.Write(boneType, b, i);
-                i += UMI3DNetworkingHelper.Write(position, b, i);
-                i += UMI3DNetworkingHelper.Write(rotation, b, i);
-                i += UMI3DNetworkingHelper.Write(scale, b, i);
-                return size;
-            };
-            return (size, func);
+            return
+                UMI3DNetworkingHelper.Write(boneType)
+                + UMI3DNetworkingHelper.Write(position)
+                + UMI3DNetworkingHelper.Write(rotation)
+                + UMI3DNetworkingHelper.Write(scale);
         }
     }
 }

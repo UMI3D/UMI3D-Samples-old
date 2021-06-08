@@ -24,15 +24,10 @@ namespace umi3d.edk.userCapture
     {
         public List<uint> streamedBones;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            int size = sizeof(uint) + UMI3DNetworkingHelper.GetSizeArray(streamedBones);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty, b, i);
-                i += UMI3DNetworkingHelper.WriteArray(streamedBones, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty)
+                + UMI3DNetworkingHelper.WriteArray(streamedBones);
         }
 
         public override AbstractOperationDto ToOperationDto(UMI3DUser user)

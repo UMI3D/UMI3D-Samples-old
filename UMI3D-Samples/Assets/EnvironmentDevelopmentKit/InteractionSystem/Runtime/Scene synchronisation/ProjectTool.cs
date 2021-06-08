@@ -26,16 +26,11 @@ namespace umi3d.edk.interaction
         public AbstractTool tool;
         public bool releasable = true;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            int size = sizeof(uint) + sizeof(ulong) + sizeof(bool);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.ProjectTool, b, i);
-                i += UMI3DNetworkingHelper.Write(tool.Id(), b, i);
-                i += UMI3DNetworkingHelper.Write(releasable, b, i);
-                return size;
-            };
-            return (size, func); 
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.ProjectTool)
+                + UMI3DNetworkingHelper.Write(tool.Id())
+                + UMI3DNetworkingHelper.Write(releasable);
         }
 
         ///<inheritdoc/>
