@@ -14,11 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using System.Collections.Generic;
 using umi3d.edk;
 using UnityEngine;
 
+[RequireComponent(typeof(UMI3DModel))]
 public class ChangeColorOnTrigger : MonoBehaviour
 {
+    UMI3DModel model;
+    public List<MaterialSO> materials;
+    int i = 0;
+
+    private void Start()
+    {
+        model = GetComponent<UMI3DModel>();
+        model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] });
+            
+    }
 
     public void OnTrigger(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
@@ -27,6 +39,18 @@ public class ChangeColorOnTrigger : MonoBehaviour
 
     public void updateColor()
     {
+        i++;
+        if (i >= materials.Count) i = 0;
+        var t = new Transaction()
+        {
+            reliable = true,
+            Operations = new List<Operation>() 
+            { 
+                model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] })
+            }
+        };
+        UMI3DServer.Dispatch(t);
+
         Debug.Log($"trigger");
     }
 

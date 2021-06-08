@@ -290,30 +290,13 @@ namespace umi3d.edk
             nodeDto.lodDto = GetLod();
         }
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            var fp = base.ToBytes(user);
-            var lod = LodToBytes(user);
-            var col = ColliderToBytes(user);
-
-            var xBillboard = objectXBillboard.GetValue(user);
-            var yBillboard = objectYBillboard.GetValue(user);
-
-            int size = 2 * sizeof(bool)
-                + UMI3DNetworkingHelper.GetSize(xBillboard)
-                + UMI3DNetworkingHelper.GetSize(yBillboard)
-                + col.Item1
-                + lod.Item1
-                + fp.Item1;
-            Func<byte[], int, int> func = (b, i) => {
-                i += fp.Item2(b, i);
-                i += UMI3DNetworkingHelper.Write(xBillboard, b, i);
-                i += UMI3DNetworkingHelper.Write(yBillboard, b, i);
-                i += col.Item2(b, i);
-                i += lod.Item2(b, i);
-                return size;
-            };
-            return (size, func);
+            return base.ToBytes(user)
+                + UMI3DNetworkingHelper.Write(objectXBillboard.GetValue(user))
+                + UMI3DNetworkingHelper.Write(objectYBillboard.GetValue(user))
+                + ColliderToBytes(user)
+                + LodToBytes(user);
         }
 
         /// <summary>
@@ -338,7 +321,7 @@ namespace umi3d.edk
             return lodg;
         }
 
-        (int, Func<byte[], int, int>) LodToBytes(UMI3DUser user)
+        Bytable LodToBytes(UMI3DUser user)
         {
             throw new NotImplementedException();
         }
@@ -394,7 +377,7 @@ namespace umi3d.edk
             return res;
         }
 
-        (int, Func<byte[], int, int>) ColliderToBytes(UMI3DUser user)
+        Bytable ColliderToBytes(UMI3DUser user)
         {
             throw new NotImplementedException();
         }

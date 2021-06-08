@@ -43,36 +43,17 @@ namespace umi3d.edk.userCapture
             offsetRotation = b.offsetRotation;
         }
 
-        public (int, Func<byte[], int, int>) ToByte(UMI3DUser user)
+        public Bytable ToByte(UMI3DUser user)
         {
-        uint boneType = this.boneType;
-        bool isBinded = this.isBinded;
-        ulong node = this.node?.Id() ?? 0;
-        string rigName = this.rigName;
-        Vector3 offsetPosition = this.offsetPosition;
-        Quaternion offsetRotation = this.offsetRotation;
-
-
-            int size = UMI3DNetworkingHelper.GetSize(boneType)
-                + UMI3DNetworkingHelper.GetSize(isBinded)
-                + UMI3DNetworkingHelper.GetSize(node)
-                + UMI3DNetworkingHelper.GetSize(rigName)
-                + UMI3DNetworkingHelper.GetSize(offsetPosition)
-                + UMI3DNetworkingHelper.GetSize(offsetRotation);
-            Func<byte[], int, int> func = (byte[] b, int i) =>
-            {
-                i += UMI3DNetworkingHelper.Write(boneType, b, i);
-                i += UMI3DNetworkingHelper.Write(isBinded, b, i);
-                i += UMI3DNetworkingHelper.Write(node, b, i);
-                i += UMI3DNetworkingHelper.Write(rigName, b, i);
-                i += UMI3DNetworkingHelper.Write(offsetPosition, b, i);
-                i += UMI3DNetworkingHelper.Write(offsetRotation, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(boneType)
+                    + UMI3DNetworkingHelper.Write(isBinded)
+                    + UMI3DNetworkingHelper.Write(this.node?.Id() ?? 0)
+                    + UMI3DNetworkingHelper.Write(rigName)
+                    + UMI3DNetworkingHelper.Write(offsetPosition)
+                    + UMI3DNetworkingHelper.Write(offsetRotation);
         }
 
-        (int, Func<byte[], int, int>) IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToByteArray(params object[] parameters)
         {
             if (parameters.Length < 1)
                 return ToByte(null);

@@ -24,15 +24,10 @@ namespace umi3d.edk.userCapture
     {
         public int targetFPS;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            int size = sizeof(uint) + sizeof(int);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty, b, i);
-                i += UMI3DNetworkingHelper.Write(targetFPS, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty)
+                + UMI3DNetworkingHelper.Write(targetFPS);
         }
 
         public override AbstractOperationDto ToOperationDto(UMI3DUser user)

@@ -41,17 +41,12 @@ namespace umi3d.edk
         /// </summary>
         public object value;
 
-        public override (int, Func<byte[], int, int>) ToBytes(UMI3DUser user)
+        public override Bytable ToBytes(UMI3DUser user)
         {
-            int size = sizeof(uint) + sizeof(ulong) + sizeof(uint) + UMI3DNetworkingHelper.GetSize(value);
-            Func<byte[], int, int> func = (b, i) => {
-                i += UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty, b, i);
-                i += UMI3DNetworkingHelper.Write(entityId, b, i);
-                i += UMI3DNetworkingHelper.Write(property, b, i);
-                i += UMI3DNetworkingHelper.Write(value, b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty)
+                + UMI3DNetworkingHelper.Write(entityId)
+                + UMI3DNetworkingHelper.Write(property)
+                + UMI3DNetworkingHelper.Write(value);
         }
 
         ///<inheritdoc/>

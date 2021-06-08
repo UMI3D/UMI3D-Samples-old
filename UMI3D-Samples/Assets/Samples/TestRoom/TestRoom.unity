@@ -2120,8 +2120,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   materialIds: 
   animationIds: 
-  materialSOs: []
-  PreloadedMaterials: []
+  materialSOs:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
+  PreloadedMaterials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!1 &133971195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,8 +2265,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -2372,6 +2389,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8bacdd81b497e449e159fe1bf65951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!114 &134761189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10191,8 +10215,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -11681,8 +11710,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0

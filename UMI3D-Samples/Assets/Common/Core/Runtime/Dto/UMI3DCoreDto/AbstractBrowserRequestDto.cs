@@ -31,15 +31,9 @@ namespace umi3d.common
 
 
         protected abstract uint GetOperationId();
-        public virtual (int, Func<byte[], int, int>) ToByteArray(params object[] parameters)
+        public virtual Bytable ToByteArray(params object[] parameters)
         {
-            int size = UMI3DNetworkingHelper.GetSize(GetOperationId());
-            Func<byte[], int, int> func = (b, i) =>
-            {
-                i += UMI3DNetworkingHelper.Write(GetOperationId(), b, i);
-                return size;
-            };
-            return (size, func);
+            return UMI3DNetworkingHelper.Write(GetOperationId());
         }
     }
 }
