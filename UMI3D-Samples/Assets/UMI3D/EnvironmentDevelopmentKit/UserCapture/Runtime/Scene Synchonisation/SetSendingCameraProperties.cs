@@ -13,29 +13,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+using System.Collections.Generic;
+using System.Linq;
+using umi3d.common;
 
-using System;
-
-namespace umi3d.common.userCapture
+namespace umi3d.edk.userCapture
 {
-    /// <summary>
-    /// Class to describe a bone's 6-D pose in the frame of reference of a user.
-    /// </summary>
-    [Serializable]
-    public class BoneDto : UMI3DDto
+    public class SetSendingCameraProperties : Operation
     {
-        /// <summary>
-        /// Defines the type of the bone.
-        /// </summary>
-        public string boneType;
+        public bool activeSending;
 
-        public bool tracked;
-
-        public SerializableVector3 position;
-
-        public SerializableVector4 rotation;
-
-        public SerializableVector3 scale;
-
+        public override AbstractOperationDto ToOperationDto(UMI3DUser user)
+        {
+            var sendingCamera = new SetSendingCameraPropertiesDto()
+            {
+                activeSending = this.activeSending
+            };
+            return sendingCamera;
+        }
     }
 }
