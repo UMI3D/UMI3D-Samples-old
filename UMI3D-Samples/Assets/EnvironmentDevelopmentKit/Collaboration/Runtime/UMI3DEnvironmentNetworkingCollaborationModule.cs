@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using umi3d.common;
 using umi3d.common.collaboration;
+using umi3d.common.userCapture;
 using UnityEngine;
 
 namespace umi3d.edk.collaboration
@@ -9,28 +11,8 @@ namespace umi3d.edk.collaboration
     public class UMI3DEnvironmentNetworkingCollaborationModule : Umi3dNetworkingHelperModule
     {
 
-        public override bool Read<T>(byte[] array, ref int position, ref int length, out bool readable, out T result)
+        public override bool Read<T>(ByteContainer container, out bool readable, out T result)
         {
-            //switch (true)
-            //{
-            //    case true when typeof(T) == typeof(UserDto):
-            //        //result = (T)Convert.ChangeType(BitConverter.ToBoolean(array, (int)position), typeof(T));
-            //        //position += sizeof(bool);
-            //        //length -= sizeof(bool);
-            //        return true;
-            //}
-            //switch (true)
-            //{
-            //    case true when typeof(T) == typeof(UMI3DCollaborationUser):
-            //        result = sizeof(uint) + sizeof(ulong) + sizeof(ulong) + sizeof(ulong) + sizeof(uint);
-            //        UMI3DNetworkingHelper.Read<uint>(array, ref position, ref length);
-            //        UMI3DNetworkingHelper.Read<ulong>(array, ref position, ref length);
-            //        UMI3DNetworkingHelper.Read<ulong>(array, ref position, ref length);
-            //        UMI3DNetworkingHelper.Read<ulong>(array, ref position, ref length);
-            //        UMI3DNetworkingHelper.Read<uint>(array, ref position, ref length);
-
-            //        return true;
-            //}
             result = default;
             readable = false;
             return false;

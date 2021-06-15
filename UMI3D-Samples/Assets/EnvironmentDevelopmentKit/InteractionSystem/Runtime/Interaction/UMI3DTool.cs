@@ -70,11 +70,16 @@ namespace umi3d.edk.interaction
             return base.ToBytes(user);
         }
 
-        Bytable IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToBytableArray(params object[] parameters)
         {
             if (parameters.Length < 1)
                 ToBytes(null);
             return ToBytes(parameters[0] as UMI3DUser);
         }
+        bool IByte.IsCountable()
+        {
+            return true;
+        }
+
     }
 }

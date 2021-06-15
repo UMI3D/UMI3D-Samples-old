@@ -30,7 +30,7 @@ namespace umi3d.edk
             public UMI3DAbstractAnimation Animation;
             public float Progress;
 
-            public Bytable ToByteArray(params object[] parameters)
+            public Bytable ToBytableArray(params object[] parameters)
             {
                 return ToByte(null);
             }
@@ -44,6 +44,16 @@ namespace umi3d.edk
             public UMI3DAnimationDto.AnimationChainDto Todto(UMI3DUser user)
             {
                 return new UMI3DAnimationDto.AnimationChainDto() { animationId = Animation.Id(), startOnProgress = Progress };
+            }
+
+            bool IByte.IsCountable()
+            {
+                throw new NotImplementedException();
+            }
+
+            Bytable IByte.ToBytableArray(params object[] parameters)
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -88,7 +98,7 @@ namespace umi3d.edk
         protected override Bytable ToBytesAux(UMI3DUser user)
         {
             return base.ToBytesAux(user) 
-                + UMI3DNetworkingHelper.ToBytes(ObjectAnimationChain.GetValue(user)) 
+                + UMI3DNetworkingHelper.ListToBytable(ObjectAnimationChain.GetValue(user)) 
                 + UMI3DNetworkingHelper.Write(ObjectDuration.GetValue(user));
         }
     }

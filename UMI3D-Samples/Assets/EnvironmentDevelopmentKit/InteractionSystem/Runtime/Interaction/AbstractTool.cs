@@ -164,14 +164,14 @@ namespace umi3d.edk.interaction
         /// <param name="user">User interacting</param>
         /// <param name="request">Interaction request</param>
         public void OnToolProjected(UMI3DUser user, ToolProjectedDto request) { onProjection.Invoke(new ProjectionContent(user, request.boneType, this)); }
-        public void OnToolProjected(UMI3DUser user, uint boneType, byte[] array, int position, int length) { onProjection.Invoke(new ProjectionContent(user, boneType, this)); }
+        public void OnToolProjected(UMI3DUser user, uint boneType, ByteContainer container) { onProjection.Invoke(new ProjectionContent(user, boneType, this)); }
         /// <summary>
         /// Called by a user on Tool release.
         /// </summary>
         /// <param name="user">User interacting</param>
         /// <param name="request">Interaction request</param>
         public void OnToolReleased(UMI3DUser user, ToolReleasedDto request) { onRelease.Invoke(new ProjectionContent(user, request.boneType, this)); }
-        public void OnToolReleased(UMI3DUser user, uint boneType, byte[] array, int position, int length) { onRelease.Invoke(new ProjectionContent(user, boneType, this)); }
+        public void OnToolReleased(UMI3DUser user, uint boneType, ByteContainer container) { onRelease.Invoke(new ProjectionContent(user, boneType, this)); }
 
         #region event
         /// <summary>
@@ -216,7 +216,7 @@ namespace umi3d.edk.interaction
 
 
         /// <summary>
-        /// Writte the AbstractTool properties in an object AbstractToolDto is assignable from.
+        /// Write the AbstractTool properties in an object AbstractToolDto is assignable from.
         /// </summary>
         /// <param name="scene">The AbstractToolDto to be completed</param>
         /// <param name="user">User to convert for</param>
@@ -240,7 +240,7 @@ namespace umi3d.edk.interaction
                 + UMI3DNetworkingHelper.Write(Display.description)
                 + Display.icon2D?.ToByte()
                 + Display.icon3D?.ToByte()
-                + UMI3DNetworkingHelper.ToBytes(objectInteractions.GetValue(user).Where(i => i != null), user)
+                + UMI3DNetworkingHelper.ListToBytable(objectInteractions.GetValue(user).Where(i => i != null), user)
                 + UMI3DNetworkingHelper.Write(objectActive.GetValue(user));
         }
 

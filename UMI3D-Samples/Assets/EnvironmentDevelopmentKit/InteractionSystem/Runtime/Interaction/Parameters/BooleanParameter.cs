@@ -55,7 +55,7 @@ namespace umi3d.edk.interaction
         }
 
         /// <summary>
-        /// Writte the UMI3DNode properties in an object UMI3DNodeDto is assignable from.
+        /// Write the UMI3DNode properties in an object UMI3DNodeDto is assignable from.
         /// </summary>
         /// <param name="scene">The UMI3DNodeDto to be completed</param>
         /// <param name="user">User to convert for</param>
@@ -89,13 +89,13 @@ namespace umi3d.edk.interaction
             }
         }
 
-        public override void OnUserInteraction(UMI3DUser user, ulong operationId, ulong toolId, ulong interactionId, ulong hoverredId, uint boneType, byte[] array, int position, int length)
+        public override void OnUserInteraction(UMI3DUser user, ulong operationId, ulong toolId, ulong interactionId, ulong hoverredId, uint boneType, ByteContainer container)
         {
             switch (operationId)
             {
                 case  UMI3DOperationKeys.ParameterSettingRequest:
-                    var parameterId = UMI3DNetworkingHelper.Read<uint>(array, ref position, ref length);
-                    value = UMI3DNetworkingHelper.Read<bool>(array, position, length);
+                    var parameterId = UMI3DNetworkingHelper.Read<uint>(container);
+                    value = UMI3DNetworkingHelper.Read<bool>(container);
                     onChange.Invoke(new ParameterEventContent<bool>(user, toolId,interactionId,hoverredId,boneType, value));
                         if (value)
                             onChangeTrue.Invoke(new InteractionEventContent(user, toolId, interactionId, hoverredId, boneType));

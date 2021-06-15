@@ -53,13 +53,17 @@ namespace umi3d.edk.userCapture
                     + UMI3DNetworkingHelper.Write(offsetRotation);
         }
 
-        Bytable IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToBytableArray(params object[] parameters)
         {
             if (parameters.Length < 1)
                 return ToByte(null);
             return ToByte(parameters[0] as UMI3DUser);
         }
 
+        bool IByte.IsCountable()
+        {
+            return true;
+        }
         public BoneBindingDto ToDto(UMI3DUser user)
         {
             BoneBindingDto dto = new BoneBindingDto()

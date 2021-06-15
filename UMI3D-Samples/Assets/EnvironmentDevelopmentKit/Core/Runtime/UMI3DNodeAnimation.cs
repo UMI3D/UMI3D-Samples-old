@@ -37,14 +37,19 @@ namespace umi3d.edk
 
             public Bytable ToBytes(UMI3DUser user)
             {
-                return UMI3DNetworkingHelper.Write(progress) + Operation.ToBytes(user);
+                return UMI3DNetworkingHelper.Write(progress) + Operation.ToBytable(user);
             }
 
-            Bytable IByte.ToByteArray(params object[] parameters)
+            Bytable IByte.ToBytableArray(params object[] parameters)
             {
                 if (parameters.Length < 1)
                     return ToBytes(null);
                 return ToBytes(parameters[0] as UMI3DUser);
+            }
+
+            bool IByte.IsCountable()
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -87,7 +92,7 @@ namespace umi3d.edk
 
         protected override Bytable ToBytesAux(UMI3DUser user)
         {
-            return UMI3DNetworkingHelper.ToBytes(animationChain, user)
+            return UMI3DNetworkingHelper.ListToBytable(animationChain, user)
                 + UMI3DNetworkingHelper.Write(objectDuration.GetValue(user));
         }
     }
