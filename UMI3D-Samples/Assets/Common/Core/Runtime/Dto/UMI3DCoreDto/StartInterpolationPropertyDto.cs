@@ -21,27 +21,11 @@ namespace umi3d.common
     /// <summary>
     /// A class to describe a starting interpolation operation
     /// </summary>
-<<<<<<< HEAD:UMI3D-Samples/Assets/Common/Core/Runtime/Dto/UMI3DCoreDto/StartInterpolationPropertyDto.cs
     public class StartInterpolationPropertyDto : AbstractInterpolationPropertyDto
-=======
-    [Serializable]
-    public abstract class AbstractBrowserRequestDto : UMI3DDto, IByte
->>>>>>> e58c168cebce48f2369d166a2e5a296723ac64de:UMI3D-Samples/Assets/Common/Core/Runtime/Dto/UMI3DCoreDto/AbstractBrowserRequestDto.cs
     {
         /// <summary>
         /// The value with witch to start interpolation
         /// </summary>
-<<<<<<< HEAD:UMI3D-Samples/Assets/Common/Core/Runtime/Dto/UMI3DCoreDto/StartInterpolationPropertyDto.cs
         public object startValue;
-=======
-        protected bool reliable = true;
-
-
-        protected abstract uint GetOperationId();
-        public virtual Bytable ToByteArray(params object[] parameters)
-        {
-            return UMI3DNetworkingHelper.Write(GetOperationId());
-        }
->>>>>>> e58c168cebce48f2369d166a2e5a296723ac64de:UMI3D-Samples/Assets/Common/Core/Runtime/Dto/UMI3DCoreDto/AbstractBrowserRequestDto.cs
     }
 }
