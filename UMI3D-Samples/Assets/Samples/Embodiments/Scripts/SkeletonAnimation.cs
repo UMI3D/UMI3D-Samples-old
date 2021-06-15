@@ -11,8 +11,8 @@ public class SkeletonAnimation : MonoBehaviour
 {
     public GameObject SkeletonPrefab;
 
-    Dictionary<string, GameObject> skeletons = new Dictionary<string, GameObject>();
-    Dictionary<string, Animator> animators = new Dictionary<string, Animator>();
+    Dictionary<ulong, GameObject> skeletons = new Dictionary<ulong, GameObject>();
+    Dictionary<ulong, Animator> animators = new Dictionary<ulong, Animator>();
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +39,7 @@ public class SkeletonAnimation : MonoBehaviour
     void UpdateBone(UMI3DUserEmbodimentBone bone)
     {
         Animator userAnimator = animators[bone.userId];
-        Transform transform = userAnimator.GetBoneTransform(BoneTypeConverter.Convert(bone.boneType).GetValueOrDefault());
+        Transform transform = userAnimator.GetBoneTransform(bone.boneType.ConvertToBoneType().GetValueOrDefault());
         transform.localRotation = bone.spatialPosition.localRotation;
     }
 }
