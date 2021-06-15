@@ -37,11 +37,6 @@ namespace umi3d.common.interaction
         /// </summary>
         public bool hasPriority = false;
 
-        /// <summary>
-        /// Defines if this interactable has priority on browsers over other interactables with hasPriority false.
-        /// </summary>
-        public bool hasPriority = false;
-
         public InteractableDto() : base() { }
     }
 }

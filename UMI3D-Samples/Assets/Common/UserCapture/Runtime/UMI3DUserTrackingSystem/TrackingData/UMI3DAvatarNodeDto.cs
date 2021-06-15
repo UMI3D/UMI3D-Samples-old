@@ -15,22 +15,34 @@ limitations under the License.
 */
 
 using System;
+using System.Collections.Generic;
 
-namespace umi3d.common
+namespace umi3d.common.userCapture
 {
     /// <summary>
-    /// Abstract class to describe an interpolation operation
+    /// Abstract class to represent the root node of one user's representation.
     /// </summary>
-    public class AbstractInterpolationPropertyDto : AbstractOperationDto
+    [Serializable]
+    public class UMI3DAvatarNodeDto : UMI3DNodeDto
     {
         /// <summary>
-        /// The unique identifier of the entity
+        /// The unique identifier of the user.
         /// </summary>
-        public string entityId;
+        public ulong userId;
 
         /// <summary>
-        /// The name of the interpolated property
+        /// The user's size
         /// </summary>
-        public string property;
+        public SerializableVector3 userSize;
+
+        /// <summary>
+        /// A bool to enable or disable bindings
+        /// </summary>
+        public bool activeBindings;
+
+        /// <summary>
+        /// A list of bindings between the user's bones and their representations.
+        /// </summary>
+        public List<BoneBindingDto> bindings;
     }
 }

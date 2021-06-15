@@ -13,29 +13,34 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-using System.Collections.Generic;
-using System.Linq;
-using umi3d.common;
 
-namespace umi3d.edk
+using System;
+
+namespace umi3d.common.userCapture
 {
     /// <summary>
-    /// An opertion to stop interpolation on a property's entity
+    /// Class to describe a bone's 6-D pose in the frame of reference of a user.
     /// </summary>
-    public class StopInterpolationProperty : AbstractInterpolationProperty
+    [Serializable]
+    public class BoneDto : UMI3DDto, IByte
     {
         /// <summary>
-        /// The value with which to stop interpolation
+        /// Defines the type of the bone.
         /// </summary>
-        public object stopValue;
+        public uint boneType;
 
-        public override AbstractOperationDto ToOperationDto(UMI3DUser user)
+        public SerializableVector4 rotation;
+
+        bool IByte.IsCountable()
         {
-            var stopInterpolation = new StopInterpolationPropertyDto();
-            stopInterpolation.property = property;
-            stopInterpolation.entityId = entityId;
-            stopInterpolation.stopValue = stopValue;
-            return stopInterpolation;
+            return true;
+        }
+
+        Bytable IByte.ToBytableArray (params object[] parameters)
+        {
+            return
+                UMI3DNetworkingHelper.Write(boneType)
+                + UMI3DNetworkingHelper.Write(rotation);
         }
     }
 }
