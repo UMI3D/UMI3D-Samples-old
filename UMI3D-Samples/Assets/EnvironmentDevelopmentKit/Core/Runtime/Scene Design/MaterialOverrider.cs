@@ -62,9 +62,14 @@ namespace umi3d.edk
             };
         }
 
-        Bytable IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToBytableArray(params object[] parameters)
         {
             throw new NotImplementedException();
+        }
+
+        bool IByte.IsCountable()
+        {
+            return false;
         }
     }
 

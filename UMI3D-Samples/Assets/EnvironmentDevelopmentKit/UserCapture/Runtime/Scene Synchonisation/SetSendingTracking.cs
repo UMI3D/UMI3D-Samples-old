@@ -13,30 +13,29 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using umi3d.common;
 
 namespace umi3d.edk.userCapture
 {
-    public class SetTrackingTargetFPS : Operation
+    public class SetSendingTracking : Operation
     {
-        public int targetFPS;
+        public bool activeSending;
 
         public override Bytable ToBytable(UMI3DUser user)
         {
-            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetEntityProperty)
-                + UMI3DNetworkingHelper.Write(targetFPS);
+            return UMI3DNetworkingHelper.Write(UMI3DOperationKeys.SetSendingTracking)
+                + UMI3DNetworkingHelper.Write(activeSending);
         }
 
         public override AbstractOperationDto ToOperationDto(UMI3DUser user)
         {
-            var targetFPS = new SetTrackingTargetFPSDto()
+            var sendingCamera = new SetSendingTrackingDto()
             {
-                targetFPS = this.targetFPS
+                activeSending = this.activeSending
             };
-            return targetFPS;
+            return sendingCamera;
         }
     }
 }

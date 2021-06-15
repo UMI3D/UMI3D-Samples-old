@@ -59,6 +59,11 @@ namespace umi3d.edk
                 + UMI3DNetworkingHelper.Write(isInLibrary ? libraryKey?.id : null);
         }
 
+        bool IByte.IsCountable()
+        {
+            return true;
+        }
+
         public string GetUrl()
         {
             path = path.Replace(@"\", "/");
@@ -72,7 +77,7 @@ namespace umi3d.edk
                 return System.Uri.EscapeUriString(Path.Combine(domain, path));
         }
 
-        Bytable IByte.ToByteArray(params object[] parameters)
+        Bytable IByte.ToBytableArray(params object[] parameters)
         {
             return ToByte();
         }

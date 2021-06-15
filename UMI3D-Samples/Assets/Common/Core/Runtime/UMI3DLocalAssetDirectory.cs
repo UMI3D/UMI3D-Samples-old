@@ -42,7 +42,12 @@ namespace umi3d.common
             this.formats = other.formats;
         }
 
-        Bytable IByte.ToByteArray( params object[] parameters)
+        bool IByte.IsCountable()
+        {
+            return true;
+        }
+
+        Bytable IByte.ToBytableArray( params object[] parameters)
         {
             return
                 UMI3DNetworkingHelper.Write(name)

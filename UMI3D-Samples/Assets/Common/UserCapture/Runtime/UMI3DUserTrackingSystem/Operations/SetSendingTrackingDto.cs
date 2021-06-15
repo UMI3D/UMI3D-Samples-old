@@ -14,14 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using System;
+
 namespace umi3d.common
 {
-    [System.Serializable]
-    public class TeleportDto : NavigateDto
+    public class SetSendingTrackingDto : AbstractOperationDto
     {
-        public SerializableVector4 rotation = null;
-
-        public TeleportDto() : base() { }
-
+        public bool activeSending;
     }
 }

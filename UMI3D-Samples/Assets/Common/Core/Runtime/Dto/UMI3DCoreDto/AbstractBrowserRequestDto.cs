@@ -31,9 +31,14 @@ namespace umi3d.common
 
 
         protected abstract uint GetOperationId();
-        public virtual Bytable ToByteArray(params object[] parameters)
+        public virtual Bytable ToBytableArray(params object[] parameters)
         {
             return UMI3DNetworkingHelper.Write(GetOperationId());
+        }
+
+        public bool IsCountable()
+        {
+            return true;
         }
     }
 }
