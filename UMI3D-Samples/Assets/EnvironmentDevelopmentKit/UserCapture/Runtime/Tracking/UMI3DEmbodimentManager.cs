@@ -27,9 +27,9 @@ namespace umi3d.edk.userCapture
     {
         public UMI3DScene embodimentsScene;
 
-        public Dictionary<string, UMI3DAvatarNode> embodimentInstances = new Dictionary<string, UMI3DAvatarNode>();
-        public Dictionary<string, Vector3> embodimentSize = new Dictionary<string, Vector3>();
-        public Dictionary<string, Dictionary<string, bool>> embodimentTrackedBonetypes = new Dictionary<string, Dictionary<string, bool>>();
+        public Dictionary<ulong, UMI3DAvatarNode> embodimentInstances = new Dictionary<ulong, UMI3DAvatarNode>();
+        public Dictionary<ulong, Vector3> embodimentSize = new Dictionary<ulong, Vector3>();
+        public Dictionary<ulong, Dictionary<uint, bool>> embodimentTrackedBonetypes = new Dictionary<ulong, Dictionary<uint, bool>>();
 
         public class EmbodimentEvent : UnityEvent<UMI3DAvatarNode> { };
         public class EmbodimentBoneEvent : UnityEvent<UMI3DUserEmbodimentBone> { };
@@ -57,7 +57,7 @@ namespace umi3d.edk.userCapture
             UMI3DServer.Instance.OnUserLeave.AddListener(DeleteEmbodiment);
         }
 
-        public virtual bool BoneTrackedInformation(string userId, string bonetype)
+        public virtual bool BoneTrackedInformation(ulong userId, uint bonetype)
         {
             if (embodimentTrackedBonetypes.ContainsKey(userId))
                 return embodimentTrackedBonetypes[userId][bonetype];
@@ -65,7 +65,7 @@ namespace umi3d.edk.userCapture
                 return false;
         }
 
-        public void JoinDtoReception(string userId, SerializableVector3 userSize, Dictionary<string, bool> trackedBonetypes)
+        public void JoinDtoReception(ulong userId, SerializableVector3 userSize, Dictionary<uint, bool> trackedBonetypes)
         {
             if (embodimentSize.ContainsKey(userId))
                 Debug.LogWarning("Internal error : the user size is already registered");
@@ -109,7 +109,7 @@ namespace umi3d.edk.userCapture
         /// Update the Embodiment from the received Dto.
         /// </summary>
         /// <param name="dto">a dto containing the tracking data</param>
-        public void UserTrackingReception(UserTrackingFrameDto dto, string userId)
+        public void UserTrackingReception(UserTrackingFrameDto dto, ulong userId)
         {
             if (!embodimentInstances.ContainsKey(userId))
             {
@@ -137,6 +137,11 @@ namespace umi3d.edk.userCapture
             StartCoroutine(_UserCameraReception(dto, user));
         }
 
+        public void UserCameraReception(uint operationKey, ByteContainer container, UMI3DUser user)
+        {
+            StartCoroutine(_UserCameraReception(operationKey, container, user));
+        }
+
         IEnumerator _UserCameraReception(UserCameraPropertiesDto dto, UMI3DUser user)
         {
             while (!embodimentInstances.ContainsKey(user.Id()))
@@ -147,6 +152,18 @@ namespace umi3d.edk.userCapture
 
             UMI3DAvatarNode userEmbd = embodimentInstances[user.Id()];
             userEmbd.userCameraPropertiesDto = dto;
+        }
+
+        IEnumerator _UserCameraReception(uint operationKey, ByteContainer container, UMI3DUser user)
+        {
+            while (!embodimentInstances.ContainsKey(user.Id()))
+            {
+                Debug.LogWarning($"Internal error : the user [{user.Id()}] is not registered");
+                yield return new WaitForFixedUpdate();
+            }
+
+            UMI3DAvatarNode userEmbd = embodimentInstances[user.Id()];
+            userEmbd.userCameraPropertiesDto = UMI3DNetworkingHelper.Read<UserCameraPropertiesDto>(container);
         }
 
         /// <summary>

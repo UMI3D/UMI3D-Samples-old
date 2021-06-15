@@ -14,7 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using umi3d.common;
 using umi3d.common.userCapture;
 using UnityEngine;
@@ -25,26 +27,26 @@ namespace umi3d.edk.userCapture
     public class UMI3DAvatarNode : UMI3DNode
     {
         [SerializeField]
-        public string userId;
+        public ulong userId;
 
         [SerializeField, EditorReadOnly]
         bool activeAvatarBindings_ = true;
 
-        public Dictionary<string, UMI3DUserEmbodimentBone> dicoBones = new Dictionary<string, UMI3DUserEmbodimentBone>();
+        public Dictionary<uint, UMI3DUserEmbodimentBone> dicoBones = new Dictionary<uint, UMI3DUserEmbodimentBone>();
 
         public UserCameraPropertiesDto userCameraPropertiesDto;
 
         public UMI3DAsyncListProperty<UMI3DBinding> bindings { get { Register(); return _bindings; } protected set => _bindings = value; }
         public UMI3DAsyncProperty<bool> activeBindings { get { Register(); return _activeBindings; } protected set => _activeBindings = value; }
 
-        public class OnActivationValueChanged : UnityEvent<string, bool> { };
+        public class OnActivationValueChanged : UnityEvent<ulong, bool> { };
 
         public static OnActivationValueChanged onActivationValueChanged = new OnActivationValueChanged();
         private UMI3DAsyncListProperty<UMI3DBinding> _bindings;
         private UMI3DAsyncProperty<bool> _activeBindings;
 
         ///<inheritdoc/>
-        protected override void InitDefinition(string id)
+        protected override void InitDefinition(ulong id)
         {
             base.InitDefinition(id);
 
@@ -68,12 +70,14 @@ namespace umi3d.edk.userCapture
 
             List<UMI3DUserEmbodimentBone> oldBoneList = new List<UMI3DUserEmbodimentBone>();
 
-            foreach (KeyValuePair<string, UMI3DUserEmbodimentBone> pair in dicoBones)
+            foreach (KeyValuePair<uint, UMI3DUserEmbodimentBone> pair in dicoBones)
                 oldBoneList.Add(pair.Value);
 
             List<BoneDto> bonesToCreate = new List<BoneDto>();
             List<BoneDto> bonesToUpdate = new List<BoneDto>();
             List<UMI3DUserEmbodimentBone> bonesToDelete = new List<UMI3DUserEmbodimentBone>();
+
+            Debug.Log(newBoneList.Count());
 
             bonesToCreate = newBoneList.FindAll(newBoneDto => !dicoBones.ContainsKey(newBoneDto.boneType));
             bonesToUpdate = newBoneList.FindAll(newBoneDto => dicoBones.ContainsKey(newBoneDto.boneType));
@@ -158,5 +162,13 @@ namespace umi3d.edk.userCapture
             avatarNodeDto.bindings = bindingDtoList;
         }
 
+        public override Bytable ToBytes(UMI3DUser user)
+        {
+            return
+                base.ToBytes(user)
+                + UMI3DNetworkingHelper.Write(userId)
+                + UMI3DNetworkingHelper.Write(activeBindings.GetValue(user))
+                + UMI3DNetworkingHelper.ListToBytable(bindings.GetValue(user), user);
+        }
     }
 }
