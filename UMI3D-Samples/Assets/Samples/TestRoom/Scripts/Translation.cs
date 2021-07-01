@@ -20,6 +20,20 @@ public class Translation : MonoBehaviour
 {
     public GameObject frameOfReference;
 
+    bool isInit = false;
+
+    Vector3 lastPosition = Vector3.zero;
+
+    /// <summary>
+    /// Last time a user used UMI3DManipualtion linked to this class.
+    /// </summary>
+    float lastTimeUsed;
+
+    /// <summary>
+    /// If OnUserManipulation has not been triggered for this time, this class will consider that the user stopped using it.
+    /// </summary>
+    float timeToDetectStopUsing = .2f;
+
     /// <summary>
     /// This have on purpose to be call by a OnManipulated Event.
     /// </summary>
@@ -28,7 +42,30 @@ public class Translation : MonoBehaviour
     /// <param name="rot">The rotation delta of the manipulation</param>
     public void OnUserManipulation(umi3d.edk.interaction.UMI3DManipulation.ManipulationEventContent content)
     {
-        this.transform.position += frameOfReference.transform.TransformDirection(content.translation);
+        if (!isInit)
+        {
+            isInit = true;
+            lastPosition = frameOfReference.transform.TransformDirection(content.translation);
+        } else
+        {
+            
+            Vector3 newPosition = frameOfReference.transform.TransformDirection(content.translation);
+            Vector3 delta = newPosition - lastPosition;
+
+            transform.position += delta;
+
+            lastPosition = newPosition;
+        }
+
+        lastTimeUsed = Time.time;
     }
 
+
+    private void Update()
+    {
+        if (Time.time > lastTimeUsed + timeToDetectStopUsing)
+        {
+            isInit = false;
+        }
+    }
 }

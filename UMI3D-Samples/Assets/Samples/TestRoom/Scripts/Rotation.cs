@@ -20,22 +20,65 @@ public class Rotation : MonoBehaviour
 {
     public GameObject frameOfReference;
 
+    bool isInit = false;
+
+    Quaternion lastRotation;
+
+    GameObject helper;
+
+    /// <summary>
+    /// Last time a user used UMI3DManipualtion linked to this class.
+    /// </summary>
+    float lastTimeUsed;
+
+    /// <summary>
+    /// If OnUserManipulation has not been triggered for this time, this class will consider that the user stopped using it.
+    /// </summary>
+    float timeToDetectStopUsing = .2f;
+
+    private void Start()
+    {
+        helper = new GameObject("Rotation helper");
+        if (frameOfReference != null)
+            helper.transform.SetParent(frameOfReference.transform);
+
+        helper.transform.rotation = Quaternion.identity;
+    }
+
     /// <summary>
     /// This have on purpose to be call by a OnManipulated Event.
     /// </summary>
     /// <param name="user">The who performed the manipulation</param>
     /// <param name="trans">The position delta of the manipulation</param>
     /// <param name="rot">The rotation delta of the manipulation</param>
-    [System.Obsolete("TODO : Does not work properly, must be fixed !")]
     public void OnUserManipulation(umi3d.edk.interaction.UMI3DManipulation.ManipulationEventContent content)
     {
-        Vector3 localRotation = content.rotation.eulerAngles;
-        Debug.Log(localRotation);
-        Vector3 localRotationRemapped = new Vector3(
-                    (localRotation.x > 180) ? localRotation.x - 360 : localRotation.x,
-                    (localRotation.y > 180) ? localRotation.y - 360 : localRotation.y,
-                    (localRotation.z > 180) ? localRotation.z - 360 : localRotation.z);
-        Vector3 worldRotation = frameOfReference.transform.TransformDirection(localRotationRemapped);
-        this.transform.Rotate(worldRotation, Space.World); 
+        if (!isInit)
+        {
+            isInit = true;
+            lastRotation = Quaternion.Euler(content.rotation.eulerAngles);
+        } else
+        {
+            Quaternion newRotation = Quaternion.Euler(content.rotation.eulerAngles);
+
+            Quaternion delta = Quaternion.Inverse(lastRotation) * newRotation;
+
+            helper.transform.rotation = transform.rotation;
+            helper.transform.localRotation *= delta;
+
+            transform.rotation = helper.transform.rotation;
+
+            lastRotation = newRotation;
+        }
+
+        lastTimeUsed = Time.time;
+    }
+
+    private void Update()
+    {
+        if (Time.time > lastTimeUsed + timeToDetectStopUsing)
+        {
+            isInit = false;
+        }
     }
 }
