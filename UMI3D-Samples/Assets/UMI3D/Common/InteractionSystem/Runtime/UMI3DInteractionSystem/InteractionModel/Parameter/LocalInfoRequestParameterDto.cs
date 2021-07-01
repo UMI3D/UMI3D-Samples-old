@@ -14,27 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using System;
-using System.Collections.Generic;
-
-namespace umi3d.common.userCapture
+namespace umi3d.common.interaction
 {
+
     /// <summary>
-    /// A request to inform about the current pose of the user.
+    /// local info request acces parameter dto.
     /// </summary>
-    [Serializable]
-    public class UserTrackingFrameDto : AbstractBrowserRequestDto
+    [System.Serializable]
+    public class LocalInfoRequestParameterDto : AbstractParameterDto<(bool,bool)> //read authorization, write authorization
     {
-        public string userId;
+        public LocalInfoRequestParameterDto() : base() { }
 
-        public List<BoneDto> bones;
-
-        public SerializableVector3 position;
-
-        public SerializableVector4 rotation;
-
-        public SerializableVector3 scale;
-
-        public float refreshFrequency;
+        public string key;
+        public string reason;
+        public string serverName;
+        public string app_id;
+        
     }
 }
