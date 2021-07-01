@@ -35,7 +35,7 @@ public class PinIdentifierWithParameter : PinIdentifierApi
     {
         var state = base.UpdateIdentity(user, identity);
         //debugForm(identity.parameters);
-
+       
         return state;
     }
 
@@ -56,6 +56,9 @@ public class PinIdentifierWithParameter : PinIdentifierApi
                     break;
                 case StringParameterDto stringParameterDto:
                     Debug.Log(stringParameterDto.value);
+                    break;
+                case LocalInfoRequestParameterDto requestParameterDto:
+                    Debug.Log(requestParameterDto.value);
                     break;
                 default:
                     Debug.Log(dto);
