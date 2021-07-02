@@ -25,7 +25,7 @@ public class AvatarManager : MonoBehaviour
     [System.Serializable]
     public class Bind
     {
-        [ConstStringEnum(typeof(BoneType))]
+        [ConstEnum(typeof(BoneType),typeof(uint))]
         public uint boneType;
         public string rigName;
         public Vector3 positionOffset;
