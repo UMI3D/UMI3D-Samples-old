@@ -15,7 +15,10 @@ limitations under the License.
 */
 
 using System.Collections.Generic;
+using System.Linq;
+using umi3d.common;
 using umi3d.edk;
+using umi3d.edk.collaboration;
 using UnityEngine;
 
 [RequireComponent(typeof(UMI3DModel))]
@@ -49,9 +52,10 @@ public class ChangeColorOnTrigger : MonoBehaviour
                 model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] })
             }
         };
-        UMI3DServer.Dispatch(t);
 
-        Debug.Log($"trigger");
+        UMI3DServer.Dispatch(t);
+        var b = t.ToBytes(UMI3DCollaborationServer.Collaboration.Users.First());
+        Debug.Log($"trigger _{t.Operations[0]}_ {b.Item1.ToString<byte>()}");
     }
 
 }
