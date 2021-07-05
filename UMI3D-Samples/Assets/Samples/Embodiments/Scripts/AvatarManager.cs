@@ -25,8 +25,8 @@ public class AvatarManager : MonoBehaviour
     [System.Serializable]
     public class Bind
     {
-        [ConstStringEnum(typeof(BoneType))]
-        public string boneType;
+        [ConstEnum(typeof(BoneType),typeof(uint))]
+        public uint boneType;
         public string rigName;
         public Vector3 positionOffset;
         public Vector3 rotationOffset;
@@ -56,17 +56,17 @@ public class AvatarManager : MonoBehaviour
 
     // user, bonetype, transform
 
-    Dictionary<string, Dictionary<string, Transform>> bones = new Dictionary<string, Dictionary<string, Transform>>();
+    Dictionary<ulong, Dictionary<ulong, Transform>> bones = new Dictionary<ulong, Dictionary<ulong, Transform>>();
 
     // user, model
 
-    Dictionary<string, Transform> models = new Dictionary<string, Transform>();
+    Dictionary<ulong, Transform> models = new Dictionary<ulong, Transform>();
 
     void NewUser(UMI3DUser user)
     {
         if (!bones.ContainsKey(user.Id()))
         {
-            bones[user.Id()] = new Dictionary<string, Transform>();
+            bones[user.Id()] = new Dictionary<ulong, Transform>();
             models[user.Id()] = null;
         }
     }
