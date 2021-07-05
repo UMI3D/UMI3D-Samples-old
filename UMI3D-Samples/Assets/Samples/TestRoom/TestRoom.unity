@@ -14818,7 +14818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  embodimentsScene: {fileID: 1183297983}
+  EmbodimentsScene: {fileID: 1183297983}
+  SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
+    type: 3}
 --- !u!1 &1532318486
 GameObject:
   m_ObjectHideFlags: 0
