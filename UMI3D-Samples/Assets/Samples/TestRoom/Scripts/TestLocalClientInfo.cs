@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using umi3d.edk;
 using umi3d.edk.collaboration;
 using umi3d.edk.interaction;
 using UnityEngine;
@@ -25,10 +26,11 @@ public class TestLocalClientInfo : MonoBehaviour
         if(tryToWrite != oldWriteValue)
         {
             UMI3DCollaborationUser user = UMI3DCollaborationServer.Collaboration.Users.FirstOrDefault();
+            var users = new HashSet<UMI3DUser>(); users.Add(user);
             if (LocalInfoParameter.userResponses.ContainsKey((user, "testdata")) && LocalInfoParameter.userResponses[(user, "testdata")].Item2)
             {
                 Debug.Log(LocalInfoParameter.userResponses[(user, "testdata")]);
-                UMI3DCollaborationServer.ForgeServer.SendData(user.networkPlayer, new umi3d.common.RequestHttpGetDto() { key = "testdata" }, true);
+                UMI3DCollaborationServer.Dispatch(new GetLocalInfoRequest("testdata", true, users));
             }
             else
                 Debug.Log("unautorized acces to : " + "testdata");

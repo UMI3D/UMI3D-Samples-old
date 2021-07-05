@@ -1146,8 +1146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lapPerSec: 0.1
-  axis: {x: 0, y: 0, z: 1}
-  lapSubdivision: 10
+  axis: {x: 0, y: 1, z: 0}
+  lapSubdivision: 500
 --- !u!114 &49873178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,10 +2118,22 @@ MonoBehaviour:
   VolumeId: 
   libraries:
   - {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
-  materialIds: []
-  animationIds: []
-  materialSOs: []
-  PreloadedMaterials: []
+  materialIds: 
+  animationIds: 
+  materialSOs:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
+  PreloadedMaterials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!1 &133971195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,8 +2265,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -2372,6 +2389,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8bacdd81b497e449e159fe1bf65951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!114 &134761189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5508,7 +5532,6 @@ GameObject:
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
   - component: {fileID: 484575145}
-  - component: {fileID: 484575150}
   m_Layer: 0
   m_Name: ConnectionParameters
   m_TagString: Untagged
@@ -5707,7 +5730,7 @@ MonoBehaviour:
   onFormCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484575150}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugForm
         m_Mode: 0
         m_Arguments:
@@ -5718,18 +5741,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &484575150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484575141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9745,8 +9756,8 @@ MonoBehaviour:
   immersiveOnly: 0
   VolumeId: 
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &1003581601
@@ -10204,8 +10215,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -11387,8 +11403,8 @@ MonoBehaviour:
   immersiveOnly: 0
   VolumeId: 
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!4 &1183297984
@@ -11694,8 +11710,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -14797,7 +14818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  embodimentsScene: {fileID: 1183297983}
+  EmbodimentsScene: {fileID: 1183297983}
+  SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
+    type: 3}
 --- !u!1 &1532318486
 GameObject:
   m_ObjectHideFlags: 0

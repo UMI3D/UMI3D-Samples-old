@@ -22,7 +22,7 @@ public class ChangeColorOnHold : MonoBehaviour
 {
     List<string> trackers = new List<string>();
 
-    string ToName(UMI3DUser user, string boneId)
+    string ToName(UMI3DUser user, uint boneId)
     {
         return $"{user.Id()}:{boneId}";
     }
