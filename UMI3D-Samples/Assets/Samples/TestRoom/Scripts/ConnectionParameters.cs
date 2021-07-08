@@ -23,12 +23,15 @@ using UnityEngine;
 public class ConnectionParameters : MonoBehaviour
 {
 
-    public PinIdentifierWithParameter pinIdentifier;
+    //public PinIdentifierWithParameter pinIdentifier;
+    public IdentifierApi pinIdentifier;
+
     public UMI3DForm form;
     // Start is called before the first frame update
     void Start()
     {
-        pinIdentifier.GetParameter = GetParameter;
+        if (pinIdentifier is PinIdentifierWithParameter)
+            ((PinIdentifierWithParameter)pinIdentifier).GetParameter = GetParameter;
     }
 
     FormDto GetParameter(UMI3DCollaborationUser user) {
