@@ -1146,8 +1146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lapPerSec: 0.1
-  axis: {x: 0, y: 0, z: 1}
-  lapSubdivision: 10
+  axis: {x: 0, y: 1, z: 0}
+  lapSubdivision: 500
 --- !u!114 &49873178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,8 +2120,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   materialIds: 
   animationIds: 
-  materialSOs: []
-  PreloadedMaterials: []
+  materialSOs:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
+  PreloadedMaterials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!1 &133971195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,8 +4322,8 @@ MonoBehaviour:
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
   isRightHanded: 1
-  isPartOfNavmesh: 0
-  isTraversable: 1
+  isPartOfNavmesh: 1
+  isTraversable: 0
 --- !u!1001 &379265052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5519,9 +5531,8 @@ GameObject:
   - component: {fileID: 484575148}
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
-  - component: {fileID: 484575145}
-  - component: {fileID: 484575150}
   - component: {fileID: 484575151}
+  - component: {fileID: 484575150}
   m_Layer: 0
   m_Name: ConnectionParameters
   m_TagString: Untagged
@@ -5572,30 +5583,6 @@ MonoBehaviour:
   IsSubInteraction: 0
   Display:
     name: stringy
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  value: 
-  onChange:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &484575145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484575141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567b33942ea52b94486e809a14d72454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: Text
     description: 
     icon2D:
       variants: []
@@ -5716,12 +5703,36 @@ MonoBehaviour:
   - {fileID: 484575148}
   - {fileID: 484575147}
   - {fileID: 484575146}
-  - {fileID: 484575145}
-  - {fileID: 484575150}
+  - {fileID: 484575151}
   onFormCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: DebugForm
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &484575150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484575141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4663f0f730794104dac41dcc33845659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 
+  tryToWrite: 0
+--- !u!114 &484575151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5752,20 +5763,6 @@ MonoBehaviour:
   onChangeFalse:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &484575151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484575141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4663f0f730794104dac41dcc33845659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: 42
-  tryToWrite: 0
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10240,8 +10237,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -11730,8 +11732,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
