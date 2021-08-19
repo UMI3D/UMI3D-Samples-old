@@ -27,7 +27,7 @@ public class TestLocalClientInfo : MonoBehaviour
         {
             UMI3DCollaborationUser user = UMI3DCollaborationServer.Collaboration.Users.FirstOrDefault();
             var users = new HashSet<UMI3DUser>(); users.Add(user);
-            if (LocalInfoParameter.userResponses.ContainsKey((user, "testdata")) && LocalInfoParameter.userResponses[(user, "testdata")].Item2)
+            if (LocalInfoParameter.userResponses.ContainsKey((user, "testdata")) && LocalInfoParameter.userResponses[(user, "testdata")].write)
             {
                 Debug.Log(LocalInfoParameter.userResponses[(user, "testdata")]);
                 UMI3DCollaborationServer.Dispatch(new GetLocalInfoRequest("testdata", true, users));

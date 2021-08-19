@@ -20,6 +20,7 @@ using umi3d.common;
 using umi3d.edk;
 using umi3d.edk.collaboration;
 using UnityEngine;
+using inetum.unityUtils;
 
 [RequireComponent(typeof(UMI3DModel))]
 public class ChangeColorOnTrigger : MonoBehaviour
