@@ -31,7 +31,7 @@ public class PinIdentifierWithParameter : PinIdentifierApi
         return GetParameter != null ? GetParameter(user) : null;
     }
 
-    public override StatusType UpdateIdentity(UMI3DCollaborationUser user, UserConnectionDto identity)
+    public override StatusType UpdateIdentity(UMI3DCollaborationUser user, UserConnectionAnswerDto identity)
     {
         var state = base.UpdateIdentity(user, identity);
         //debugForm(identity.parameters);

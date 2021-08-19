@@ -14,16 +14,20 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-namespace umi3d.common
-{
-    [System.Serializable]
-    public class RequestHttpGetDto : UMI3DDto 
-    {
-        /// <summary>
-        /// Local file id. Used in the http Get request. /!\ Warning : Contains only lower case letter or number 
-        /// </summary>
-        public string key;
+using System.Collections.Generic;
 
-        public RequestHttpGetDto() : base() { }
+namespace umi3d.common.interaction
+{
+    public class FormAnswerDto : InteractionRequestDto
+    {
+        public List<ParameterSettingRequestDto> answers;
+
+        protected override uint GetOperationId() { return UMI3DOperationKeys.FormAnswer; }
+
+        public override Bytable ToBytableArray(params object[] parameters)
+        {
+            return base.ToBytableArray(parameters)
+                + UMI3DNetworkingHelper.Write(answers);
+        }
     }
 }

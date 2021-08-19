@@ -22,7 +22,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace umi3d.common
+namespace inetum.unityUtils
 {
     public class ConstEnumAttribute : PropertyAttribute
     {
@@ -31,16 +31,6 @@ namespace umi3d.common
         public object[] values;
         public Action<object, object> writer;
         public Func<object, object> reader;
-
-        //public ConstEnumAttribute(Type type)
-        //{
-
-
-        //    this.type = type;
-        //    values = options = type.GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)
-        //                    .Where(fi => fi.IsLiteral && !fi.IsInitOnly)
-        //                    .Select(fi => fi.GetValue(null) as string).ToArray();
-        //}
 
         public ConstEnumAttribute(Type type, Type valueType)
         {

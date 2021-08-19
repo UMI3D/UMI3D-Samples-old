@@ -14,6 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using inetum.unityUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,7 +50,7 @@ namespace umi3d.edk
 
             bool IBytable.IsCountable()
             {
-                throw new NotImplementedException();
+                return false;
             }
         }
 

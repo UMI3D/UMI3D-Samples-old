@@ -42,7 +42,7 @@ public class TestParameters : MonoBehaviour
     public void DebugString(AbstractParameter.ParameterEventContent<string> content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} changed value to {content.value}"); }
     public void DebugFloat(AbstractParameter.ParameterEventContent<float> content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} changed value to {content.value}"); }
     public void DebugBoolean(AbstractParameter.ParameterEventContent<bool> content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} changed value to {content.value}"); }
-    public void DebugForm(UMI3DForm.FormEventContent content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} changed value to [{content.form.fields.Select(a=>ToString(a)).Aggregate((a,b)=> $"{a}; {b}")}]"); }
+    public void DebugForm(UMI3DForm.FormEventContent content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} changed value "); }
     public void DebugEventTrigger(AbstractInteraction.InteractionEventContent content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} event Trigger"); }
     public void DebugEventRelease(AbstractInteraction.InteractionEventContent content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} event Release"); }
     public void DebugEventHold(AbstractInteraction.InteractionEventContent content) { Debug.Log($"{(content.user as UMI3DCollaborationUser)?.login} event Hold"); }
