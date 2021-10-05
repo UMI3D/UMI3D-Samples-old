@@ -32,8 +32,11 @@ public class ChangeColorOnTrigger : MonoBehaviour
     private void Start()
     {
         model = GetComponent<UMI3DModel>();
-        model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] });
-            
+        model.objectMaterialsOverrided.SetValue(true);
+        if (model.objectMaterialOverriders.GetValue().Count > 0)
+            model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] });
+        else
+            model.objectMaterialOverriders.Add(new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] });
     }
 
     public void OnTrigger(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
@@ -55,8 +58,6 @@ public class ChangeColorOnTrigger : MonoBehaviour
         };
 
         UMI3DServer.Dispatch(t);
-        var b = t.ToBytes(UMI3DCollaborationServer.Collaboration.Users.First());
-        Debug.Log($"trigger _{t.Operations[0]}_ {b.Item1.ToString<byte>()}");
     }
 
 }
