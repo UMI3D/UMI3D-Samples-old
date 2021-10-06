@@ -116,7 +116,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -268,10 +268,10 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
-  hasCollider: 0
+  hasCollider: 1
   colliderType: 3
   convex: 0
   colliderCenter: {x: 0, y: 0, z: 0}
@@ -347,6 +347,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &7297656407201046655
 MonoBehaviour:
@@ -368,6 +371,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -473,7 +478,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -537,7 +542,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0

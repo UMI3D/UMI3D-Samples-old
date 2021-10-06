@@ -106,7 +106,7 @@ namespace umi3d.edk.interaction
                         onChange.Invoke(new ParameterEventContent<string>(user, toolId, interactionId, hoverredId, boneType, value));
                     }
                     else
-                        throw new System.Exception($"parameter of type {parameterId}");
+                        throw new System.Exception($"parameter of type {parameterId} {interactionId}");
                     break;
                 default:
                     throw new System.Exception("User interaction not supported (ParameterSettingRequestDto) ");
