@@ -86,10 +86,11 @@ public class FrequenciesDisplay : MonoBehaviour
                         }
                     }
                     );
+               
                 var t = new Transaction()
                 {
                     reliable = true,
-                    Operations = new List<Operation>() { tool.objectInteractions.Add(Enum), interactable.objectInteractions.Add(Enum) }
+                    Operations = new List<Operation>() { tool.objectInteractions.Add(Enum), interactable.objectInteractions.Add(Enum)}
                 };
                 UMI3DServer.Dispatch(t);
             }
@@ -105,6 +106,7 @@ public class FrequenciesDisplay : MonoBehaviour
                 if (mapEnum.ContainsKey(user))
                 {
                     var Enum = mapEnum[user];
+                    
                     var t = new Transaction()
                     {
                         reliable = true,
