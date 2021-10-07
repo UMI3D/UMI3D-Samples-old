@@ -66,7 +66,7 @@ namespace umi3d.edk.collaboration
         public UMI3DForgeServer forgeServer;
 
         public UMI3DAudioPlayer audioPlayer;
-        public int audioFrequency;
+        public int audioFrequency = 12000;
         public UMI3DAudioPlayer videoPlayer;
 
         public void NotifyUpdate()

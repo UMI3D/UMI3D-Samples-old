@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Display:
-    name: new tool
+    name: Frequency Tool
     description: 
     icon2D:
       variants: []
