@@ -68,14 +68,11 @@ public class ChangeColorOnHold : MonoBehaviour
         lastState = !lastState;
         var t = new Transaction()
         {
-            reliable = true,
-            Operations = new List<Operation>()
-            {
-                model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = lastState ? holdMaterial : defaultMaterial })
-            }
+            reliable = true,            
         };
+        t.AddIfNotNull(model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = lastState ? holdMaterial : defaultMaterial }));
 
-        UMI3DServer.Dispatch(t);
+        t.Dispatch();
         var b = t.ToBytes(UMI3DCollaborationServer.Collaboration.Users.First());
     }
 
