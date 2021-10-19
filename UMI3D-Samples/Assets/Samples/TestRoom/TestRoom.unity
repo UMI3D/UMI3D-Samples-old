@@ -5579,6 +5579,7 @@ GameObject:
   - component: {fileID: 484575148}
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
+  - component: {fileID: 484575150}
   - component: {fileID: 484575145}
   m_Layer: 0
   m_Name: ConnectionParameters
@@ -5629,7 +5630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSubInteraction: 0
   Display:
-    name: stringy
+    name: string
     description: 
     icon2D:
       variants: []
@@ -5650,12 +5651,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 484575141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567b33942ea52b94486e809a14d72454, type: 3}
+  m_Script: {fileID: 11500000, guid: 85664ba41c7a3c74a954ced45c3d2b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsSubInteraction: 0
   Display:
-    name: Text
+    name: Local info
     description: 
     icon2D:
       variants: []
@@ -5663,10 +5664,11 @@ MonoBehaviour:
       variants: []
   TriggerAnimation: {fileID: 0}
   ReleaseAnimation: {fileID: 0}
-  value: 
-  onChange:
-    m_PersistentCalls:
-      m_Calls: []
+  readValue: 1
+  writeValue: 1
+  reason: 'This is just a test '
+  serverName: UMI3D_Sample
+  key: testdata
 --- !u!114 &484575146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5801,6 +5803,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &484575150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484575141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4663f0f730794104dac41dcc33845659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 
+  tryToWrite: 0
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0

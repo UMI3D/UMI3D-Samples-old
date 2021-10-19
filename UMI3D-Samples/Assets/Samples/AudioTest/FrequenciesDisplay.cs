@@ -90,9 +90,10 @@ public class FrequenciesDisplay : MonoBehaviour
                 var t = new Transaction()
                 {
                     reliable = true,
-                    Operations = new List<Operation>() { tool.objectInteractions.Add(Enum), interactable.objectInteractions.Add(Enum)}
                 };
-                UMI3DServer.Dispatch(t);
+                t.AddIfNotNull(tool.objectInteractions.Add(Enum));
+                t.AddIfNotNull(interactable.objectInteractions.Add(Enum));
+                t.Dispatch();
             }
         });
         UMI3DCollaborationServer.Instance.OnUserLeave.AddListener((u) => {
@@ -110,9 +111,10 @@ public class FrequenciesDisplay : MonoBehaviour
                     var t = new Transaction()
                     {
                         reliable = true,
-                        Operations = new List<Operation>() { tool.objectInteractions.Remove(Enum), interactable.objectInteractions.Remove(Enum) }
                     };
-                    UMI3DServer.Dispatch(t);
+                    t.AddIfNotNull(tool.objectInteractions.Remove(Enum));
+                    t.AddIfNotNull(interactable.objectInteractions.Remove(Enum));
+                    t.Dispatch();
                     Destroy(Enum);
                     mapEnum.Remove(user);
                 }
