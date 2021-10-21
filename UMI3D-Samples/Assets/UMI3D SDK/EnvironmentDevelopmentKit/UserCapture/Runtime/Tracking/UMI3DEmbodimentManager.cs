@@ -211,7 +211,7 @@ namespace umi3d.edk.userCapture
             LoadEntity op = node.GetLoadEntity();
             Transaction tr = new Transaction() { reliable = true };
             tr.AddIfNotNull(op);
-            tr.Dispatch();
+            UMI3DServer.Dispatch(tr);
         }
 
         /// <summary>
@@ -222,7 +222,7 @@ namespace umi3d.edk.userCapture
         {
             Transaction tr = new Transaction() { reliable = true };
             tr.AddIfNotNull(node.GetDeleteEntity());
-            tr.Dispatch();
+            UMI3DServer.Dispatch(tr);
         }
 
         /// <summary>

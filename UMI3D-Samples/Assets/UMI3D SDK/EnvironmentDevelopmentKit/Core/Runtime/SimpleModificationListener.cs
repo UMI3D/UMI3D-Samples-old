@@ -66,7 +66,7 @@ namespace umi3d.edk
                 if (transaction.Count() > 0)
                 {
                     transaction.reliable = false;
-                    transaction.Dispatch();
+                    UMI3DServer.Dispatch(transaction);
                     sets = new Dictionary<ulong, Dictionary<ulong, SetEntityProperty>>();
                 }
                 nodes = GetComponentsInChildren<UMI3DNode>();
