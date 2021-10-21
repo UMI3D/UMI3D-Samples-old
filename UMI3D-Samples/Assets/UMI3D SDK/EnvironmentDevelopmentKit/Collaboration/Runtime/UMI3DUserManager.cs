@@ -243,7 +243,7 @@ namespace umi3d.edk.collaboration
             op.users.Remove(user);
             Transaction tr = new Transaction() { reliable = true };
             tr.AddIfNotNull(op);
-            tr.Dispatch();
+            UMI3DServer.Dispatch(tr);
         }
 
         IEnumerator RemoveUserOnLeave(UMI3DCollaborationUser user)
@@ -256,7 +256,7 @@ namespace umi3d.edk.collaboration
                 op.users.Remove(user);
             Transaction tr = new Transaction() { reliable = true };
             tr.AddIfNotNull(op);
-            tr.Dispatch();
+            UMI3DServer.Dispatch(tr);
         }
 
         IEnumerator UpdateUser(UMI3DCollaborationUser user)
@@ -274,7 +274,7 @@ namespace umi3d.edk.collaboration
             operation += UMI3DCollaborationServer.Collaboration.Users;
             Transaction tr = new Transaction() { reliable = true };
             tr.AddIfNotNull(operation);
-            tr.Dispatch();
+            UMI3DServer.Dispatch(tr);
         }
 
 
