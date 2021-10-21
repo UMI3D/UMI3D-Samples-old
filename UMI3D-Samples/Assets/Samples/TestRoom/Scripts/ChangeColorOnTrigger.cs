@@ -51,13 +51,9 @@ public class ChangeColorOnTrigger : MonoBehaviour
         var t = new Transaction()
         {
             reliable = true,
-            Operations = new List<Operation>() 
-            { 
-                model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] })
-            }
         };
-
-        UMI3DServer.Dispatch(t);
+        t.AddIfNotNull(model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = materials[i] }));
+        t.Dispatch();
     }
 
 }

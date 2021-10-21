@@ -26,34 +26,16 @@ public class BindingsTransactionManager : MonoBehaviour
 
     public void Dispatch(List<Operation> ops, bool reliable)
     {
-        var transaction = new Transaction();
-        foreach (Operation op in ops)
-        {
-            if (op != null)
-                transaction.Operations.Add(op);
-        }
-
-        if (transaction.Operations.Count > 0)
-        {
-            transaction.reliable = reliable;
-            UMI3DServer.Dispatch(transaction);
-        }
+        var transaction = new Transaction() { reliable = reliable };
+        transaction.AddIfNotNull(ops);
+        transaction.Dispatch();
     }
 
     public void Dispatch(List<SetEntityProperty> ops, bool reliable)
     {
-        var transaction = new Transaction();
-        foreach (Operation op in ops)
-        {
-            if (op != null)
-                transaction.Operations.Add(op);
-        }
-
-        if (transaction.Operations.Count > 0)
-        {
-            transaction.reliable = reliable;
-            UMI3DServer.Dispatch(transaction);
-        }
+        var transaction = new Transaction() { reliable = reliable };
+        transaction.AddIfNotNull(ops);
+        transaction.Dispatch();
     }
 
     public void Dispatch(Operation op, bool reliable)

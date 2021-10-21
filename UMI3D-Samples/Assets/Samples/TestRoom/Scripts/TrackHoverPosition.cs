@@ -38,16 +38,22 @@ public class TrackHoverPosition : MonoBehaviour
             var transaction = new Transaction();
             transaction.reliable = true;
             transaction += trackers[ToName(content.user, content.boneType)].GetLoadEntity();
-            UMI3DServer.Dispatch(transaction);
+            transaction.Dispatch();
         }
     }
     public void OnHoverExit(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content) {
         if (trackers.ContainsKey(ToName(content.user, content.boneType)))
         {
             var transaction = new Transaction();
-            transaction.Operations = new List<Operation>() { new DeleteEntity() { entityId = trackers[ToName(content.user, content.boneType)].Id(), users = new HashSet<UMI3DUser>(UMI3DEnvironment.GetEntities<UMI3DUser>()) } };
+
+            var del = new DeleteEntity()
+            {
+                entityId = trackers[ToName(content.user, content.boneType)].Id(),
+                users = UMI3DServer.Instance.UserSet()
+            };
+            transaction.AddIfNotNull(del);
             transaction.reliable = true;
-            UMI3DServer.Dispatch(transaction);
+            transaction.Dispatch();
 
             Destroy(trackers[ToName(content.user, content.boneType)].gameObject);
             trackers.Remove(ToName(content.user, content.boneType));
@@ -63,7 +69,7 @@ public class TrackHoverPosition : MonoBehaviour
             op = t.objectRotation.SetValue(Quaternion.FromToRotation(transform.up, content.normal));
             if (op != null) transaction += op;
             transaction.reliable = false;
-            UMI3DServer.Dispatch(transaction);
+            transaction.Dispatch();
         }
     }
 }
