@@ -70,14 +70,9 @@ public class ChangeColorOnHover : MonoBehaviour
         var t = new Transaction()
         {
             reliable = true,
-            Operations = new List<Operation>()
-            {
-                model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = lastState ? HoverMaterial : defaultMaterial })
-            }
         };
-
-        UMI3DServer.Dispatch(t);
-        var b = t.ToBytes(UMI3DCollaborationServer.Collaboration.Users.First());
+        t.AddIfNotNull(model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = lastState ? HoverMaterial : defaultMaterial }));
+        t.Dispatch();
     }
 
 }
