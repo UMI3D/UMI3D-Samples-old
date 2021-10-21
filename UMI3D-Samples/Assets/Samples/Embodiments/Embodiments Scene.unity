@@ -1678,8 +1678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ad6a97d852faa4f81ef6bc5a58af69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Avatars:
-  - variants:
+  Avatar:
+    variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.avatar\default\unitskeleton.prefab.bundle
@@ -1689,7 +1689,7 @@ MonoBehaviour:
       pathIfInBundle: Assets/Samples/Embodiments/Models/UnitSkeleton.prefab
       metrics:
         resolution: 0
-        size: 1178.589
+        size: 1654.887
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: 1cf18b03bbea54f4f84e7b4e1bb2b9de, type: 2}
     - isLocalFile: 1
@@ -1701,14 +1701,12 @@ MonoBehaviour:
       pathIfInBundle: Assets/Samples/Embodiments/Models/UnitSkeleton.prefab
       metrics:
         resolution: 0
-        size: 1178.589
+        size: 1655.312
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: 1cf18b03bbea54f4f84e7b4e1bb2b9de, type: 2}
-  avartChoice:
-  - default
   bindRig: 1
   binds:
-  - binds:
+    binds:
     - boneType: Hips
       rigName: mixamorig:Hips
       positionOffset: {x: 0, y: 0, z: 0}
@@ -1745,7 +1743,7 @@ MonoBehaviour:
       rigName: mixamorig:RightToeBase
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Spine
+    - boneType: Chest
       rigName: mixamorig:Spine1
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
@@ -1791,6 +1789,10 @@ MonoBehaviour:
       rotationOffset: {x: 0, y: 0, z: 0}
     - boneType: Right Hand
       rigName: mixamorig:RightHand
+      positionOffset: {x: 0, y: 0, z: 0}
+      rotationOffset: {x: 0, y: 0, z: 0}
+    - boneType: Spine
+      rigName: mixamorig:Spine
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
   positionOffset: {x: 0, y: 0, z: 0}
