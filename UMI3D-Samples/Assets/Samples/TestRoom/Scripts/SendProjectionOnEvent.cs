@@ -41,8 +41,9 @@ public class SendProjectionOnEvent : MonoBehaviour
 
     void Dispatch(Operation operation)
     {
-        var transaction = new Transaction() { reliable = true, Operations = new List<Operation>() { operation } };
-        UMI3DServer.Dispatch(transaction);
+        var transaction = new Transaction() { reliable = true};
+        transaction.AddIfNotNull(operation);
+        transaction.Dispatch();
     }
 
 }

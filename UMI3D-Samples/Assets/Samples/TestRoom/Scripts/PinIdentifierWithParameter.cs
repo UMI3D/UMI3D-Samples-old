@@ -31,11 +31,11 @@ public class PinIdentifierWithParameter : PinIdentifierApi
         return GetParameter != null ? GetParameter(user) : null;
     }
 
-    public override StatusType UpdateIdentity(UMI3DCollaborationUser user, UserConnectionDto identity)
+    public override StatusType UpdateIdentity(UMI3DCollaborationUser user, UserConnectionAnswerDto identity)
     {
         var state = base.UpdateIdentity(user, identity);
         //debugForm(identity.parameters);
-
+       
         return state;
     }
 
@@ -56,6 +56,9 @@ public class PinIdentifierWithParameter : PinIdentifierApi
                     break;
                 case StringParameterDto stringParameterDto:
                     Debug.Log(stringParameterDto.value);
+                    break;
+                case LocalInfoRequestParameterDto requestParameterDto:
+                    Debug.Log(requestParameterDto.value);
                     break;
                 default:
                     Debug.Log(dto);

@@ -30,7 +30,7 @@ public class MoveForward : MonoBehaviour
 
     HashSet<string> users = new HashSet<string>();
 
-    string ToName(UMI3DUser user, string boneId)
+    string ToName(UMI3DUser user, uint boneId)
     {
         return $"{user.Id()}:{boneId}";
     }

@@ -48,6 +48,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 1
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -61,8 +62,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -82,6 +88,9 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
+  isPartOfNavmesh: 0
+  isTraversable: 1
 --- !u!1001 &4473443577385877711
 PrefabInstance:
   m_ObjectHideFlags: 0

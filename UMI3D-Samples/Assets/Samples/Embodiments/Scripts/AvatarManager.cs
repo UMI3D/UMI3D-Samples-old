@@ -1,3 +1,4 @@
+using inetum.unityUtils;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,8 +24,8 @@ public class AvatarManager : MonoBehaviour
     [System.Serializable]
     public class Bind
     {
-        [ConstStringEnum(typeof(BoneType))]
-        public string boneType;
+        [ConstEnum(typeof(BoneType),typeof(uint))]
+        public uint boneType;
         public string rigName;
         public Vector3 positionOffset;
         public Vector3 rotationOffset;
