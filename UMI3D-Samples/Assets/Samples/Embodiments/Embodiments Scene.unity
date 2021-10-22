@@ -288,7 +288,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -373,10 +373,10 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &372192187
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -1631,7 +1631,6 @@ GameObject:
   - component: {fileID: 1589337213}
   - component: {fileID: 1589337214}
   - component: {fileID: 1589337215}
-  - component: {fileID: 1589337216}
   m_Layer: 0
   m_Name: Embodiment Manager
   m_TagString: Untagged
@@ -1665,7 +1664,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  embodimentsScene: {fileID: 286572993}
+  EmbodimentsScene: {fileID: 286572993}
+  SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
+    type: 3}
+  handPoseIds: 
+  PreloadedHandPoses: []
 --- !u!114 &1589337215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1707,110 +1710,96 @@ MonoBehaviour:
   bindRig: 1
   binds:
     binds:
-    - boneType: Hips
+    - boneType: 13
       rigName: mixamorig:Hips
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Hip
+    - boneType: 7
       rigName: mixamorig:LeftUpLeg
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Knee
+    - boneType: 9
       rigName: mixamorig:LeftLeg
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Ankle
+    - boneType: 4
       rigName: mixamorig:LeftFoot
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Toe Base
+    - boneType: 8
       rigName: mixamorig:LeftToeBase
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Hip
+    - boneType: 17
       rigName: mixamorig:RightUpLeg
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Knee
+    - boneType: 19
       rigName: mixamorig:RightLeg
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Ankle
+    - boneType: 14
       rigName: mixamorig:RightFoot
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Toe Base
+    - boneType: 18
       rigName: mixamorig:RightToeBase
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Chest
+    - boneType: 24
       rigName: mixamorig:Spine1
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Upper Chest
+    - boneType: 23
       rigName: mixamorig:Spine2
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Shoulder
+    - boneType: 10
       rigName: mixamorig:LeftShoulder
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Upper Arm
+    - boneType: 11
       rigName: mixamorig:LeftArm
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left ForeArm
+    - boneType: 5
       rigName: mixamorig:LeftForeArm
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Left Hand
+    - boneType: 6
       rigName: mixamorig:LeftHand
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Neck
+    - boneType: 12
       rigName: mixamorig:Neck
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Head
+    - boneType: 3
       rigName: mixamorig:Head
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Shoulder
+    - boneType: 20
       rigName: mixamorig:RightShoulder
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Upper Arm
+    - boneType: 21
       rigName: mixamorig:RightArm
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right ForeArm
+    - boneType: 15
       rigName: mixamorig:RightForeArm
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Right Hand
+    - boneType: 16
       rigName: mixamorig:RightHand
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: Spine
+    - boneType: 25
       rigName: mixamorig:Spine
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1589337216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589337212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2d6fddb65c27e4dbbffa4aef734c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SkeletonPrefab: {fileID: 8434539890996593422, guid: 221bc20772f4fb64998a45850f4743d3,
-    type: 3}
 --- !u!1 &1628678761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2097,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -2314,10 +2303,10 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &1999748047
