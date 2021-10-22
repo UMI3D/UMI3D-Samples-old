@@ -1,3 +1,19 @@
+/*
+Copyright 2019 Gfi Informatique
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
 using inetum.unityUtils;
 using System;
 using System.Collections;
@@ -17,10 +33,8 @@ using static umi3d.edk.interaction.UMI3DForm;
 public class AvatarManager : MonoBehaviour
 {
     [SerializeField, EditorReadOnly]
-    List<UMI3DResource> Avatars;
-    [SerializeField, EditorReadOnly]
-    List<string> avartChoice = new List<string>() { "default", "Woman", "Man" };
-
+    UMI3DResource Avatar;
+    
     HashSet<UMI3DUser> Handled = new HashSet<UMI3DUser>();
 
     [System.Serializable]
@@ -41,55 +55,19 @@ public class AvatarManager : MonoBehaviour
 
     [SerializeField, EditorReadOnly]
     bool bindRig;
+
     [SerializeField, EditorReadOnly]
-    List<BindList> binds;
+    BindList binds;
+
     [SerializeField, EditorReadOnly]
     Vector3 positionOffset;
+
     [SerializeField, EditorReadOnly]
     Vector3 rotationOffset;
     // Start is called before the first frame update
     void Start()
     {
-        UMI3DCollaborationServer.Instance.OnUserJoin.AddListener(NewUser);
         UMI3DEmbodimentManager.Instance.NewEmbodiment.AddListener(NewAvatar);
-        UMI3DCollaborationServer.Instance.OnUserLeave.AddListener(DeleteUser);
-    }
-
-    // user, bonetype, transform
-
-    Dictionary<ulong, Dictionary<ulong, Transform>> bones = new Dictionary<ulong, Dictionary<ulong, Transform>>();
-
-    // user, model
-
-    Dictionary<ulong, Transform> models = new Dictionary<ulong, Transform>();
-
-    void NewUser(UMI3DUser user)
-    {
-        if (!bones.ContainsKey(user.Id()))
-        {
-            bones[user.Id()] = new Dictionary<ulong, Transform>();
-            models[user.Id()] = null;
-        }
-    }
-
-    void DeleteUser(UMI3DUser user)
-    {
-        var userId = user.Id();
-        if (bones.ContainsKey(userId))
-            bones.Remove(userId);
-        if (models.ContainsKey(userId))
-            models.Remove(userId);
-        Handled.Remove(user);
-    }
-
-    private UMI3DResource ChooseAvatar(UMI3DUser user)
-    {
-        return Avatars[0];
-    }
-
-    private List<Bind> ChooseBinds(UMI3DUser user)
-    {
-        return binds[0].binds;
     }
 
     void NewAvatar(UMI3DAvatarNode node)
@@ -121,9 +99,12 @@ public class AvatarManager : MonoBehaviour
 
         GameObject avatarModelnode = new GameObject("AvatarModel");
         avatarModelnode.transform.SetParent(avatarnode.transform);
+        avatarModelnode.transform.localPosition = Vector3.zero;
+        avatarModelnode.transform.localRotation = Quaternion.identity;
+
         UMI3DModel avatarModel = avatarModelnode.AddComponent<UMI3DModel>();
 
-        avatarModel.objectModel.SetValue(ChooseAvatar(user));
+        avatarModel.objectModel.SetValue(Avatar);
         avatarModel.objectScale.SetValue(UMI3DEmbodimentManager.Instance.embodimentSize[avatarnode.userId]);
 
         List<Operation> ops = new List<Operation>();
@@ -137,14 +118,12 @@ public class AvatarManager : MonoBehaviour
 
     IEnumerator Binding(UMI3DModel avatarModel, UMI3DAvatarNode avatarnode, UMI3DUser user)
     {
-        WaitForFixedUpdate wait = new WaitForFixedUpdate();
-
         List<Operation> ops = new List<Operation>();
 
         SetEntityProperty op;
         if (bindRig)
         {
-            foreach (Bind bind in ChooseBinds(user))
+            foreach (Bind bind in binds.binds)
             {
                 UMI3DBinding binding = new UMI3DBinding()
                 {
@@ -155,6 +134,10 @@ public class AvatarManager : MonoBehaviour
                     node = avatarModel,
                     isBinded = true,
                 };
+
+                //if (bind.boneType.Equals(BoneType.CenterFeet))
+                //    binding.syncPosition = true;
+
                 op = UMI3DEmbodimentManager.Instance.AddBinding(avatarnode, binding);
                 ops.Add(op);
             }
