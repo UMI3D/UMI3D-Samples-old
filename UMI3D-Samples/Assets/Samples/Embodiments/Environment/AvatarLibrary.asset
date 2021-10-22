@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: com.gfi.avatar
   date:
-    _dateTime: 14/06/2021 15:47:25
-    day: 14
+    _dateTime: 16/06/2021 10:45:02
+    day: 16
     month: 6
     year: 2021
-    hours: 15
-    minutes: 47
-    seconds: 25
+    hours: 10
+    minutes: 45
+    seconds: 2
     setNow: 0
     culture: en-US
     format: dd/MM/yyyy  HH:mm:ss

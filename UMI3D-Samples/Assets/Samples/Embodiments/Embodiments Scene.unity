@@ -288,7 +288,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   libraries: []
   materialIds: 
   animationIds: 
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -1631,7 +1631,6 @@ GameObject:
   - component: {fileID: 1589337213}
   - component: {fileID: 1589337214}
   - component: {fileID: 1589337215}
-  - component: {fileID: 1589337216}
   m_Layer: 0
   m_Name: Embodiment Manager
   m_TagString: Untagged
@@ -1666,8 +1665,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmbodimentsScene: {fileID: 286572993}
-  SkeletonPrefab: {fileID: 8434539890996593422, guid: 221bc20772f4fb64998a45850f4743d3,
+  SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
     type: 3}
+  handPoseIds: 
+  PreloadedHandPoses: []
 --- !u!114 &1589337215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,8 +1681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ad6a97d852faa4f81ef6bc5a58af69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Avatars:
-  - variants:
+  Avatar:
+    variants:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.avatar\default\unitskeleton.prefab.bundle
@@ -1691,7 +1692,7 @@ MonoBehaviour:
       pathIfInBundle: Assets/Samples/Embodiments/Models/UnitSkeleton.prefab
       metrics:
         resolution: 0
-        size: 1178.589
+        size: 1654.887
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: 1cf18b03bbea54f4f84e7b4e1bb2b9de, type: 2}
     - isLocalFile: 1
@@ -1703,14 +1704,12 @@ MonoBehaviour:
       pathIfInBundle: Assets/Samples/Embodiments/Models/UnitSkeleton.prefab
       metrics:
         resolution: 0
-        size: 1178.589
+        size: 1655.312
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: 1cf18b03bbea54f4f84e7b4e1bb2b9de, type: 2}
-  avartChoice:
-  - default
   bindRig: 1
   binds:
-  - binds:
+    binds:
     - boneType: 13
       rigName: mixamorig:Hips
       positionOffset: {x: 0, y: 0, z: 0}
@@ -1747,11 +1746,11 @@ MonoBehaviour:
       rigName: mixamorig:RightToeBase
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: 0
+    - boneType: 24
       rigName: mixamorig:Spine1
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
-    - boneType: 0
+    - boneType: 23
       rigName: mixamorig:Spine2
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
@@ -1795,22 +1794,12 @@ MonoBehaviour:
       rigName: mixamorig:RightHand
       positionOffset: {x: 0, y: 0, z: 0}
       rotationOffset: {x: 0, y: 0, z: 0}
+    - boneType: 25
+      rigName: mixamorig:Spine
+      positionOffset: {x: 0, y: 0, z: 0}
+      rotationOffset: {x: 0, y: 0, z: 0}
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
---- !u!114 &1589337216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1589337212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2d6fddb65c27e4dbbffa4aef734c60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SkeletonPrefab: {fileID: 8434539890996593422, guid: 221bc20772f4fb64998a45850f4743d3,
-    type: 3}
 --- !u!1 &1628678761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2097,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -2314,7 +2303,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
-  VolumeId: 
+  VolumeId: 0
   libraries: []
   materialIds: 
   animationIds: 
@@ -2699,7 +2688,7 @@ MonoBehaviour:
   forgeNatServerPort: 0
   forgeMaxNbPlayer: 32
   useRandomHttpPort: 0
-  httpPort: 50043
+  httpPort: 50200
   iconServerUrl: 
   sessionId: 
   descriptionComment: 
