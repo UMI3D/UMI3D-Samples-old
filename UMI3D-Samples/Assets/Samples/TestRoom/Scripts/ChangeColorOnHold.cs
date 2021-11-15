@@ -15,14 +15,32 @@ limitations under the License.
 */
 
 using System.Collections.Generic;
+using System.Linq;
 using umi3d.edk;
+using umi3d.edk.collaboration;
 using UnityEngine;
 
 public class ChangeColorOnHold : MonoBehaviour
 {
     List<string> trackers = new List<string>();
+    bool lastState = false;
 
-    string ToName(UMI3DUser user, string boneId)
+    UMI3DModel model;
+
+    public MaterialSO holdMaterial;
+    public MaterialSO defaultMaterial;
+
+    private void Start()
+    {
+        model = GetComponent<UMI3DModel>();
+        model.objectMaterialsOverrided.SetValue(true);
+        if (model.objectMaterialOverriders.GetValue().Count > 0)
+            model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = defaultMaterial });
+        else
+            model.objectMaterialOverriders.Add(new MaterialOverrider() { overrideAllMaterial = true, newMaterial = defaultMaterial });
+    }
+
+    string ToName(UMI3DUser user, uint boneId)
     {
         return $"{user.Id()}:{boneId}";
     }
@@ -46,7 +64,16 @@ public class ChangeColorOnHold : MonoBehaviour
 
     public void updateColor()
     {
-        Debug.Log($"hovered {trackers.Count > 0}");
+        if (lastState == trackers.Count > 0) return;
+        lastState = !lastState;
+        var t = new Transaction()
+        {
+            reliable = true,            
+        };
+        t.AddIfNotNull(model.objectMaterialOverriders.SetValue(0, new MaterialOverrider() { overrideAllMaterial = true, newMaterial = lastState ? holdMaterial : defaultMaterial }));
+
+        t.Dispatch();
+        var b = t.ToBytes(UMI3DCollaborationServer.Collaboration.Users.First());
     }
 
 }

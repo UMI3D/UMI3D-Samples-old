@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &8307172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +220,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 683477943}
   dofSeparationOptions:
   - name: XZ
@@ -265,6 +269,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 8307174}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -274,6 +279,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 8307176}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -305,6 +311,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &8307176
 MonoBehaviour:
@@ -322,6 +331,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -335,8 +345,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 0}
+    materialListToOverride:
+      overrideAllMaterial: 0
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -356,6 +371,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &12411764
@@ -383,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12411764}
   m_LocalRotation: {x: -0, y: -0.00000004371139, z: -0, w: -1}
-  m_LocalPosition: {x: -5, y: 0, z: 0.0000004371139}
+  m_LocalPosition: {x: -5, y: 0, z: 0.00000047683716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1562998270}
@@ -409,6 +425,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -489,6 +506,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -537,6 +556,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -571,6 +591,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &25655242
@@ -762,6 +783,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -796,6 +818,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &39339658
@@ -865,6 +888,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -913,6 +938,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -947,6 +973,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &46122662
@@ -1045,6 +1072,7 @@ GameObject:
   - component: {fileID: 49873175}
   - component: {fileID: 49873176}
   - component: {fileID: 49873177}
+  - component: {fileID: 49873178}
   m_Layer: 0
   m_Name: Model_obj
   m_TagString: Untagged
@@ -1083,6 +1111,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -1117,6 +1146,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &49873177
@@ -1131,8 +1161,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7929f814e041ca04daf05131d7357668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  axis: {x: 0, y: 0, z: 1}
+  lapPerSec: 0.1
+  axis: {x: 0, y: 1, z: 0}
+  lapSubdivision: 500
+--- !u!114 &49873178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49873174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 1
+  looping: 1
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
 --- !u!1001 &71655243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,6 +1368,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -1367,6 +1418,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -1401,6 +1453,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &91137215
@@ -1649,7 +1702,6 @@ GameObject:
   - component: {fileID: 118957851}
   - component: {fileID: 118957850}
   - component: {fileID: 118957849}
-  - component: {fileID: 118957845}
   m_Layer: 0
   m_Name: Super Toolbox
   m_TagString: Untagged
@@ -1671,18 +1723,6 @@ Transform:
   m_Father: {fileID: 133817798}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &118957845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118957843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &118957846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1703,11 +1743,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugEventHold
         m_Mode: 0
         m_Arguments:
@@ -1721,7 +1763,7 @@ MonoBehaviour:
   onRelease:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugEventRelease
         m_Mode: 0
         m_Arguments:
@@ -1735,7 +1777,7 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugEventTrigger
         m_Mode: 0
         m_Arguments:
@@ -1771,6 +1813,7 @@ MonoBehaviour:
   - {fileID: 118957851}
   - {fileID: 118957850}
   - {fileID: 118957849}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -1799,6 +1842,7 @@ MonoBehaviour:
   Scene: {fileID: 133817799}
   tools:
   - {fileID: 118957847}
+  Active: 0
 --- !u!114 &118957849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,11 +1863,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: aze
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -1854,6 +1900,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: B
   options:
   - A
@@ -1863,7 +1911,7 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -1894,6 +1942,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 42
   min: 0
   max: 84
@@ -1901,7 +1951,7 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugFloat
         m_Mode: 0
         m_Arguments:
@@ -1932,11 +1982,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 1
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118957845}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugBoolean
         m_Mode: 0
         m_Arguments:
@@ -2078,12 +2130,25 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   libraries:
   - {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
-  materialIds: []
-  animationIds: []
-  materialSOs: []
-  PreloadedMaterials: []
+  materialIds: 
+  animationIds: 
+  materialSOs:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
+  PreloadedMaterials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!1 &133971195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,6 +2200,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -2200,6 +2266,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -2213,8 +2280,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -2234,6 +2306,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &134761186
@@ -2256,6 +2329,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -2298,6 +2373,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 134761186}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -2307,6 +2383,7 @@ MonoBehaviour:
   NotifyHoverPosition: 1
   NotifySubObject: 0
   Node: {fileID: 134761185}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -2316,6 +2393,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &134761188
 MonoBehaviour:
@@ -2329,6 +2409,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a8bacdd81b497e449e159fe1bf65951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  - {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  - {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  - {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  - {fileID: 11400000, guid: 7f52399a8f2be144fba841f2a000fd9e, type: 2}
+  - {fileID: 11400000, guid: 4663fa224b51d654086e10e11ba10b2d, type: 2}
 --- !u!114 &134761189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2349,6 +2436,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 0}
   dofSeparationOptions:
   - name: 
@@ -2486,6 +2575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
 --- !u!114 &141607880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2534,6 +2625,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 661837857}
   dofSeparationOptions:
   - name: Z
@@ -2575,6 +2668,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 141607882}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -2584,6 +2678,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 141607884}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -2615,6 +2710,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &141607884
 MonoBehaviour:
@@ -2632,6 +2730,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -2666,6 +2765,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &149866579
@@ -3025,6 +3125,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -3059,6 +3160,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &223080074
@@ -3277,6 +3379,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -3379,6 +3482,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -3413,6 +3517,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &278249412
@@ -3435,6 +3540,7 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -3444,6 +3550,7 @@ MonoBehaviour:
   NotifyHoverPosition: 1
   NotifySubObject: 0
   Node: {fileID: 278249411}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -3486,6 +3593,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &278249413
 MonoBehaviour:
@@ -3727,6 +3837,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -3775,6 +3887,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -3809,6 +3922,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &326592199
@@ -3950,6 +4064,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -4071,6 +4186,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -4119,6 +4236,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -4153,6 +4271,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &348269743
@@ -4203,6 +4322,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -4237,8 +4357,9 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
-  isPartOfNavmesh: 0
-  isTraversable: 1
+  isRightHanded: 1
+  isPartOfNavmesh: 1
+  isTraversable: 0
 --- !u!1001 &379265052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4453,6 +4574,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 1047701355}
   dofSeparationOptions:
   - name: RZ
@@ -4494,6 +4617,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 389781991}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -4503,6 +4627,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 389781993}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -4534,6 +4659,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &389781993
 MonoBehaviour:
@@ -4551,6 +4679,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -4585,6 +4714,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &389781994
@@ -4612,6 +4742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1001 &403418659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4736,6 +4868,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -5007,6 +5140,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -5041,6 +5175,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &442326012
@@ -5067,6 +5202,7 @@ MonoBehaviour:
   - {fileID: 20045062}
   - {fileID: 2053054718}
   - {fileID: 1147409693}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -5076,6 +5212,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 442326011}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -5107,6 +5244,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &442326013
 MonoBehaviour:
@@ -5120,6 +5260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1 &452904068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,7 +5289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452904068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2124067626}
@@ -5193,6 +5335,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -5436,8 +5579,8 @@ GameObject:
   - component: {fileID: 484575148}
   - component: {fileID: 484575147}
   - component: {fileID: 484575146}
-  - component: {fileID: 484575145}
   - component: {fileID: 484575150}
+  - component: {fileID: 484575145}
   m_Layer: 0
   m_Name: ConnectionParameters
   m_TagString: Untagged
@@ -5487,12 +5630,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSubInteraction: 0
   Display:
-    name: stringy
+    name: string
     description: 
     icon2D:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 
   onChange:
     m_PersistentCalls:
@@ -5506,21 +5651,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 484575141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567b33942ea52b94486e809a14d72454, type: 3}
+  m_Script: {fileID: 11500000, guid: 85664ba41c7a3c74a954ced45c3d2b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsSubInteraction: 0
   Display:
-    name: Text
+    name: Local info
     description: 
     icon2D:
       variants: []
     icon3D:
       variants: []
-  value: 
-  onChange:
-    m_PersistentCalls:
-      m_Calls: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
+  readValue: 1
+  writeValue: 1
+  reason: 'This is just a test '
+  serverName: UMI3D_Sample
+  key: testdata
 --- !u!114 &484575146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5541,6 +5689,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 
   options:
   - A
@@ -5570,6 +5720,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 4
   min: 12
   max: 45
@@ -5597,6 +5749,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 0
   onChange:
     m_PersistentCalls:
@@ -5627,6 +5781,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Fields:
   - {fileID: 484575144}
   - {fileID: 484575148}
@@ -5636,7 +5792,7 @@ MonoBehaviour:
   onFormCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 484575150}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugForm
         m_Mode: 0
         m_Arguments:
@@ -5656,9 +5812,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 484575141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
+  m_Script: {fileID: 11500000, guid: 4663f0f730794104dac41dcc33845659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 
+  tryToWrite: 0
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5865,6 +6023,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -5995,6 +6154,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -6282,6 +6442,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 998256514}
   dofSeparationOptions:
   - name: X
@@ -6323,6 +6485,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 617298788}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -6332,6 +6495,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 617298790}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -6363,6 +6527,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &617298790
 MonoBehaviour:
@@ -6380,6 +6547,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -6414,6 +6582,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &617298791
@@ -6428,6 +6597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
 --- !u!1001 &626403935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6555,6 +6726,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -6870,6 +7042,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -6935,6 +7108,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -6999,6 +7173,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -7033,6 +7208,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &687007373
@@ -7177,6 +7353,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -7225,6 +7403,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -7259,6 +7438,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &713356418
@@ -7395,6 +7575,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -7653,6 +7834,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -7761,6 +7943,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -7803,6 +7987,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 752258431}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -7812,6 +7997,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 752258433}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -7821,6 +8007,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &752258433
 MonoBehaviour:
@@ -7838,6 +8027,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -7872,6 +8062,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &765322012
@@ -7928,6 +8119,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -7970,6 +8163,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 765322014}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -7979,6 +8173,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 765322016}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -7988,6 +8183,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &765322016
 MonoBehaviour:
@@ -8005,6 +8203,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -8039,6 +8238,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &765442239
@@ -8057,6 +8257,7 @@ GameObject:
   - component: {fileID: 765442244}
   - component: {fileID: 765442243}
   - component: {fileID: 765442242}
+  - component: {fileID: 765442248}
   m_Layer: 0
   m_Name: ParametersContainer
   m_TagString: Untagged
@@ -8096,6 +8297,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -8130,6 +8332,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &765442242
@@ -8152,6 +8355,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 0
   onChange:
     m_PersistentCalls:
@@ -8182,6 +8387,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 0
   min: 42
   max: 100
@@ -8209,6 +8416,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: Option C
   options:
   - Option A
@@ -8239,6 +8448,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: None
   onChange:
     m_PersistentCalls:
@@ -8287,6 +8498,7 @@ MonoBehaviour:
   - {fileID: 765442244}
   - {fileID: 765442243}
   - {fileID: 765442242}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8296,16 +8508,56 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 765442241}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 765442248}
+        m_MethodName: OnHoverEnter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHovered:
     m_PersistentCalls:
       m_Calls: []
   onHoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 765442248}
+        m_MethodName: OnHoverExit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
+--- !u!114 &765442248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765442239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1 &791911616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8362,6 +8614,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 484575149}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8391,6 +8644,7 @@ MonoBehaviour:
   tools:
   - {fileID: 791911618}
   - {fileID: 791911620}
+  Active: 0
 --- !u!114 &791911620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8417,6 +8671,7 @@ MonoBehaviour:
   - {fileID: 879101400}
   - {fileID: 879101404}
   - {fileID: 879101399}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -8490,6 +8745,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -8538,6 +8795,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -8572,6 +8830,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &866900349
@@ -8664,7 +8923,6 @@ GameObject:
   - component: {fileID: 879101400}
   - component: {fileID: 879101404}
   - component: {fileID: 879101399}
-  - component: {fileID: 879101405}
   m_Layer: 0
   m_Name: OtherParameters
   m_TagString: Untagged
@@ -8706,11 +8964,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -8741,6 +9001,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 
   options:
   - A
@@ -8750,7 +9012,7 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -8781,6 +9043,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 4
   min: 12
   max: 45
@@ -8788,7 +9052,7 @@ MonoBehaviour:
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugFloat
         m_Mode: 0
         m_Arguments:
@@ -8819,11 +9083,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 0
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugBoolean
         m_Mode: 0
         m_Arguments:
@@ -8860,11 +9126,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: 
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -8895,11 +9163,13 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: a
   onChange:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879101405}
+      - m_Target: {fileID: 0}
         m_MethodName: DebugString
         m_Mode: 0
         m_Arguments:
@@ -8910,18 +9180,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &879101405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879101397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5bcf44ec3a68ca4c9534f8eb45e6d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &907630342
 GameObject:
   m_ObjectHideFlags: 0
@@ -8971,6 +9229,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9262,6 +9521,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9296,6 +9556,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &975902843
@@ -9423,6 +9684,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9484,6 +9746,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9518,6 +9781,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &998256512
@@ -9569,6 +9833,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9633,9 +9898,10 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!1 &1003581601
@@ -9793,6 +10059,9 @@ MonoBehaviour:
   forgeMaxNbPlayer: 32
   useRandomHttpPort: 0
   httpPort: 50043
+  iconServerUrl: 
+  sessionId: 
+  descriptionComment: 
   Authentication: 0
   WaitTimeForPingAnswer: 1
   MaxPingingTry: 3
@@ -9850,6 +10119,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -9884,6 +10154,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1046571799
@@ -10009,6 +10280,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -10073,6 +10345,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -10086,8 +10359,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -10107,6 +10385,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1078006856
@@ -10130,6 +10409,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1078006857}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -10139,6 +10419,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1078006855}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -10148,6 +10429,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1078006857
 MonoBehaviour:
@@ -10169,6 +10453,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -10213,6 +10499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567969ba5f3535746b521d55239abbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdMaterial: {fileID: 11400000, guid: c142dd9d6aa316d408557ff0b2a1effe, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1001 &1089187488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10370,6 +10658,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -10418,6 +10708,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -10452,6 +10743,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1100864748
@@ -10671,6 +10963,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -10719,6 +11013,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -10753,6 +11048,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1114583557
@@ -10804,6 +11100,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -10865,6 +11162,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -10899,6 +11197,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1147409690
@@ -10968,6 +11267,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -11016,6 +11317,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -11050,6 +11352,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1147968302
@@ -11255,9 +11558,10 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   libraries: []
-  materialIds: []
-  animationIds: []
+  materialIds: 
+  animationIds: 
   materialSOs: []
   PreloadedMaterials: []
 --- !u!4 &1183297984
@@ -11549,6 +11853,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -11562,8 +11867,13 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
+  overrideModelMaterials: 1
+  materialsOverrider:
+  - newMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+    materialListToOverride:
+      overrideAllMaterial: 1
+      addMaterialIfNotExists: 0
+      overidedMaterials: []
   castShadow: 1
   receiveShadow: 1
   lockColliders: 0
@@ -11583,6 +11893,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1234291670
@@ -11605,6 +11916,7 @@ MonoBehaviour:
     icon3D:
       variants: []
   Interactions: []
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -11614,6 +11926,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1234291669}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -11645,6 +11958,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1234291671
 MonoBehaviour:
@@ -11658,6 +11974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 87689726343b63a4ea9c655be73076a0, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1 &1240801601
 GameObject:
   m_ObjectHideFlags: 0
@@ -11716,6 +12034,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -11939,6 +12258,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -11987,6 +12308,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12021,6 +12343,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1269359222
@@ -12075,6 +12398,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12119,6 +12443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9958806fc2c1a1048b389b7c85dc71a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useDto: 0
   environmentName: test
   scenes: []
   globalLibraries:
@@ -12296,6 +12621,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12330,6 +12656,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1300337828
@@ -12530,6 +12857,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12676,6 +13004,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12710,6 +13039,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1372722094
@@ -12779,6 +13109,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -12827,6 +13159,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -12861,6 +13194,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1373408663
@@ -12917,6 +13251,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -13186,6 +13521,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -13248,6 +13584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
 --- !u!114 &1429462359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13296,6 +13634,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 1114583559}
   dofSeparationOptions:
   - name: Y
@@ -13337,6 +13677,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1429462361}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13346,6 +13687,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1429462363}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -13377,6 +13719,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1429462363
 MonoBehaviour:
@@ -13394,6 +13739,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -13428,6 +13774,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1434138841
@@ -13484,6 +13831,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -13526,6 +13875,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1434138843}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13535,6 +13885,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1434138845}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -13544,6 +13895,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1434138845
 MonoBehaviour:
@@ -13561,6 +13915,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -13595,6 +13950,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1434847445
@@ -13646,6 +14002,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -13680,6 +14037,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1439604874
@@ -13736,6 +14094,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -13778,6 +14138,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1439604876}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13787,6 +14148,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1439604878}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -13796,6 +14158,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1439604878
 MonoBehaviour:
@@ -13813,6 +14178,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -13847,6 +14213,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1442899558
@@ -13897,6 +14264,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &1442899561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13930,6 +14299,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 1324949855}
   dofSeparationOptions:
   - name: RXYZ
@@ -13985,6 +14356,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1442899562}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -13994,6 +14366,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1442899564}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -14025,6 +14398,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1442899564
 MonoBehaviour:
@@ -14042,6 +14418,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -14076,6 +14453,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1460561731
@@ -14225,6 +14603,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14286,6 +14665,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14320,6 +14700,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1509708251
@@ -14378,6 +14759,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14497,6 +14879,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -14545,6 +14929,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14579,6 +14964,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1528412416
@@ -14624,7 +15010,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  embodimentsScene: {fileID: 1183297983}
+  EmbodimentsScene: {fileID: 1183297983}
+  SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
+    type: 3}
+  handPoseIds: 
+  PreloadedHandPoses: []
 --- !u!1 &1532318486
 GameObject:
   m_ObjectHideFlags: 0
@@ -14674,6 +15064,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14735,6 +15126,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -14769,6 +15161,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1538675612
@@ -14820,6 +15213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &1538675615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14868,6 +15263,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 683477943}
   dofSeparationOptions:
   - name: YZ
@@ -14915,6 +15312,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1538675617}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -14924,6 +15322,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1538675619}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -14955,6 +15354,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1538675619
 MonoBehaviour:
@@ -14972,6 +15374,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -15006,6 +15409,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1544520446
@@ -15150,6 +15554,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -15198,6 +15604,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -15232,6 +15639,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1562998269
@@ -15386,6 +15794,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -15434,6 +15844,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -15468,6 +15879,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1599687253
@@ -15518,6 +15930,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -15552,6 +15965,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1601705781
@@ -15603,6 +16017,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -15637,6 +16052,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1606043620
@@ -15693,6 +16109,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -15954,6 +16371,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   value: value
   onChange:
     m_PersistentCalls:
@@ -15978,6 +16397,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -16008,6 +16429,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -16042,6 +16465,7 @@ MonoBehaviour:
   - {fileID: 1639039347}
   - {fileID: 1639039346}
   - {fileID: 1639039351}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -16051,6 +16475,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1639039350}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -16060,6 +16485,9 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1639039350
 MonoBehaviour:
@@ -16077,6 +16505,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -16111,6 +16540,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1639039351
@@ -16133,6 +16563,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -16202,6 +16634,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -16236,6 +16669,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1663566020
@@ -16292,6 +16726,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -16395,6 +16830,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -16429,6 +16865,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1672571740
@@ -16479,6 +16916,7 @@ MonoBehaviour:
   active: 0
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -16767,6 +17205,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -16815,6 +17255,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -16849,6 +17290,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1680773428
@@ -17343,6 +17785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &1772183022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17376,6 +17820,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 2082603922}
   dofSeparationOptions:
   - name: RYZ
@@ -17423,6 +17869,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1772183023}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -17432,6 +17879,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1772183025}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -17463,6 +17911,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1772183025
 MonoBehaviour:
@@ -17480,6 +17931,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -17514,6 +17966,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1809250204
@@ -17650,6 +18103,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -17684,6 +18138,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!114 &1844647780
@@ -17721,6 +18176,7 @@ MonoBehaviour:
   - {fileID: 1594774789}
   - {fileID: 1946345058}
   - {fileID: 1254613035}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -17730,6 +18186,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1844647779}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -17761,6 +18218,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1844647781
 MonoBehaviour:
@@ -17774,6 +18234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!1 &1846504819
 GameObject:
   m_ObjectHideFlags: 0
@@ -17824,6 +18286,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -18041,6 +18504,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -18219,6 +18683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &1896244839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18267,6 +18733,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 683477943}
   dofSeparationOptions:
   - name: XY
@@ -18314,6 +18782,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1896244841}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -18323,6 +18792,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1896244843}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -18354,6 +18824,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1896244843
 MonoBehaviour:
@@ -18371,6 +18844,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -18405,6 +18879,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1907152573
@@ -18575,6 +19050,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -18609,6 +19085,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1915568800
@@ -18753,6 +19230,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -18801,6 +19280,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -18835,6 +19315,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1919571397
@@ -18964,6 +19445,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -19033,6 +19515,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -19134,6 +19617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04934e9e313bd342bc6c85e0e4eed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverMaterial: {fileID: 11400000, guid: 96990a2ce5119a84ea58abe9dff7303d, type: 2}
+  defaultMaterial: {fileID: 11400000, guid: 5cdb75934ed3b564f967ea8a226917ac, type: 2}
 --- !u!114 &1946197403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19182,6 +19667,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   frameOfReference: {fileID: 1601705783}
   dofSeparationOptions:
   - name: XYZ
@@ -19237,6 +19724,7 @@ MonoBehaviour:
       variants: []
   Interactions:
   - {fileID: 1946197405}
+  Active: 1
   onProjection:
     m_PersistentCalls:
       m_Calls: []
@@ -19246,6 +19734,7 @@ MonoBehaviour:
   NotifyHoverPosition: 0
   NotifySubObject: 0
   Node: {fileID: 1946197407}
+  HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
       m_Calls:
@@ -19277,6 +19766,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UseAnimations: 0
+  HoverEnterAnimation: {fileID: 0}
+  HoverExitAnimation: {fileID: 0}
   hoveringBones: []
 --- !u!114 &1946197407
 MonoBehaviour:
@@ -19294,6 +19786,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 1
@@ -19328,6 +19821,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1946345055
@@ -19397,6 +19891,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -19445,6 +19941,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -19479,6 +19976,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1 &1951587529
@@ -19607,6 +20105,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -19641,6 +20140,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &1964561012
@@ -20054,6 +20554,8 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
   Hold: 1
   onHold:
     m_PersistentCalls:
@@ -20102,6 +20604,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -20136,6 +20639,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: c315d8382c42eaa4991dcd4bdde6ec23, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
 --- !u!1001 &2072000318
@@ -20346,6 +20850,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -20653,6 +21158,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -20781,6 +21287,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -20884,6 +21391,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
@@ -20961,6 +21469,7 @@ MonoBehaviour:
   active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
+  VolumeId: 0
   xBillboard: 0
   yBillboard: 0
   hasCollider: 0
