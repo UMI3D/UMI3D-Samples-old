@@ -30,7 +30,6 @@ public class MaterialUpdateColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //originalColor = pBRMaterial.objectBaseColorFactor.GetValue();
         materialOverrider.overrideAllMaterial = true;
         pBRMaterial = ScriptableObject.CreateInstance<PBRMaterial>();
         pBRMaterial.baseColorFactor = color;
@@ -44,13 +43,10 @@ public class MaterialUpdateColor : MonoBehaviour
         UMI3DEnvironment.Instance.GetComponentInChildren<UMI3DScene>().PreloadedMaterials.Add(pBRMaterial);
         UMI3DEnvironment.Instance.GetComponentInChildren<UMI3DScene>().PreloadedMaterials.Add(matToAdd);
 
-
         // add overider 
         transaction.AddIfNotNull(currentColorDisplayer.objectMaterialsOverrided.SetValue(true));
         transaction.AddIfNotNull(currentColorDisplayer.objectMaterialOverriders.SetValue(new List<MaterialOverrider>() { materialOverrider }));
-
         transaction.Dispatch();
-
     }
 
 
@@ -207,6 +203,5 @@ public class MaterialUpdateColor : MonoBehaviour
         }
 
     }
-
 
 }
