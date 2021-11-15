@@ -22,10 +22,13 @@ MonoBehaviour:
     minutes: 39
     seconds: 45
     setNow: 0
+    culture: en-US
+    format: dd/MM/yyyy  HH:mm:ss
   variants:
   - name: default
     path: private\com.gfi.primitive\default
     metrics:
       resolution: 0
       size: 0
-    formats: 01000000
+    formats:
+    - obj

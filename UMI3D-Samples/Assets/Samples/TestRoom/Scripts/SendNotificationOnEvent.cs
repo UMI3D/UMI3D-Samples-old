@@ -34,8 +34,9 @@ public class SendNotificationOnEvent : MonoBehaviour
 
     void Dispatch(UMI3DNotification notif)
     {
-        var transaction = new Transaction() { reliable = true, Operations = new List<Operation>() { notif.GetLoadEntity() } };
-        UMI3DServer.Dispatch(transaction);
+        var transaction = new Transaction() { reliable = true };
+        transaction.AddIfNotNull(notif.GetLoadEntity());
+        transaction.Dispatch();
     }
 
 }
