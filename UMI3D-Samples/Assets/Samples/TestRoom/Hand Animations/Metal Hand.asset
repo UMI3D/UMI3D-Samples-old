@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4afd99d02e1ef446a9c90cebe013fb7, type: 3}
+  m_Name: Metal Hand
+  m_EditorClassIdentifier: 
+  PoseId: 0
+  IsActive: 0
+  HoverAnimation: 0
+  isRelativeToNode: 0
+  PoseName: Metal Hand
+  RightHandPosition: {x: -0.0000023841856, y: 0.00000029802322, z: -2.1186397}
+  RightHandEulerRotation: {x: 323.38354, y: 90.00001, z: 180}
+  LeftHandPosition: {x: 0, y: 0, z: 0}
+  LeftHandEulerRotation: {x: 0, y: 0, z: 0}
+  PhalanxRotations:
+  - phalanxId: 42
+    Phalanx: RightThumbProximal
+    PhalanxEulerRotation: {x: -0.0000002740924, y: -0.00000007053219, z: 26.30834}
+  - phalanxId: 43
+    Phalanx: RightThumbIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 44
+    Phalanx: RightThumbDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 45
+    Phalanx: RightIndexProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 46
+    Phalanx: RightIndexIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 47
+    Phalanx: RightIndexDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 48
+    Phalanx: RightMiddleProximal
+    PhalanxEulerRotation: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - phalanxId: 49
+    Phalanx: RightMiddleIntermediate
+    PhalanxEulerRotation: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - phalanxId: 50
+    Phalanx: RightMiddleDistal
+    PhalanxEulerRotation: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - phalanxId: 51
+    Phalanx: RightRingProximal
+    PhalanxEulerRotation: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - phalanxId: 52
+    Phalanx: RightRingIntermediate
+    PhalanxEulerRotation: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - phalanxId: 53
+    Phalanx: RightRingDistal
+    PhalanxEulerRotation: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - phalanxId: 54
+    Phalanx: RightLittleProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 55
+    Phalanx: RightLittleIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 56
+    Phalanx: RightLittleDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 27
+    Phalanx: LeftThumbProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 28
+    Phalanx: LeftThumbIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 29
+    Phalanx: LeftThumbDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 30
+    Phalanx: LeftIndexProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 31
+    Phalanx: LeftIndexIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 32
+    Phalanx: LeftIndexDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 33
+    Phalanx: LeftMiddleProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 34
+    Phalanx: LeftMiddleIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 35
+    Phalanx: LeftMiddleDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 36
+    Phalanx: LeftRingProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 37
+    Phalanx: LeftRingIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 38
+    Phalanx: LeftRingDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 39
+    Phalanx: LeftLittleProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 40
+    Phalanx: LeftLittleIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 41
+    Phalanx: LeftLittleDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
