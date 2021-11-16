@@ -26,18 +26,17 @@ namespace umi3d.edk
     [Obsolete("This class isn't mean to be use in production", false)]
     public partial class SimpleModificationListener : MonoBehaviour
     {
-        UMI3DNode[] nodes;
-        UMI3DScene[] scenes;
+        private UMI3DNode[] nodes;
+        private UMI3DScene[] scenes;
         public float time = 0f;
-        float timeTmp = 0;
+        private float timeTmp = 0;
         public int max = 0;
-
-        Dictionary<ulong, Dictionary<ulong, SetEntityProperty>> sets;
+        private Dictionary<ulong, Dictionary<ulong, SetEntityProperty>> sets;
 
         public UnityEvent SetNodes = new UnityEvent();
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             nodes = GetComponentsInChildren<UMI3DNode>();
             scenes = GetComponentsInChildren<UMI3DScene>();
@@ -46,21 +45,21 @@ namespace umi3d.edk
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (UMI3DServer.Exists)
             {
-                foreach (var node in nodes)
+                foreach (UMI3DNode node in nodes)
                     Update(node);
 
-                foreach (var scene in scenes)
+                foreach (UMI3DScene scene in scenes)
                     MaterialUpdate(scene);
 
                 Dispatch();
             }
         }
 
-        void Dispatch()
+        private void Dispatch()
         {
             if (checkTime() || checkMax())
             {
@@ -80,7 +79,7 @@ namespace umi3d.edk
             }
         }
 
-        bool checkTime()
+        private bool checkTime()
         {
             timeTmp -= Time.deltaTime;
             if (time == 0 || timeTmp <= 0)
@@ -91,7 +90,7 @@ namespace umi3d.edk
             return false;
         }
 
-        bool checkMax()
+        private bool checkMax()
         {
             return (max != 0) && (sets.SelectMany(p => p.Value).Count() > max);
         }
@@ -185,7 +184,7 @@ namespace umi3d.edk
         {
             if (obj != null)
             {
-                var rectTransform = obj.GetComponent<RectTransform>();
+                RectTransform rectTransform = obj.GetComponent<RectTransform>();
                 setOperation(obj.AnchoredPosition.SetValue(rectTransform.anchoredPosition));
                 setOperation(obj.AnchoredPosition3D.SetValue(rectTransform.anchoredPosition3D));
                 setOperation(obj.AnchorMax.SetValue(rectTransform.anchorMax));
@@ -198,8 +197,8 @@ namespace umi3d.edk
                 if (obj is UICanvas)
                 {
                     var canvas = obj as UICanvas;
-                    var canvasScaler = obj.GetComponent<CanvasScaler>();
-                    var Canvas = obj.GetComponent<Canvas>();
+                    CanvasScaler canvasScaler = obj.GetComponent<CanvasScaler>();
+                    Canvas Canvas = obj.GetComponent<Canvas>();
                     setOperation(canvas.DynamicPixelPerUnit.SetValue(canvasScaler.dynamicPixelsPerUnit));
                     setOperation(canvas.ReferencePixelPerUnit.SetValue(canvasScaler.referencePixelsPerUnit));
                     setOperation(canvas.OrderInLayer.SetValue(Canvas.sortingOrder));
@@ -207,7 +206,7 @@ namespace umi3d.edk
                 if (obj is UIImage)
                 {
                     var image = obj as UIImage;
-                    var Image = obj.GetComponent<Image>();
+                    Image Image = obj.GetComponent<Image>();
                     setOperation(image.Color.SetValue(Image.color));
                     setOperation(image.ImageType.SetValue(Image.type));
                     //update sprite
@@ -216,7 +215,7 @@ namespace umi3d.edk
                 if (obj is UIText)
                 {
                     var text = obj as UIText;
-                    var Text = obj.GetComponent<Text>();
+                    Text Text = obj.GetComponent<Text>();
                     setOperation(text.Alignment.SetValue(Text.alignment));
                     setOperation(text.AlignByGeometry.SetValue(Text.alignByGeometry));
                     setOperation(text.TextColor.SetValue(Text.color));
@@ -235,7 +234,7 @@ namespace umi3d.edk
             }
         }
 
-        void setOperation(SetEntityProperty operation)
+        private void setOperation(SetEntityProperty operation)
         {
             if (operation != null)
             {
