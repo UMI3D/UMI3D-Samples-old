@@ -398,8 +398,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12411764}
-  m_LocalRotation: {x: -0, y: -0.00000004371139, z: -0, w: -1}
-  m_LocalPosition: {x: -5, y: 0, z: 0.00000047683716}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: -0.92387956}
+  m_LocalPosition: {x: -4.2426405, y: 0, z: -4.2426405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1562998270}
@@ -2173,8 +2173,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133971195}
-  m_LocalRotation: {x: -0, y: -0.30901688, z: -0, w: -0.95105654}
-  m_LocalPosition: {x: -4.045084, y: 0, z: 2.9389277}
+  m_LocalRotation: {x: -0, y: 0.15643446, z: -0, w: -0.98768836}
+  m_LocalPosition: {x: -5.70634, y: 0, z: -1.8541024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27448916}
@@ -4843,8 +4843,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411654111}
-  m_LocalRotation: {x: -0, y: 0.809017, z: -0, w: -0.5877853}
-  m_LocalPosition: {x: 1.545085, y: 0, z: -4.755283}
+  m_LocalRotation: {x: -0, y: 0.8910066, z: -0, w: -0.45399046}
+  m_LocalPosition: {x: 3.526711, y: 0, z: -4.854102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765442240}
@@ -5301,6 +5301,9 @@ Transform:
   - {fileID: 133971196}
   - {fileID: 2131503141}
   - {fileID: 1426578666}
+  - {fileID: 1569632618}
+  - {fileID: 560168692}
+  - {fileID: 1605533978}
   m_Father: {fileID: 133817798}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5317,7 +5320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualChildren: 1
-  Radius: 5
+  Radius: 6
   update: 0
 --- !u!114 &452904071
 MonoBehaviour:
@@ -5817,6 +5820,183 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 
   tryToWrite: 0
+--- !u!114 &512428876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e9940359247dc48a1c9178b9bff2c4, type: 3}
+  m_Name: Hand Pose Information
+  m_EditorClassIdentifier: 
+  RightHandPosition: {x: -0.0000023841856, y: 0.00000029802322, z: -2.1186397}
+  RightHandEulerRotation: {x: 323.38354, y: 270, z: 180}
+  LeftHandPosition: {x: 0, y: 0, z: 0}
+  LeftHandEulerRotation: {x: 323.38354, y: 270, z: 180}
+  PhalangesData:
+  - PhalanxName: LeftThumbProximal
+    Data:
+      Pos: {x: -0.03788809, y: -0.02166997, z: 0.03003088}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbIntermediate
+    Data:
+      Pos: {x: -3.675443, y: -2.122008, z: 2.122012}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbDistal
+    Data:
+      Pos: {x: -3.394359, y: -1.959744, z: 1.959793}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbEnd
+    Data:
+      Pos: {x: -2.679404, y: -1.546945, z: 1.54692}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexProximal
+    Data:
+      Pos: {x: -0.1226661, y: -0.002316688, z: 0.02822058}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexIntermediate
+    Data:
+      Pos: {x: -3.891967, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexDistal
+    Data:
+      Pos: {x: -3.415161, y: 0.000000005749108, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexEnd
+    Data:
+      Pos: {x: -3.077986, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleProximal
+    Data:
+      Pos: {x: -0.1277552, y: 0.0000001334202, z: 0.0000002041846}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleIntermediate
+    Data:
+      Pos: {x: -3.613972, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleDistal
+    Data:
+      Pos: {x: -3.45976, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleEnd
+    Data:
+      Pos: {x: -3.680192, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingProximal
+    Data:
+      Pos: {x: -0.12147, y: 0.00009894983, z: -0.02216629}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingIntermediate
+    Data:
+      Pos: {x: -3.60119, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingDistal
+    Data:
+      Pos: {x: -3.307317, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingEnd
+    Data:
+      Pos: {x: -3.660115, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleProximal
+    Data:
+      Pos: {x: -0.1090819, y: -0.00226365, z: -0.04725818}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleIntermediate
+    Data:
+      Pos: {x: -4.136652, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleDistal
+    Data:
+      Pos: {x: -2.594836, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleEnd
+    Data:
+      Pos: {x: -2.923869, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbProximal
+    Data:
+      Pos: {x: 0.03788812, y: -0.02166999, z: 0.03003085}
+      Rot: {x: -0.0000002740924, y: -0.00000007053219, z: 26.30834}
+  - PhalanxName: RightThumbIntermediate
+    Data:
+      Pos: {x: 3.675445, y: -2.122004, z: 2.122034}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbDistal
+    Data:
+      Pos: {x: 3.39436, y: -1.959753, z: 1.959789}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbEnd
+    Data:
+      Pos: {x: 2.679403, y: -1.546945, z: 1.546891}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexProximal
+    Data:
+      Pos: {x: 0.1226662, y: -0.002316732, z: 0.02822055}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexIntermediate
+    Data:
+      Pos: {x: 3.891967, y: -0.00000007205551, z: 0.00003751302}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexDistal
+    Data:
+      Pos: {x: 3.415161, y: 0.0000002529914, z: -0.000008605841}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexEnd
+    Data:
+      Pos: {x: 3.077986, y: -0.0000009272842, z: -0.000008780579}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightMiddleProximal
+    Data:
+      Pos: {x: 0.1277552, y: 0.00000008945774, z: 0.0000001801164}
+      Rot: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - PhalanxName: RightMiddleIntermediate
+    Data:
+      Pos: {x: 3.613972, y: 0.000002756502, z: 0.000003080337}
+      Rot: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - PhalanxName: RightMiddleDistal
+    Data:
+      Pos: {x: 3.45976, y: -0.0000001972182, z: -0.00002645789}
+      Rot: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightMiddleEnd
+    Data:
+      Pos: {x: 3.680192, y: -0.0000006576055, z: 0.00003250981}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightRingProximal
+    Data:
+      Pos: {x: 0.12147, y: 0.00009894557, z: -0.02216627}
+      Rot: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - PhalanxName: RightRingIntermediate
+    Data:
+      Pos: {x: 3.601193, y: 0, z: 0.00002384185}
+      Rot: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - PhalanxName: RightRingDistal
+    Data:
+      Pos: {x: 3.30732, y: 0, z: -0.00001341104}
+      Rot: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightRingEnd
+    Data:
+      Pos: {x: 3.660113, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleProximal
+    Data:
+      Pos: {x: 0.1090819, y: -0.002263658, z: -0.04725829}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleIntermediate
+    Data:
+      Pos: {x: 4.136657, y: 0, z: 0.00003576278}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleDistal
+    Data:
+      Pos: {x: 2.594835, y: 0, z: -0.00003576278}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleEnd
+    Data:
+      Pos: {x: 2.923873, y: 0, z: 0.00001112792}
+      Rot: {x: 0, y: 0, z: 0}
 --- !u!1001 &512614987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5966,6 +6146,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 06c2b5970d037ba48acf5b6dc8c86118,
     type: 3}
   m_PrefabInstance: {fileID: 518248734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &560168692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &569678209
 GameObject:
@@ -9204,8 +9390,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907630342}
-  m_LocalRotation: {x: -0, y: 0.30901697, z: -0, w: -0.95105654}
-  m_LocalPosition: {x: -4.0450854, y: 0, z: -2.9389262}
+  m_LocalRotation: {x: -0, y: 0.5877853, z: -0, w: -0.809017}
+  m_LocalPosition: {x: -1.8541031, y: 0, z: -5.706339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1844647778}
@@ -9497,8 +9683,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972520207}
-  m_LocalRotation: {x: -0, y: 0.17364821, z: -0, w: -0.9848078}
-  m_LocalPosition: {x: -6.7657876, y: 0, z: -2.462544}
+  m_LocalRotation: {x: -0, y: 0.30901697, z: -0, w: -0.95105654}
+  m_LocalPosition: {x: -6.472136, y: 0, z: -4.7022815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1706889441}
@@ -9722,8 +9908,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998173770}
-  m_LocalRotation: {x: -0, y: -0.50000006, z: -0, w: -0.8660254}
-  m_LocalPosition: {x: -3.6, y: 0, z: 6.2353835}
+  m_LocalRotation: {x: -0, y: -0.30901688, z: -0, w: -0.95105654}
+  m_LocalPosition: {x: -6.472134, y: 0, z: 4.702284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1147968303}
@@ -10095,8 +10281,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036543025}
-  m_LocalRotation: {x: -0, y: 0.4999999, z: -0, w: -0.86602545}
-  m_LocalPosition: {x: -3.6000009, y: 0, z: -6.2353826}
+  m_LocalRotation: {x: -0, y: 0.5877853, z: -0, w: -0.809017}
+  m_LocalPosition: {x: -2.4721372, y: 0, z: -7.6084514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425432707}
@@ -11139,7 +11325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126093533}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
-  m_LocalPosition: {x: 7.2, y: 0, z: 0}
+  m_LocalPosition: {x: 7.9999995, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 642889207}
@@ -11578,6 +11764,183 @@ Transform:
   m_Father: {fileID: 1274528702}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1192205754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e9940359247dc48a1c9178b9bff2c4, type: 3}
+  m_Name: Hand Pose Information
+  m_EditorClassIdentifier: 
+  RightHandPosition: {x: 0, y: 0, z: -0.55164206}
+  RightHandEulerRotation: {x: 270, y: 89.99999, z: 0}
+  LeftHandPosition: {x: -0.31522277, y: 0.13142107, z: -0.04896505}
+  LeftHandEulerRotation: {x: 270, y: 89.99999, z: 0}
+  PhalangesData:
+  - PhalanxName: LeftThumbProximal
+    Data:
+      Pos: {x: -0.03788809, y: -0.02166997, z: 0.03003088}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbIntermediate
+    Data:
+      Pos: {x: -3.675443, y: -2.122008, z: 2.122012}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbDistal
+    Data:
+      Pos: {x: -3.394359, y: -1.959744, z: 1.959793}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbEnd
+    Data:
+      Pos: {x: -2.679404, y: -1.546945, z: 1.54692}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexProximal
+    Data:
+      Pos: {x: -0.1226661, y: -0.002316688, z: 0.02822058}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexIntermediate
+    Data:
+      Pos: {x: -3.891967, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexDistal
+    Data:
+      Pos: {x: -3.415161, y: 0.000000005749108, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexEnd
+    Data:
+      Pos: {x: -3.077986, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleProximal
+    Data:
+      Pos: {x: -0.1277552, y: 0.0000001334202, z: 0.0000002041846}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleIntermediate
+    Data:
+      Pos: {x: -3.613972, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleDistal
+    Data:
+      Pos: {x: -3.45976, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleEnd
+    Data:
+      Pos: {x: -3.680192, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingProximal
+    Data:
+      Pos: {x: -0.12147, y: 0.00009894983, z: -0.02216629}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingIntermediate
+    Data:
+      Pos: {x: -3.60119, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingDistal
+    Data:
+      Pos: {x: -3.307317, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingEnd
+    Data:
+      Pos: {x: -3.660115, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleProximal
+    Data:
+      Pos: {x: -0.1090819, y: -0.00226365, z: -0.04725818}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleIntermediate
+    Data:
+      Pos: {x: -4.136652, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleDistal
+    Data:
+      Pos: {x: -2.594836, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleEnd
+    Data:
+      Pos: {x: -2.923869, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbProximal
+    Data:
+      Pos: {x: 0.03788812, y: -0.02166999, z: 0.03003085}
+      Rot: {x: 0.00000005797181, y: 27.376736, z: 0.00000006250037}
+  - PhalanxName: RightThumbIntermediate
+    Data:
+      Pos: {x: 3.675445, y: -2.122004, z: 2.122034}
+      Rot: {x: 0.000000114998045, y: 35.544487, z: 0.0000001126539}
+  - PhalanxName: RightThumbDistal
+    Data:
+      Pos: {x: 3.39436, y: -1.959753, z: 1.959789}
+      Rot: {x: -0.000000074923825, y: 56.727287, z: 0.00000028065173}
+  - PhalanxName: RightThumbEnd
+    Data:
+      Pos: {x: 2.679403, y: -1.546945, z: 1.546891}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexProximal
+    Data:
+      Pos: {x: 0.1226662, y: -0.002316732, z: 0.02822055}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexIntermediate
+    Data:
+      Pos: {x: 3.891967, y: -0.00000007205551, z: 0.00003751302}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexDistal
+    Data:
+      Pos: {x: 3.415161, y: 0.0000002529914, z: -0.000008605841}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexEnd
+    Data:
+      Pos: {x: 3.077986, y: -0.0000009272842, z: -0.000008780579}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightMiddleProximal
+    Data:
+      Pos: {x: 0.1277552, y: 0.00000008945774, z: 0.0000001801164}
+      Rot: {x: 0.0000062625004, y: -0.0000012081157, z: 294.72293}
+  - PhalanxName: RightMiddleIntermediate
+    Data:
+      Pos: {x: 3.613972, y: 0.000002756502, z: 0.000003080337}
+      Rot: {x: 0.000011204971, y: 0.0000024601327, z: 294.07178}
+  - PhalanxName: RightMiddleDistal
+    Data:
+      Pos: {x: 3.45976, y: -0.0000001972182, z: -0.00002645789}
+      Rot: {x: 0.000006019213, y: 0.00001329271, z: 261.88162}
+  - PhalanxName: RightMiddleEnd
+    Data:
+      Pos: {x: 3.680192, y: -0.0000006576055, z: 0.00003250981}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightRingProximal
+    Data:
+      Pos: {x: 0.12147, y: 0.00009894557, z: -0.02216627}
+      Rot: {x: 0.0000062625, y: -0.000001208116, z: 294.7229}
+  - PhalanxName: RightRingIntermediate
+    Data:
+      Pos: {x: 3.601193, y: 0, z: 0.00002384185}
+      Rot: {x: 0.00001120497, y: 0.000002460133, z: 294.0718}
+  - PhalanxName: RightRingDistal
+    Data:
+      Pos: {x: 3.30732, y: 0, z: -0.00001341104}
+      Rot: {x: 0.000006019213, y: 0.00001329271, z: 261.8816}
+  - PhalanxName: RightRingEnd
+    Data:
+      Pos: {x: 3.660113, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleProximal
+    Data:
+      Pos: {x: 0.1090819, y: -0.002263658, z: -0.04725829}
+      Rot: {x: 0.0000062625, y: -0.000001208116, z: 294.7229}
+  - PhalanxName: RightLittleIntermediate
+    Data:
+      Pos: {x: 4.136657, y: 0, z: 0.00003576278}
+      Rot: {x: 0.00001120497, y: 0.000002460133, z: 294.0718}
+  - PhalanxName: RightLittleDistal
+    Data:
+      Pos: {x: 2.594835, y: 0, z: -0.00003576278}
+      Rot: {x: 0.000006019213, y: 0.00001329271, z: 261.8816}
+  - PhalanxName: RightLittleEnd
+    Data:
+      Pos: {x: 2.923873, y: 0, z: 0.00001112792}
+      Rot: {x: 0, y: 0, z: 0}
 --- !u!1001 &1216226464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12191,6 +12554,183 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242256217}
   m_CullTransparentMesh: 0
+--- !u!114 &1242417107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e9940359247dc48a1c9178b9bff2c4, type: 3}
+  m_Name: Hand Pose Information
+  m_EditorClassIdentifier: 
+  RightHandPosition: {x: 0, y: 0, z: -0.4684033}
+  RightHandEulerRotation: {x: 270, y: 89.99999, z: 0}
+  LeftHandPosition: {x: 0, y: 0, z: 0}
+  LeftHandEulerRotation: {x: 270, y: 89.99999, z: 0}
+  PhalangesData:
+  - PhalanxName: LeftThumbProximal
+    Data:
+      Pos: {x: -0.03788809, y: -0.02166997, z: 0.03003088}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbIntermediate
+    Data:
+      Pos: {x: -3.675443, y: -2.122008, z: 2.122012}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbDistal
+    Data:
+      Pos: {x: -3.394359, y: -1.959744, z: 1.959793}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbEnd
+    Data:
+      Pos: {x: -2.679404, y: -1.546945, z: 1.54692}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexProximal
+    Data:
+      Pos: {x: -0.1226661, y: -0.002316688, z: 0.02822058}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexIntermediate
+    Data:
+      Pos: {x: -3.891967, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexDistal
+    Data:
+      Pos: {x: -3.415161, y: 0.000000005749108, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexEnd
+    Data:
+      Pos: {x: -3.077986, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleProximal
+    Data:
+      Pos: {x: -0.1277552, y: 0.0000001334202, z: 0.0000002041846}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleIntermediate
+    Data:
+      Pos: {x: -3.613972, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleDistal
+    Data:
+      Pos: {x: -3.45976, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleEnd
+    Data:
+      Pos: {x: -3.680192, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingProximal
+    Data:
+      Pos: {x: -0.12147, y: 0.00009894983, z: -0.02216629}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingIntermediate
+    Data:
+      Pos: {x: -3.60119, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingDistal
+    Data:
+      Pos: {x: -3.307317, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingEnd
+    Data:
+      Pos: {x: -3.660115, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleProximal
+    Data:
+      Pos: {x: -0.1090819, y: -0.00226365, z: -0.04725818}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleIntermediate
+    Data:
+      Pos: {x: -4.136652, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleDistal
+    Data:
+      Pos: {x: -2.594836, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleEnd
+    Data:
+      Pos: {x: -2.923869, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbProximal
+    Data:
+      Pos: {x: 0.03788812, y: -0.02166999, z: 0.03003085}
+      Rot: {x: -0.0000002740924, y: -0.00000007053219, z: 26.30834}
+  - PhalanxName: RightThumbIntermediate
+    Data:
+      Pos: {x: 3.675445, y: -2.122004, z: 2.122034}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbDistal
+    Data:
+      Pos: {x: 3.39436, y: -1.959753, z: 1.959789}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbEnd
+    Data:
+      Pos: {x: 2.679403, y: -1.546945, z: 1.546891}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexProximal
+    Data:
+      Pos: {x: 0.1226662, y: -0.002316732, z: 0.02822055}
+      Rot: {x: 3.2074747, y: 353.97794, z: 271.32764}
+  - PhalanxName: RightIndexIntermediate
+    Data:
+      Pos: {x: 3.891967, y: -0.00000007205551, z: 0.00003751302}
+      Rot: {x: 0.0000016819745, y: -0.0000056679028, z: 268.27917}
+  - PhalanxName: RightIndexDistal
+    Data:
+      Pos: {x: 3.415161, y: 0.0000002529914, z: -0.000008605841}
+      Rot: {x: 0.0000020552914, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightIndexEnd
+    Data:
+      Pos: {x: 3.077986, y: -0.0000009272842, z: -0.000008780579}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightMiddleProximal
+    Data:
+      Pos: {x: 0.1277552, y: 0.00000008945774, z: 0.0000001801164}
+      Rot: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - PhalanxName: RightMiddleIntermediate
+    Data:
+      Pos: {x: 3.613972, y: 0.000002756502, z: 0.000003080337}
+      Rot: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - PhalanxName: RightMiddleDistal
+    Data:
+      Pos: {x: 3.45976, y: -0.0000001972182, z: -0.00002645789}
+      Rot: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightMiddleEnd
+    Data:
+      Pos: {x: 3.680192, y: -0.0000006576055, z: 0.00003250981}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightRingProximal
+    Data:
+      Pos: {x: 0.12147, y: 0.00009894557, z: -0.02216627}
+      Rot: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - PhalanxName: RightRingIntermediate
+    Data:
+      Pos: {x: 3.601193, y: 0, z: 0.00002384185}
+      Rot: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - PhalanxName: RightRingDistal
+    Data:
+      Pos: {x: 3.30732, y: 0, z: -0.00001341104}
+      Rot: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightRingEnd
+    Data:
+      Pos: {x: 3.660113, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleProximal
+    Data:
+      Pos: {x: 0.1090819, y: -0.002263658, z: -0.04725829}
+      Rot: {x: 3.207475, y: 353.9779, z: 271.3276}
+  - PhalanxName: RightLittleIntermediate
+    Data:
+      Pos: {x: 4.136657, y: 0, z: 0.00003576278}
+      Rot: {x: 0.000001681974, y: -0.000005667903, z: 268.2792}
+  - PhalanxName: RightLittleDistal
+    Data:
+      Pos: {x: 2.594835, y: 0, z: -0.00003576278}
+      Rot: {x: 0.000002055291, y: -0.0000145475, z: 280.1786}
+  - PhalanxName: RightLittleEnd
+    Data:
+      Pos: {x: 2.923873, y: 0, z: 0.00001112792}
+      Rot: {x: 0, y: 0, z: 0}
 --- !u!1 &1254613032
 GameObject:
   m_ObjectHideFlags: 0
@@ -12370,8 +12910,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269359222}
-  m_LocalRotation: {x: -0, y: 0.95105654, z: -0, w: -0.30901703}
-  m_LocalPosition: {x: 4.045085, y: 0, z: -2.9389265}
+  m_LocalRotation: {x: -0, y: 0.9723699, z: -0, w: -0.23344539}
+  m_LocalPosition: {x: 5.346039, y: 0, z: -2.7239432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 134761184}
@@ -12498,6 +13038,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   max: 0
+  SetNodes:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1283352784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12597,8 +13140,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294359969}
-  m_LocalRotation: {x: -0, y: -0.9396926, z: -0, w: -0.34202024}
-  m_LocalPosition: {x: 5.515521, y: 0, z: 4.628069}
+  m_LocalRotation: {x: -0, y: -0.80901706, z: -0, w: -0.58778524}
+  m_LocalPosition: {x: 2.472137, y: 0, z: 7.6084514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158419722}
@@ -13481,8 +14024,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426578665}
-  m_LocalRotation: {x: -0, y: -0.80901706, z: -0, w: -0.58778524}
-  m_LocalPosition: {x: 1.5450859, y: 0, z: 4.7552824}
+  m_LocalRotation: {x: -0, y: -0.30901688, z: -0, w: -0.95105654}
+  m_LocalPosition: {x: -4.854101, y: 0, z: 3.5267134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1434138842}
@@ -14557,7 +15100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476259084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0.61, y: 0, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1126093534}
@@ -14584,8 +15127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e20292c8f9d80544a97668893861e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualChildren: 0
-  Radius: 7.2
+  virtualChildren: 1
+  Radius: 8
   update: 0
 --- !u!114 &1476259087
 MonoBehaviour:
@@ -14600,7 +15143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStatic: 0
-  active: 1
+  active: 0
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
   VolumeId: 0
@@ -14641,8 +15184,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488644798}
-  m_LocalRotation: {x: -0, y: 0.9396927, z: -0, w: -0.34202012}
-  m_LocalPosition: {x: 5.5155196, y: 0, z: -4.628071}
+  m_LocalRotation: {x: -0, y: 0.95105654, z: -0, w: -0.30901703}
+  m_LocalPosition: {x: 6.4721355, y: 0, z: -4.702282}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2045561205}
@@ -15014,7 +15557,11 @@ MonoBehaviour:
   SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
     type: 3}
   handPoseIds: 
-  PreloadedHandPoses: []
+  PreloadedHandPoses:
+  - {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
+  - {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+  - {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
+  - {fileID: 11400000, guid: 929b0def838cca5479deaa9e8c44c5e0, type: 2}
 --- !u!1 &1532318486
 GameObject:
   m_ObjectHideFlags: 0
@@ -15039,8 +15586,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532318486}
-  m_LocalRotation: {x: -0, y: 0.5877853, z: -0, w: -0.809017}
-  m_LocalPosition: {x: -1.5450859, y: 0, z: -4.7552824}
+  m_LocalRotation: {x: -0, y: 0.760406, z: -0, w: -0.64944804}
+  m_LocalPosition: {x: 0.93860686, y: 0, z: -5.92613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2095405620}
@@ -15102,8 +15649,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533938717}
-  m_LocalRotation: {x: -0, y: -0.76604444, z: -0, w: -0.6427877}
-  m_LocalPosition: {x: 1.2502699, y: 0, z: 7.0906153}
+  m_LocalRotation: {x: -0, y: -0.5877852, z: -0, w: -0.8090171}
+  m_LocalPosition: {x: -2.4721363, y: 0, z: 7.6084514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 266109622}
@@ -15727,6 +16274,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1562998269}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1569632618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 5141408806126444238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1594774786
 GameObject:
   m_ObjectHideFlags: 0
@@ -16055,6 +16608,12 @@ MonoBehaviour:
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
+--- !u!4 &1605533978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 103469936522012759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1606043620
 GameObject:
   m_ObjectHideFlags: 0
@@ -16610,8 +17169,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647018237}
-  m_LocalRotation: {x: -0, y: -0.17364813, z: -0, w: -0.9848078}
-  m_LocalPosition: {x: -6.7657857, y: 0, z: 2.4625466}
+  m_LocalRotation: {x: -0, y: -0.00000004371139, z: -0, w: -1}
+  m_LocalPosition: {x: -7.9999995, y: 0, z: 0.00000071525574}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1337820903}
@@ -20081,8 +20640,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956868533}
-  m_LocalRotation: {x: -0, y: 0.7660445, z: -0, w: -0.64278764}
-  m_LocalPosition: {x: 1.2502666, y: 0, z: -7.0906157}
+  m_LocalRotation: {x: -0, y: 0.809017, z: -0, w: -0.5877853}
+  m_LocalPosition: {x: 2.4721355, y: 0, z: -7.608452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 326592200}
@@ -20642,6 +21201,183 @@ MonoBehaviour:
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
+--- !u!114 &2061428025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e9940359247dc48a1c9178b9bff2c4, type: 3}
+  m_Name: Hand Pose Information
+  m_EditorClassIdentifier: 
+  RightHandPosition: {x: -0.29801127, y: 0.30043602, z: 0.42877668}
+  RightHandEulerRotation: {x: 270, y: 88.92471, z: 0}
+  LeftHandPosition: {x: 0, y: 0, z: 0}
+  LeftHandEulerRotation: {x: 0, y: 0, z: 0}
+  PhalangesData:
+  - PhalanxName: LeftThumbProximal
+    Data:
+      Pos: {x: -0.03788809, y: -0.02166997, z: 0.03003088}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbIntermediate
+    Data:
+      Pos: {x: -3.675443, y: -2.122008, z: 2.122012}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbDistal
+    Data:
+      Pos: {x: -3.394359, y: -1.959744, z: 1.959793}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftThumbEnd
+    Data:
+      Pos: {x: -2.679404, y: -1.546945, z: 1.54692}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexProximal
+    Data:
+      Pos: {x: -0.1226661, y: -0.002316688, z: 0.02822058}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexIntermediate
+    Data:
+      Pos: {x: -3.891967, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexDistal
+    Data:
+      Pos: {x: -3.415161, y: 0.000000005749108, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftIndexEnd
+    Data:
+      Pos: {x: -3.077986, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleProximal
+    Data:
+      Pos: {x: -0.1277552, y: 0.0000001334202, z: 0.0000002041846}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleIntermediate
+    Data:
+      Pos: {x: -3.613972, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleDistal
+    Data:
+      Pos: {x: -3.45976, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftMiddleEnd
+    Data:
+      Pos: {x: -3.680192, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingProximal
+    Data:
+      Pos: {x: -0.12147, y: 0.00009894983, z: -0.02216629}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftRingIntermediate
+    Data:
+      Pos: {x: -3.60119, y: 0, z: 0}
+      Rot: {x: -0, y: 0, z: 0}
+  - PhalanxName: LeftRingDistal
+    Data:
+      Pos: {x: -3.307317, y: 0, z: 0}
+      Rot: {x: -0, y: 0, z: 0}
+  - PhalanxName: LeftRingEnd
+    Data:
+      Pos: {x: -3.660115, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleProximal
+    Data:
+      Pos: {x: -0.1090819, y: -0.00226365, z: -0.04725818}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: LeftLittleIntermediate
+    Data:
+      Pos: {x: -4.136652, y: 0, z: 0}
+      Rot: {x: -0, y: 0, z: 0}
+  - PhalanxName: LeftLittleDistal
+    Data:
+      Pos: {x: -2.594836, y: 0, z: 0}
+      Rot: {x: -0, y: 0, z: 0}
+  - PhalanxName: LeftLittleEnd
+    Data:
+      Pos: {x: -2.923869, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightThumbProximal
+    Data:
+      Pos: {x: 0.03788812, y: -0.02166999, z: 0.03003085}
+      Rot: {x: 42.07673, y: 302.24054, z: 295.9247}
+  - PhalanxName: RightThumbIntermediate
+    Data:
+      Pos: {x: 3.675445, y: -2.122004, z: 2.122034}
+      Rot: {x: 1.928187, y: 20.59582, z: 27.138622}
+  - PhalanxName: RightThumbDistal
+    Data:
+      Pos: {x: 3.39436, y: -1.959753, z: 1.959789}
+      Rot: {x: 359.64166, y: 17.020153, z: 32.3645}
+  - PhalanxName: RightThumbEnd
+    Data:
+      Pos: {x: 2.679403, y: -1.546945, z: 1.546891}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightIndexProximal
+    Data:
+      Pos: {x: 0.1226662, y: -0.002316732, z: 0.02822055}
+      Rot: {x: 0, y: 0, z: 330.30066}
+  - PhalanxName: RightIndexIntermediate
+    Data:
+      Pos: {x: 3.891967, y: -0.00000007205551, z: 0.00003751302}
+      Rot: {x: 0, y: 0, z: 326.1146}
+  - PhalanxName: RightIndexDistal
+    Data:
+      Pos: {x: 3.415161, y: 0.0000002529914, z: -0.000008605841}
+      Rot: {x: 0, y: 0, z: 336.372}
+  - PhalanxName: RightIndexEnd
+    Data:
+      Pos: {x: 3.077986, y: -0.0000009272842, z: -0.000008780579}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightMiddleProximal
+    Data:
+      Pos: {x: 0.1277552, y: 0.00000008945774, z: 0.0000001801164}
+      Rot: {x: 0.000004943207, y: -0.000002172992, z: 348.33484}
+  - PhalanxName: RightMiddleIntermediate
+    Data:
+      Pos: {x: 3.613972, y: 0.000002756502, z: 0.000003080337}
+      Rot: {x: 0.000008717168, y: 0.0000030761494, z: 313.06738}
+  - PhalanxName: RightMiddleDistal
+    Data:
+      Pos: {x: 3.45976, y: -0.0000001972182, z: -0.00002645789}
+      Rot: {x: 0.0000051151123, y: 0.000015329502, z: 319.30795}
+  - PhalanxName: RightMiddleEnd
+    Data:
+      Pos: {x: 3.680192, y: -0.0000006576055, z: 0.00003250981}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightRingProximal
+    Data:
+      Pos: {x: 0.12147, y: 0.00009894557, z: -0.02216627}
+      Rot: {x: 0.0000047221233, y: -0.000002618918, z: 337.7686}
+  - PhalanxName: RightRingIntermediate
+    Data:
+      Pos: {x: 3.601193, y: 0, z: 0.00002384185}
+      Rot: {x: 0.000010058202, y: 0.0000017810999, z: 332.49484}
+  - PhalanxName: RightRingDistal
+    Data:
+      Pos: {x: 3.30732, y: 0, z: -0.00001341104}
+      Rot: {x: 0.000007014653, y: 0.000013509217, z: 313.24603}
+  - PhalanxName: RightRingEnd
+    Data:
+      Pos: {x: 3.660113, y: 0, z: 0}
+      Rot: {x: 0, y: 0, z: 0}
+  - PhalanxName: RightLittleProximal
+    Data:
+      Pos: {x: 0.1090819, y: -0.002263658, z: -0.04725829}
+      Rot: {x: 0.000005794945, y: -0.000007727975, z: 342.65466}
+  - PhalanxName: RightLittleIntermediate
+    Data:
+      Pos: {x: 4.136657, y: 0, z: 0.00003576278}
+      Rot: {x: 0.000009402461, y: 0.0000031806835, z: 347.9021}
+  - PhalanxName: RightLittleDistal
+    Data:
+      Pos: {x: 2.594835, y: 0, z: -0.00003576278}
+      Rot: {x: 0.00000091053636, y: 0.000010551597, z: 304.94177}
+  - PhalanxName: RightLittleEnd
+    Data:
+      Pos: {x: 2.923873, y: 0, z: 0.00001112792}
+      Rot: {x: 0, y: 0, z: 0}
 --- !u!1001 &2072000318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21367,7 +22103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124067625}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 49873175}
@@ -21430,8 +22166,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131503140}
-  m_LocalRotation: {x: -0, y: -0.5877852, z: -0, w: -0.8090171}
-  m_LocalPosition: {x: -1.5450853, y: 0, z: 4.755282}
+  m_LocalRotation: {x: -0, y: -0.07845906, z: -0, w: -0.99691737}
+  m_LocalPosition: {x: -5.9261293, y: 0, z: 0.93860614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765322013}
@@ -21483,6 +22219,248 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+--- !u!1001 &103469936522012759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 452904069}
+    m_Modifications:
+    - target: {fileID: 103469935178789607, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: Listener
+      value: 
+      objectReference: {fileID: 1274528703}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7239437
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.346039
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8526401
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5224987
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469935608539470, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Interpolation
+      objectReference: {fileID: 0}
+    - target: {fileID: 103469936073842027, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: Listener
+      value: 
+      objectReference: {fileID: 1274528703}
+    - target: {fileID: 103469936817692320, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
+        type: 3}
+      propertyPath: Listener
+      value: 
+      objectReference: {fileID: 1274528703}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd7d8c1b1f5904d4e917cb98322ae4c0, type: 3}
+--- !u!1001 &4391323535506847188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 452904069}
+    m_Modifications:
+    - target: {fileID: 4391323534800945835, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: ScriptableHand
+      value: 
+      objectReference: {fileID: 1242417107}
+    - target: {fileID: 4391323535687612601, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: ScriptableHand
+      value: 
+      objectReference: {fileID: 1192205754}
+    - target: {fileID: 4391323535956915907, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: ScriptableHand
+      value: 
+      objectReference: {fileID: 512428876}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00000035762787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536028977959, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Hand Poses
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323536371306081, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: ScriptableHand
+      value: 
+      objectReference: {fileID: 2061428025}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d55352bcc906fb478df3f31e17be3cd, type: 3}
+--- !u!1001 &5141408806126444238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 452904069}
+    m_Modifications:
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7239413
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.34604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5224984
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.8526402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806755233703, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: m_Name
+      value: Bindings
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51aedbc33e459944390e2e714e0dc1ba, type: 3}
 --- !u!1001 &5740664943319919487
 PrefabInstance:
   m_ObjectHideFlags: 0

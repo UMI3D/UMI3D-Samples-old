@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Blue
   m_EditorClassIdentifier: 
   alphaMode: 2
-  baseColorFactor: {r: 0, g: 0.31468964, b: 1, a: 1}
+  baseColorFactor: {r: 0, g: 0.7420225, b: 1, a: 1}
   metallicFactor: 0.6
   roughnessFactor: 0
   emissive: {r: 0, g: 0, b: 0, a: 0}
   textures:
-    id: 7665348667133394944
+    id: 7918067566487011328
     baseColorTexture:
       variants: []
       animationId: 
