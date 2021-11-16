@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf1a468f36bf3045946c550d39589d7, type: 3}
+  m_Name: Pink
+  m_EditorClassIdentifier: 
+  alphaMode: 2
+  baseColorFactor: {r: 1, g: 0.2971698, b: 0.49590853, a: 1}
+  metallicFactor: 0.6
+  roughnessFactor: 0
+  emissive: {r: 0, g: 0, b: 0, a: 0}
+  textures:
+    id: 1861289704821882880
+    baseColorTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    channelTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    metallicRoughnessTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    normalTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+      scale: 1
+    emissiveTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    occlusionTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    metallicTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    roughnessTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+    heightTexture:
+      variants: []
+      animationId: 
+      audioSourceId: 
+      streamingFromUserId: 
+      scale: 1
+  tilingScale: {x: 1, y: 1}
+  tilingOffset: {x: 0, y: 0}
