@@ -77,7 +77,8 @@ public class MaterialUpdateColor : MonoBehaviour
 
     public void ChangeColorOnMat(PBRMaterial mat)
     {
-        materialsToReset.Add(new Tuple<PBRMaterial, Color>(mat, mat.objectBaseColorFactor.GetValue()));
+        if (! materialsToReset.ConvertAll<PBRMaterial>( (t) => t.Item1).Contains(mat))
+            materialsToReset.Add(new Tuple<PBRMaterial, Color>(mat, mat.objectBaseColorFactor.GetValue()));
         Transaction transaction = new Transaction();
         transaction.AddIfNotNull(mat.objectBaseColorFactor.SetValue(color));
         transaction.Dispatch();
