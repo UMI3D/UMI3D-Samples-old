@@ -18,6 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace umi3d.edk
@@ -32,12 +33,15 @@ namespace umi3d.edk
         public int max = 0;
         private Dictionary<ulong, Dictionary<ulong, SetEntityProperty>> sets;
 
+        public UnityEvent SetNodes = new UnityEvent();
 
         // Start is called before the first frame update
         private void Start()
         {
             nodes = GetComponentsInChildren<UMI3DNode>();
             scenes = GetComponentsInChildren<UMI3DScene>();
+
+            SetNodes.Invoke();
         }
 
         // Update is called once per frame
@@ -70,6 +74,8 @@ namespace umi3d.edk
                 }
                 nodes = GetComponentsInChildren<UMI3DNode>();
                 scenes = GetComponentsInChildren<UMI3DScene>();
+
+                SetNodes.Invoke();
             }
         }
 
@@ -246,6 +252,11 @@ namespace umi3d.edk
                 }
 
             }
+        }
+
+        public void RemoveNode(UMI3DNode node)
+        {
+            nodes = nodes.Where(n => !n.Equals(node)).ToArray();
         }
 
     }
