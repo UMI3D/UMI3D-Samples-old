@@ -31,7 +31,8 @@ public class BindingActivation : MonoBehaviour
     ulong tempUserID;
 
     Transform bindingAnchor;
-    Vector3 localOffset;
+    Vector3 localPosOffset;
+    Quaternion localRotOffset;
 
     bool activation = false;
 
@@ -46,7 +47,10 @@ public class BindingActivation : MonoBehaviour
     void Update()
     {
         if (activation)
-            GetComponent<UMI3DNode>().objectPosition.SetValue(transform.parent.InverseTransformPoint(bindingAnchor.TransformPoint(localOffset)));
+        {
+            GetComponent<UMI3DNode>().objectPosition.SetValue(transform.parent.InverseTransformPoint(bindingAnchor.TransformPoint(localPosOffset)));
+            GetComponent<UMI3DNode>().objectRotation.SetValue(Quaternion.Inverse(transform.parent.rotation) * bindingAnchor.rotation * localRotOffset);
+        }
     }
 
     public void UpdateBindingActivation(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
@@ -63,7 +67,8 @@ public class BindingActivation : MonoBehaviour
 
             activation = true;
 
-            localOffset = bindingAnchor.InverseTransformPoint(transform.position);
+            localPosOffset = bindingAnchor.InverseTransformPoint(transform.position);
+            localRotOffset = Quaternion.Inverse(bindingAnchor.rotation) * transform.rotation;
 
             tempUserID = user.Id();
 
@@ -73,7 +78,8 @@ public class BindingActivation : MonoBehaviour
                 boneType = bonetype,
                 isBinded = true,
                 syncPosition = true,
-                offsetPosition = localOffset,
+                offsetPosition = localPosOffset,
+                offsetRotation = localRotOffset
             };
 
             SetEntityProperty op = UMI3DEmbodimentManager.Instance.AddBinding(user.Avatar, tempBinding);
