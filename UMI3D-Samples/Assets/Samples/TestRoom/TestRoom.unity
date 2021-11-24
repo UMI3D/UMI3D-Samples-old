@@ -22320,7 +22320,7 @@ PrefabInstance:
     - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.9733634
+      value: 6.973363
       objectReference: {fileID: 0}
     - target: {fileID: 103469935608539469, guid: cd7d8c1b1f5904d4e917cb98322ae4c0,
         type: 3}
@@ -22414,7 +22414,7 @@ PrefabInstance:
     - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.577849
+      value: 6.5778484
       objectReference: {fileID: 0}
     - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
@@ -22475,6 +22475,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452904069}
     m_Modifications:
+    - target: {fileID: 5141408805648294660, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806160034901, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806178599548, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5141408806755233700, guid: 51aedbc33e459944390e2e714e0dc1ba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22534,6 +22549,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bindings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408806942696413, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408807196685147, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408807337987145, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408807470138852, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141408807679005448, guid: 51aedbc33e459944390e2e714e0dc1ba,
+        type: 3}
+      propertyPath: hasCollider
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51aedbc33e459944390e2e714e0dc1ba, type: 3}
