@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4afd99d02e1ef446a9c90cebe013fb7, type: 3}
+  m_Name: Grab
+  m_EditorClassIdentifier: 
+  PoseId: 0
+  IsActive: 0
+  HoverAnimation: 0
+  isRelativeToNode: 1
+  PoseName: Grab
+  RightHandPosition: {x: -0.29801127, y: 0.30043602, z: 0.42877668}
+  RightHandEulerRotation: {x: 270, y: 88.92471, z: 0}
+  LeftHandPosition: {x: 0, y: 0, z: 0}
+  LeftHandEulerRotation: {x: 0, y: 0, z: 0}
+  PhalanxRotations:
+  - phalanxId: 42
+    Phalanx: RightThumbProximal
+    PhalanxEulerRotation: {x: 42.07673, y: 302.24054, z: 295.9247}
+  - phalanxId: 43
+    Phalanx: RightThumbIntermediate
+    PhalanxEulerRotation: {x: 1.928187, y: 20.59582, z: 27.138622}
+  - phalanxId: 44
+    Phalanx: RightThumbDistal
+    PhalanxEulerRotation: {x: 359.64166, y: 17.020153, z: 32.3645}
+  - phalanxId: 45
+    Phalanx: RightIndexProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 330.30066}
+  - phalanxId: 46
+    Phalanx: RightIndexIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 326.1146}
+  - phalanxId: 47
+    Phalanx: RightIndexDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 336.372}
+  - phalanxId: 48
+    Phalanx: RightMiddleProximal
+    PhalanxEulerRotation: {x: 0.000004943207, y: -0.000002172992, z: 348.33484}
+  - phalanxId: 49
+    Phalanx: RightMiddleIntermediate
+    PhalanxEulerRotation: {x: 0.000008717168, y: 0.0000030761494, z: 313.06738}
+  - phalanxId: 50
+    Phalanx: RightMiddleDistal
+    PhalanxEulerRotation: {x: 0.0000051151123, y: 0.000015329502, z: 319.30795}
+  - phalanxId: 51
+    Phalanx: RightRingProximal
+    PhalanxEulerRotation: {x: 0.0000047221233, y: -0.000002618918, z: 337.7686}
+  - phalanxId: 52
+    Phalanx: RightRingIntermediate
+    PhalanxEulerRotation: {x: 0.000010058202, y: 0.0000017810999, z: 332.49484}
+  - phalanxId: 53
+    Phalanx: RightRingDistal
+    PhalanxEulerRotation: {x: 0.000007014653, y: 0.000013509217, z: 313.24603}
+  - phalanxId: 54
+    Phalanx: RightLittleProximal
+    PhalanxEulerRotation: {x: 0.000005794945, y: -0.000007727975, z: 342.65466}
+  - phalanxId: 55
+    Phalanx: RightLittleIntermediate
+    PhalanxEulerRotation: {x: 0.000009402461, y: 0.0000031806835, z: 347.9021}
+  - phalanxId: 56
+    Phalanx: RightLittleDistal
+    PhalanxEulerRotation: {x: 0.00000091053636, y: 0.000010551597, z: 304.94177}
+  - phalanxId: 27
+    Phalanx: LeftThumbProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 28
+    Phalanx: LeftThumbIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 29
+    Phalanx: LeftThumbDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 30
+    Phalanx: LeftIndexProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 31
+    Phalanx: LeftIndexIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 32
+    Phalanx: LeftIndexDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 33
+    Phalanx: LeftMiddleProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 34
+    Phalanx: LeftMiddleIntermediate
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 35
+    Phalanx: LeftMiddleDistal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 36
+    Phalanx: LeftRingProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 37
+    Phalanx: LeftRingIntermediate
+    PhalanxEulerRotation: {x: -0, y: 0, z: 0}
+  - phalanxId: 38
+    Phalanx: LeftRingDistal
+    PhalanxEulerRotation: {x: -0, y: 0, z: 0}
+  - phalanxId: 39
+    Phalanx: LeftLittleProximal
+    PhalanxEulerRotation: {x: 0, y: 0, z: 0}
+  - phalanxId: 40
+    Phalanx: LeftLittleIntermediate
+    PhalanxEulerRotation: {x: -0, y: 0, z: 0}
+  - phalanxId: 41
+    Phalanx: LeftLittleDistal
+    PhalanxEulerRotation: {x: -0, y: 0, z: 0}

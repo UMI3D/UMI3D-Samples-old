@@ -17,7 +17,9 @@ limitations under the License.
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using umi3d.common;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace umi3d.edk
@@ -25,6 +27,8 @@ namespace umi3d.edk
     [Obsolete("This class isn't mean to be use in production", false)]
     public partial class SimpleModificationListener : MonoBehaviour
     {
+        private const DebugScope scope = DebugScope.EDK | DebugScope.Core | DebugScope.Editor;
+
         private UMI3DNode[] nodes;
         private UMI3DScene[] scenes;
         public float time = 0f;
@@ -32,12 +36,15 @@ namespace umi3d.edk
         public int max = 0;
         private Dictionary<ulong, Dictionary<ulong, SetEntityProperty>> sets;
 
+        public UnityEvent SetNodes = new UnityEvent();
 
         // Start is called before the first frame update
         private void Start()
         {
             nodes = GetComponentsInChildren<UMI3DNode>();
             scenes = GetComponentsInChildren<UMI3DScene>();
+
+            SetNodes.Invoke();
         }
 
         // Update is called once per frame
@@ -70,6 +77,8 @@ namespace umi3d.edk
                 }
                 nodes = GetComponentsInChildren<UMI3DNode>();
                 scenes = GetComponentsInChildren<UMI3DScene>();
+
+                SetNodes.Invoke();
             }
         }
 
@@ -142,7 +151,7 @@ namespace umi3d.edk
                     case OriginalMaterial extmat:
                         break;
                     default:
-                        Debug.LogWarning("unsupported material type");
+                        UMI3DLogger.LogWarning("unsupported material type", scope);
                         break;
                 }
 
@@ -239,14 +248,18 @@ namespace umi3d.edk
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError(e);
-                    Debug.Log("entityid = " + operation.entityId);
-                    Debug.Log("property = " + operation.property);
+                    UMI3DLogger.LogError(e, scope);
+                    UMI3DLogger.Log("entityid = " + operation.entityId, scope);
+                    UMI3DLogger.Log("property = " + operation.property, scope);
 
                 }
 
             }
         }
-
+        public void RemoveNode(UMI3DNode node)
+        {
+            nodes = nodes.Where(n => !n.Equals(node)).ToArray();
+        }
     }
+
 }

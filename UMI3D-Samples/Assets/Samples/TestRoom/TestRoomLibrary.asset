@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: com.gfi.test_room
   date:
-    _dateTime: 24/09/2020 15:08:33
-    day: 24
-    month: 9
-    year: 2020
-    hours: 15
-    minutes: 8
-    seconds: 33
+    _dateTime: 15/11/2021 16:40:34
+    day: 15
+    month: 11
+    year: 2021
+    hours: 16
+    minutes: 40
+    seconds: 34
     setNow: 0
+    culture: en-US
+    format: dd/MM/yyyy  HH:mm:ss
   variants:
   - name: default
     path: private\com.gfi.test_room\default
     metrics:
       resolution: 0
       size: 0
-    formats: 01000000
+    formats: []
