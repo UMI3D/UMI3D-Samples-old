@@ -27,14 +27,98 @@ public class ContinousRotation : MonoBehaviour
     public Vector3 axis = Vector3.up;
     public int lapSubdivision = 4;
 
+    umi3d.edk.UMI3DNodeAnimation _animation;
+    umi3d.edk.UMI3DNode node;
+
+    bool clockwise = false;
+
     private void Start()
     {
-        umi3d.edk.UMI3DNodeAnimation _animation = GetComponent<umi3d.edk.UMI3DNodeAnimation>();
-        umi3d.edk.UMI3DNode node = GetComponent<umi3d.edk.UMI3DNode>();
+        _animation = GetComponent<umi3d.edk.UMI3DNodeAnimation>();
+        node = GetComponent<umi3d.edk.UMI3DNode>();
 
         //ToUMI3DSerializable.ToSerializableVector4()
+        SetRotation();
+    }
 
-        HashSet<UMI3DUser> users = new HashSet<UMI3DUser>(UMI3DEnvironment.GetEntities<UMI3DUser>());
+    public void OnChangeRotation()
+    {
+        var t = new Transaction();
+            t.reliable = true;
+        t.AddIfNotNull(SetRotation());
+        t.Dispatch();
+    }
+
+    public void OnRemoveRotation()
+    {
+        var t = new Transaction();
+        t.reliable = true;
+        var l = _animation.ObjectAnimationChain.GetValue();
+        if (l != null && l.Count > 0)
+        {
+            int i = l.Count / 2;
+            t.AddIfNotNull(_animation.ObjectAnimationChain.RemoveAt(i));
+            t.Dispatch();
+        }
+    }
+
+    public void OnAddRotation()
+    {
+        var t = new Transaction();
+        t.reliable = true;
+        var l = _animation.ObjectAnimationChain.GetValue();
+        if (l != null )
+        {
+            int i = l.Count / 2;
+            t.AddIfNotNull(_animation.ObjectAnimationChain.Add(
+                    new umi3d.edk.UMI3DNodeAnimation.OperationChain()
+                    {
+                        Operation = new SetEntityProperty()
+                        {
+                            users = null,
+                            entityId = node.Id(),
+                            property = UMI3DPropertyKeys.Rotation,
+                            value = ToUMI3DSerializable.ToSerializableVector4(Quaternion.identity, null)
+
+                        },
+                        progress = _animation.ObjectDuration.GetValue()/2
+                    }
+                ));
+            t.Dispatch();
+        }
+    }
+
+    public void OnSetRotation()
+    {
+        var t = new Transaction();
+        t.reliable = true;
+        var l = _animation.ObjectAnimationChain.GetValue();
+        if (l != null)
+        {
+            int i = l.Count / 2;
+            var s = l[i];
+            t.AddIfNotNull(_animation.ObjectAnimationChain.SetValue(i,
+                    new umi3d.edk.UMI3DNodeAnimation.OperationChain()
+                    {
+                        Operation = new SetEntityProperty()
+                        {
+                            users = null,
+                            entityId = node.Id(),
+                            property = UMI3DPropertyKeys.Rotation,
+                            value = ToUMI3DSerializable.ToSerializableVector4(Quaternion.identity, null)
+
+                        },
+                        progress = s.progress
+                    }
+                ));
+            t.Dispatch();
+        }
+    }
+
+
+    List<Operation> SetRotation()
+    {
+        clockwise = !clockwise;
 
         if (lapPerSec <= 0) lapPerSec = 1;
         if (lapSubdivision <= 0) lapSubdivision = 1;
@@ -45,17 +129,19 @@ public class ContinousRotation : MonoBehaviour
         float curProgress = 0f;
         float deltaProgress = totalLapTime / lapSubdivision;
         Vector3 curRot = Vector3.zero;
-        Vector3 deltaRot = axis*360/lapSubdivision;
+        Vector3 deltaRot = axis * 360 / lapSubdivision;
+        if (!clockwise)
+            deltaRot *= -1;
         Quaternion defaultRot = node.objectRotation.GetValue();
 
-        for (int i = 0; i<lapSubdivision; i++)
+        for (int i = 0; i < lapSubdivision; i++)
         {
             var operation = new SetEntityProperty()
             {
-                users = users,
+                users = null,
                 entityId = node.Id(),
                 property = UMI3DPropertyKeys.Rotation,
-                value = ToUMI3DSerializable.ToSerializableVector4(Quaternion.Euler(curRot)* defaultRot, null)
+                value = ToUMI3DSerializable.ToSerializableVector4(Quaternion.Euler(curRot) * defaultRot, null)
             };
             op.Add(
                 new umi3d.edk.UMI3DNodeAnimation.OperationChain()
@@ -66,8 +152,13 @@ public class ContinousRotation : MonoBehaviour
             curProgress += deltaProgress;
             curRot += deltaRot;
         }
-        _animation.ObjectDuration.SetValue(totalLapTime);
-        _animation.ObjectAnimationChain.SetValue(op);
+
+        var ops = new List<Operation>();
+
+        ops.Add( _animation.ObjectDuration.SetValue(totalLapTime));
+        ops.Add( _animation.ObjectAnimationChain.SetValue(op));
+
+        return ops;
     }
 
 }
