@@ -16,6 +16,7 @@ limitations under the License.
 
 using umi3d.edk;
 using umi3d.edk.collaboration;
+using umi3d.worldController;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,8 +37,10 @@ namespace test
             StopButton.interactable = true;
 
             UMI3DEnvironment.Instance.environmentName = Name.text;
-            if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
-                (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin = Pin.text;
+            //SandAloneWorldControler.pi 
+
+            //if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
+            //    (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin = Pin.text;
 
             UMI3DServer.Instance.Init();
 
@@ -65,8 +68,8 @@ namespace test
             StartButton.onClick.AddListener(OnStart);
             StopButton.onClick.AddListener(OnStop);
             IpButton.onClick.AddListener(() => GUIUtility.systemCopyBuffer = Ip.text);
-            if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
-                Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin;
+            //if (UMI3DCollaborationServer.Instance.Identifier is PinIdentifierApi)
+            //    Pin.text = (UMI3DCollaborationServer.Instance.Identifier as PinIdentifierApi).pin;
             Name.text = UMI3DEnvironment.Instance.environmentName;
         }
     }

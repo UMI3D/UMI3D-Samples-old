@@ -16,9 +16,9 @@ public class TestLocalClientInfo : MonoBehaviour
     void Start()
     {
         oldWriteValue = tryToWrite;
-        UMI3DApi.receiveLocalInfoListener.AddListener((key, user, data) => { if (key == "testdata") value = System.Text.Encoding.Default.GetString(data); });
+        UMI3DEnvironmentApi.receiveLocalInfoListener.AddListener((key, user, data) => { if (key == "testdata") value = System.Text.Encoding.Default.GetString(data); });
         //byte[] responseData = System.Text.Encoding.Default.GetBytes(value);
-        UMI3DApi.sendLocalInfoListener.AddListener((key, user, response) => { if (key == "testdata") response.WriteContent(System.Text.Encoding.Default.GetBytes(value)); });
+        UMI3DEnvironmentApi.sendLocalInfoListener.AddListener((key, user, response) => { if (key == "testdata") response.WriteContent(System.Text.Encoding.Default.GetBytes(value)); });
     }
 
     void Update()
