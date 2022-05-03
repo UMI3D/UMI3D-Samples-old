@@ -31,7 +31,7 @@ namespace umi3d.edk.collaboration
     /// <summary>
     /// 
     /// </summary>
-    public class UMI3DForgeServer : ForgeSocketBase
+    public class UMI3DForgeServer : UMI3DForgeSocketBase
     {
         private const DebugScope scope = DebugScope.EDK | DebugScope.Collaboration | DebugScope.Networking;
 
@@ -181,7 +181,7 @@ namespace umi3d.edk.collaboration
             {
                 MainThreadManager.Run(() =>
                 {
-                    UMI3DCollaborationServer.Collaboration.ConnectionClose(user);
+                    UMI3DCollaborationServer.Collaboration.ConnectionClose(user, player.NetworkId);
                 });
             }
         }
@@ -193,6 +193,7 @@ namespace umi3d.edk.collaboration
         /// <param name="sender"></param>
         private void PlayerAuthenticated(NetworkingPlayer player, NetWorker sender)
         {
+            UMI3DLogger.Log("Player Authenticated", scope);
             //UMI3DLogger.Log($"Player { player.NetworkId } {player.Name} authenticated",scope);
         }
 
@@ -203,6 +204,7 @@ namespace umi3d.edk.collaboration
         /// <param name="sender"></param>
         private void PlayerAccepted(NetworkingPlayer player, NetWorker sender)
         {
+            UMI3DLogger.Log("Player Accepted", scope);
             playerCount = server.Players.Count;
         }
 
@@ -234,7 +236,7 @@ namespace umi3d.edk.collaboration
             {
                 MainThreadManager.Run(() =>
                 {
-                    UMI3DCollaborationServer.Collaboration.ConnectionClose(user);
+                    UMI3DCollaborationServer.Collaboration.ConnectionClose(user, player.NetworkId);
                 });
             }
         }
@@ -348,6 +350,8 @@ namespace umi3d.edk.collaboration
         protected override void OnAvatarFrame(NetworkingPlayer player, Binary frame, NetWorker sender)
         {
             UMI3DCollaborationUser user = UMI3DCollaborationServer.Collaboration.GetUserByNetworkId(player.NetworkId);
+            if (user == null) return;
+
             if (UMI3DEnvironment.Instance.useDto)
             {
                 var dto = UMI3DDto.FromBson(frame.StreamData.byteArr);
@@ -445,11 +449,22 @@ namespace umi3d.edk.collaboration
 
         #region VoIP
 
+        static List<UMI3DCollaborationUser> VoipInterceptionList = new List<UMI3DCollaborationUser>();
+
+        public delegate void AudioFrame(UMI3DCollaborationUser user,Binary frame);
+        public static AudioFrame OnAudioFrame;
+
         /// <inheritdoc/>
         protected override void OnVoIPFrame(NetworkingPlayer player, Binary frame, NetWorker sender)
         {
-
             UMI3DCollaborationUser user = UMI3DCollaborationServer.Collaboration.GetUserByNetworkId(player.NetworkId);
+
+            if (VoipInterceptionList.Contains(user))
+            {
+                OnAudioFrame(user, frame);
+                return;
+            }
+            
             if (user.Avatar != null && user.Avatar.RelayRoom != null)
             {
                 RelayVolume relayVolume = RelayVolume.relaysVolumes[user.Avatar.RelayRoom.Id()];
@@ -685,7 +700,7 @@ namespace umi3d.edk.collaboration
             {
                 MainThreadManager.Run(() =>
                 {
-                    UMI3DLogger.Log($"Error on send binary to {player.NetworkId} (from {bin.Sender?.NetworkId}) on channel {channel} [{e}]", scope);
+                    UMI3DLogger.Log($"Error on send binary to {player?.NetworkId} (from {bin?.Sender?.NetworkId}) on channel {channel} [{e}]", scope);
                 });
             }
         }
@@ -729,6 +744,20 @@ namespace umi3d.edk.collaboration
             // Should it be done before Host() ???
             NetWorker.PingForFirewall(port);
         }
+
+        public static void SetUserVOIPInterception(UMI3DCollaborationUser user, bool intercept)
+        {
+            if (intercept)
+            {
+                if (!VoipInterceptionList.Contains(user))
+                {
+                    VoipInterceptionList.Add(user);
+                }
+            }
+            else
+                VoipInterceptionList.Remove(user);
+        }
+
 
         /// <summary>
         /// 
