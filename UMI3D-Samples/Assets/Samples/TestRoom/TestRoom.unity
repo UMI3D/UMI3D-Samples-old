@@ -11119,6 +11119,9 @@ MonoBehaviour:
   OnUserJoin:
     m_PersistentCalls:
       m_Calls: []
+  OnUserRegistered:
+    m_PersistentCalls:
+      m_Calls: []
   OnUserCreated:
     m_PersistentCalls:
       m_Calls: []
@@ -11140,6 +11143,7 @@ MonoBehaviour:
   useIp: 0
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
+  WorldController: {fileID: 11400000, guid: 84a2fe2dd60104f4aa9ec8b69935580d, type: 2}
   useRandomForgePort: 0
   forgePort: 0
   forgeMasterServerHost: 
@@ -11149,10 +11153,10 @@ MonoBehaviour:
   forgeMaxNbPlayer: 32
   useRandomHttpPort: 0
   httpPort: 50043
+  resourcesUrl: 
   iconServerUrl: 
   sessionId: 
   descriptionComment: 
-  Authentication: 0
   WaitTimeForPingAnswer: 1
   MaxPingingTry: 3
   OnServerStart:
