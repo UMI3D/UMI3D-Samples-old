@@ -38,7 +38,6 @@ namespace umi3d.edk.collaboration
                         login = UMI3DNetworkingHelper.Read<string>(container),
                         localToken = UMI3DNetworkingHelper.Read<string>(container),
                         key = UMI3DNetworkingHelper.Read<string>(container),
-                        libraries = UMI3DNetworkingHelper.ReadList<LibrariesDto>(container),
                         metaData = UMI3DNetworkingHelper.ReadArray<byte>(container)
                     };
                     result = (T)(object)identity;
@@ -62,7 +61,8 @@ namespace umi3d.edk.collaboration
                     + UMI3DNetworkingHelper.Write<ulong>(user.audioSourceId)
                     + UMI3DNetworkingHelper.Write<int>(user.audioFrequency)
                     + UMI3DNetworkingHelper.Write<ulong>(user.videoSourceId)
-                    + UMI3DNetworkingHelper.Write<uint>(user.networkId);
+                    + UMI3DNetworkingHelper.Write<uint>(user.networkId)
+                     + UMI3DNetworkingHelper.Write<string>(user.login);
                     return true;
                 case UMI3DCollaborationUser user:
                     bytable = UMI3DNetworkingHelper.Write<ulong>(user.Id())
@@ -71,18 +71,18 @@ namespace umi3d.edk.collaboration
                     + UMI3DNetworkingHelper.Write<ulong>(user.audioPlayer?.Id() ?? 0)
                     + UMI3DNetworkingHelper.Write<int>(user.audioFrequency)
                     + UMI3DNetworkingHelper.Write<ulong>(user.videoPlayer?.Id() ?? 0)
-                    + UMI3DNetworkingHelper.Write<uint>(user.networkPlayer?.NetworkId ?? 0);
+                    + UMI3DNetworkingHelper.Write<uint>(user.networkPlayer?.NetworkId ?? 0)
+                    + UMI3DNetworkingHelper.Write<string>(user.login);
                     return true;
                 case RegisterIdentityDto identity:
                     bytable = UMI3DNetworkingHelper.Write(identity.userId)
                         + UMI3DNetworkingHelper.Write(identity.login)
                         + UMI3DNetworkingHelper.Write(identity.localToken)
                         + UMI3DNetworkingHelper.Write(identity.key)
-                        + UMI3DNetworkingHelper.Write(identity.libraries)
                         + UMI3DNetworkingHelper.Write(identity.metaData);
                     return true;
 
-    }
+            }
             bytable = null;
             return false;
         }
