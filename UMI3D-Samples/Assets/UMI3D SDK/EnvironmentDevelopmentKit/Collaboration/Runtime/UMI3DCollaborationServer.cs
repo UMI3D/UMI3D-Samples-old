@@ -133,7 +133,7 @@ namespace umi3d.edk.collaboration
 
         public async Task Register(RegisterIdentityDto identityDto)
         {
-            UMI3DLogger.Log($"User to be Created {identityDto.login} {identityDto.userId} {identityDto.localToken}", scope);
+            UMI3DLogger.Log($"User to be Created {identityDto.login} {identityDto.guid} {identityDto.userId} {identityDto.localToken}", scope);
             UMI3DCollaborationServer.Collaboration.CreateUser(identityDto, UserRegisteredCallback);
             await Task.CompletedTask;
         }
@@ -259,6 +259,8 @@ namespace umi3d.edk.collaboration
         /// <param name="user">user that join</param>
         public void NotifyUserJoin(UMI3DUser user)
         {
+            if (user is UMI3DCollaborationUser _user)
+                WorldController.NotifyUserJoin(_user);
             OnUserJoin.Invoke(user);
         }
 
@@ -411,6 +413,7 @@ namespace umi3d.edk.collaboration
         private void _Logout(UMI3DCollaborationUser user)
         {
             UMI3DLogger.Log($"Logout {user.login} {user.Id()}", scope);
+            WorldController.NotifyUserLeave(user);
             OnUserLeave.Invoke(user);
         }
 
