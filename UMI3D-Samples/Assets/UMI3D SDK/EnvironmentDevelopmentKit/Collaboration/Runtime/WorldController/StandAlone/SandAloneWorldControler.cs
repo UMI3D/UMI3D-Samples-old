@@ -48,7 +48,7 @@ namespace umi3d.worldController
             User user = GetUser(connectionDto);
 
             var dto = (connectionDto is FormConnectionAnswerDto formAnswer)
-                ? await IAM.isFormValid(user, formAnswer.FormAnswerDto) ? await GetIdentityDto(user) : (UMI3DDto)await IAM.GenerateForm(user)
+                ? await IAM.isFormValid(user, formAnswer.formAnswerDto) ? await GetIdentityDto(user) : (UMI3DDto)await IAM.GenerateForm(user)
                 : await IAM.IsUserValid(user) ? await GetIdentityDto(user) : (UMI3DDto)await IAM.GenerateForm(user);
 
             return dto;
@@ -76,7 +76,7 @@ namespace umi3d.worldController
 
         User GetUser(ConnectionDto connectionDto)
         {
-            var id = connectionDto.GlobalToken ?? generateFakeToken();
+            var id = connectionDto.globalToken ?? generateFakeToken();
 
             if (userMap.ContainsKey(id))
                 userMap[id].Update(connectionDto);
