@@ -133,7 +133,7 @@ public class AvatarManager : MonoBehaviour
                     offsetPosition = bind.positionOffset,
                     node = avatarModel,
                     isBinded = true,
-                    syncPosition = bind.boneType.Equals(BoneType.CenterFeet)
+                    syncPosition = bind.boneType.Equals(BoneType.CenterFeet) || bind.boneType.Equals(BoneType.Hips)
                 };
 
                 op = UMI3DEmbodimentManager.Instance.AddBinding(avatarnode, binding);
