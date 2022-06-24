@@ -30,6 +30,7 @@ public class SendNotificationOnEvent : MonoBehaviour
     public void Callback(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
     {
         var notif = new UMI3DNotification(NotificationPriority.High, "Redirection", "This is a redirection notif", new string[] { "Redirect", "Stay"}, null, null);
+        notif.CallbackTrigger.AddListener((value) => Debug.Log($"redirect = {value}"));
         Dispatch(notif);
     }
     public void Local(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
