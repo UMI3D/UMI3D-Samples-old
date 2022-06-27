@@ -17,13 +17,20 @@ limitations under the License.
 using System.Collections.Generic;
 using umi3d.edk;
 using UnityEngine;
+using static umi3d.common.NotificationDto;
 
 public class SendNotificationOnEvent : MonoBehaviour
 {
     public UMI3DNode Node;
 
     public void Global(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content) {
-        var notif = new UMI3DNotification("Global", "This is a global notif", 5f, null, null);
+        var notif = new UMI3DNotification(NotificationPriority.Low, "Global", "This is a global notif", 5f, null, null);
+        Dispatch(notif);
+    }
+    public void Callback(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
+    {
+        var notif = new UMI3DNotification(NotificationPriority.High, "Redirection", "This is a redirection notif", new string[] { "Redirect", "Stay"}, null, null);
+        notif.CallbackTrigger.AddListener((value) => Debug.Log($"redirect = {value}"));
         Dispatch(notif);
     }
     public void Local(umi3d.edk.interaction.AbstractInteraction.InteractionEventContent content)
