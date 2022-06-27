@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Linq;
 using umi3d.common;
 using umi3d.common.interaction;
+using UnityEngine;
 using UnityEngine.Events;
 using static umi3d.common.NotificationDto;
 
@@ -26,6 +27,7 @@ namespace umi3d.edk
     {
         public class NotificationCallbackEvent : UnityEvent<bool> { }
 
+        private ulong notificationId;
         public UMI3DAsyncProperty<NotificationPriority> priorityProperty;
         public UMI3DAsyncProperty<string> titleProperty;
         public UMI3DAsyncProperty<string> contentProperty;
@@ -63,12 +65,9 @@ namespace umi3d.edk
             this.icon3dProperty = new UMI3DAsyncProperty<UMI3DResource>(notificationId, UMI3DPropertyKeys.NotificationContent, icon3d, (r, u) => r.ToDto());
         }
 
-        private ulong notificationId;
-
         public ulong Id()
         {
-            if (notificationId == 0 && UMI3DEnvironment.Exists)
-                Register();
+            if (notificationId == 0 && UMI3DEnvironment.Exists) Register();
             return notificationId;
         }
 
@@ -87,7 +86,7 @@ namespace umi3d.edk
 
         protected virtual void WriteProperties(NotificationDto dto, UMI3DUser user)
         {
-            dto.id = Id();
+            dto.id = notificationId;
             dto.priority = priorityProperty.GetValue(user);
             dto.title = titleProperty.GetValue(user);
             dto.content = contentProperty.GetValue(user);
@@ -106,7 +105,7 @@ namespace umi3d.edk
 
         public Bytable ToBytes(UMI3DUser user)
         {
-            return UMI3DNetworkingHelper.Write(Id())
+            return UMI3DNetworkingHelper.Write(notificationId)
                 + UMI3DNetworkingHelper.Write(priorityProperty.GetValue(user))
                 + UMI3DNetworkingHelper.Write(titleProperty.GetValue(user))
                 + UMI3DNetworkingHelper.Write(contentProperty.GetValue(user))
@@ -151,6 +150,7 @@ namespace umi3d.edk
 
         public void OnCallbackReceived(ByteContainer container)
         {
+            Debug.Log($"test on callback received container");
             bool callback = UMI3DNetworkingHelper.Read<bool>(container);
             CallbackTrigger.Invoke(callback);
         }
