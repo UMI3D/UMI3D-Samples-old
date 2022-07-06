@@ -15,19 +15,13 @@ limitations under the License.
 */
 
 using BeardedManStudios.Forge.Networking.Unity;
-using MainThreadDispatcher;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using umi3d.common;
 using umi3d.common.collaboration;
 using umi3d.edk.collaboration;
 using UnityEngine;
-using UnityEngine.Events;
 using WebSocketSharp;
 using WebSocketSharp.Net;
 using WebSocketSharp.Server;
@@ -59,14 +53,14 @@ namespace umi3d.worldController
                     memstream.Write(buffer, 0, bytesRead);
                 bytes = memstream.ToArray();
             }
-            if(bytes == null)
+            if (bytes == null)
             {
                 Debug.Log("Missing data");
                 Error(e.Response, "Missing data");
                 return;
-            }    
+            }
 
-            var text = bytes != null ? System.Text.Encoding.UTF8.GetString(bytes) : null;
+            string text = bytes != null ? System.Text.Encoding.UTF8.GetString(bytes) : null;
 
             if (text == null)
             {
@@ -103,26 +97,26 @@ namespace umi3d.worldController
             if (result != null)
             {
                 HttpListenerResponse res = e.Response;
-                res.WriteContent( System.Text.Encoding.UTF8.GetBytes( result.ToJson(Newtonsoft.Json.TypeNameHandling.None) ));
+                res.WriteContent(System.Text.Encoding.UTF8.GetBytes(result.ToJson(Newtonsoft.Json.TypeNameHandling.None)));
             }
         }
 
-        void Error(HttpListenerResponse res, string errorMessage)
+        private void Error(HttpListenerResponse res, string errorMessage)
         {
             res.StatusCode = 400;
             res.StatusDescription = errorMessage;
         }
 
-        async void ConnectUser(ConnectionDto dto, Action<UMI3DDto> callback)
+        private async void ConnectUser(ConnectionDto dto, Action<UMI3DDto> callback)
         {
             try
             {
                 UMI3DDto res = await api.Connect(dto);
                 callback?.Invoke(res);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Debug.Log(e.Message+" "+e.StackTrace);
+                Debug.Log(e.Message + " " + e.StackTrace);
                 callback?.Invoke(null);
             }
         }
@@ -158,7 +152,7 @@ namespace umi3d.worldController
             }
         }
 
-        async void RenewCredential(PrivateIdentityDto dto, Action<UMI3DDto> callback)
+        private async void RenewCredential(PrivateIdentityDto dto, Action<UMI3DDto> callback)
         {
             try
             {
