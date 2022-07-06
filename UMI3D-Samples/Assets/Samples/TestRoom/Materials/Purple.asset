@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf1a468f36bf3045946c550d39589d7, type: 3}
   m_Name: Purple
   m_EditorClassIdentifier: 
-  alphaMode: 2
+  alphaMode: 0
   baseColorFactor: {r: 1, g: 0, b: 0.9197521, a: 1}
   metallicFactor: 0.6
   roughnessFactor: 0
   emissive: {r: 0, g: 0, b: 0, a: 0}
   textures:
-    id: 0
+    id: 100255
     baseColorTexture:
       variants: []
       animationId: 
