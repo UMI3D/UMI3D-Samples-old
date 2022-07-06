@@ -77,7 +77,7 @@ public class FrequenciesDisplay : MonoBehaviour
         UMI3DCollaborationServer.Instance.OnUserJoin.AddListener((u) => {
             if (u is UMI3DCollaborationUser user)
             {
-                map[user] = new info(prefab, board, user.Id().ToString(), user.audioFrequency);
+                map[user] = new info(prefab, board, user.Id().ToString(), user.audioFrequency.GetValue());
                 var Enum = tool.gameObject.AddComponent<StringEnumParameter>();
                 Enum.Display.name = user.Id().ToString();
                 Enum.options = new List<string>()
@@ -96,7 +96,7 @@ public class FrequenciesDisplay : MonoBehaviour
                         if (int.TryParse(s.value, out value))
                         {
                             map[user].setFrequency(value);
-                            user.audioFrequency = value;
+                            user.audioFrequency.SetValue(value);
                             user.NotifyUpdate();
                         }
                     }
@@ -141,7 +141,7 @@ public class FrequenciesDisplay : MonoBehaviour
     {
         if (map.ContainsKey(user))
         {
-            map[user].setFrequency(user.audioFrequency);
+            map[user].setFrequency(user.audioFrequency.GetValue());
         }
     }
 }
