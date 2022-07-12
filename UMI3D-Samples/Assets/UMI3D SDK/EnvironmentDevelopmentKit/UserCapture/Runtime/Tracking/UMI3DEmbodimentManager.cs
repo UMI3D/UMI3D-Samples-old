@@ -495,7 +495,7 @@ namespace umi3d.edk.userCapture
             if (avatarNodeDto.userId.Equals(user.Id()))
             {
                 avatarNodeDto.handPoses = PreloadedHandPoses.Select(hp => hp.ToDto()).ToList();
-                avatarNodeDto.emotesConfigDto = (UMI3DEmotesConfigDto)emotesConfig.ToEntityDto(user);
+                avatarNodeDto.emotesConfigDto = (UMI3DEmotesConfigDto)emotesConfig?.ToEntityDto(user);
             }
         }
         #endregion
