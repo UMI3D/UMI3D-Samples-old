@@ -12,27 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac52fbaf3e0f2d749b4aa85565547df0, type: 3}
   m_Name: UMI3DEmotesConfig
   m_EditorClassIdentifier: 
-  allAvailableAtStartByDefault: 0
+  allAvailableAtStartByDefault: 1
   IncludedEmotes:
   - name: Waving
-    id: 0
-    availableAtStart: 1
-    iconResource:
-      isLocalFile: 1
-      domain: 
-      path: private\com.inetum.emotes\default\Emote_Dance.png
-      format: png
-      extension: .png
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 0.242
-      isInLibrary: 1
-      libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 0
-  - name: Dancing
-    id: 0
+    id: 100019
     availableAtStart: 1
     iconResource:
       isLocalFile: 1
@@ -44,12 +27,29 @@ MonoBehaviour:
       pathIfInBundle: 
       metrics:
         resolution: 0
-        size: 0.327
+        size: 1.5
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 0
+    registered: 1
+  - name: Dancing
+    id: 100020
+    availableAtStart: 1
+    iconResource:
+      isLocalFile: 1
+      domain: 
+      path: private\com.inetum.emotes\default\EMOTE_DANCING.png
+      format: png
+      extension: .png
+      isInBundle: 0
+      pathIfInBundle: 
+      metrics:
+        resolution: 0
+        size: 1.224
+      isInLibrary: 1
+      libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
+    registered: 1
   - name: Yes
-    id: 0
+    id: 100021
     availableAtStart: 0
     iconResource:
       isLocalFile: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
       pathIfInBundle: 
       metrics:
         resolution: 0
-        size: 0.208
+        size: 1.457
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 0
+    registered: 1
