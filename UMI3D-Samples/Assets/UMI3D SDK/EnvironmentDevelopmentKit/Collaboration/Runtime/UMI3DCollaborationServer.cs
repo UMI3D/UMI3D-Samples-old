@@ -234,6 +234,10 @@ namespace umi3d.edk.collaboration
             {
                 OnUserCreated.Invoke(user);
             }
+            else
+            {
+                OnUserRecreated.Invoke(user);
+            }
             user.InitConnection(forgeServer);
             forgeServer.SendSignalingMessage(user.networkPlayer, user.ToStatusDto());
         }
@@ -245,6 +249,7 @@ namespace umi3d.edk.collaboration
         /// <param name="user"></param>
         public static void NotifyUserJoin(UMI3DCollaborationUser user)
         {
+            user.hasJoined = true;
             Collaboration.UserJoin(user);
             MainThreadManager.Run(() =>
             {
@@ -405,7 +410,10 @@ namespace umi3d.edk.collaboration
         {
             if (user == null)
                 return;
+            user.hasJoined = false;
             (user.networkPlayer.Networker as IServer).Disconnect(user.networkPlayer, true);
+            lock(user.networkPlayer.Networker.Players)
+            user.networkPlayer.Networker.Players.Remove(user.networkPlayer);
             Collaboration.Logout(user, notifiedByUser);
             MainThreadManager.Run(() => Instance._Logout(user));
         }
