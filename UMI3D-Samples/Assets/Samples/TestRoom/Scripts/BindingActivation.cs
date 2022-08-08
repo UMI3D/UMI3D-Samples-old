@@ -60,7 +60,7 @@ public class BindingActivation : MonoBehaviour
 
         if (!activation)
         {
-            if (!bonetype.Equals(BoneType.Head) && Vector3.Distance(transform.position, user.Avatar.skeletonAnimator.GetBoneTransform(bonetype.ConvertToBoneType().GetValueOrDefault()).transform.position) < HandDistActivation)
+            if (!bonetype.Equals(BoneType.Head) && Vector3.Distance(transform.position, user.Avatar.skeletonAnimator.GetBoneTransform(bonetype.ConvertToBoneType().GetValueOrDefault()).transform.position) > HandDistActivation)
                 return;
 
             bindingAnchor = user.Avatar.skeletonAnimator.GetBoneTransform(bonetype.ConvertToBoneType().GetValueOrDefault()).transform;
