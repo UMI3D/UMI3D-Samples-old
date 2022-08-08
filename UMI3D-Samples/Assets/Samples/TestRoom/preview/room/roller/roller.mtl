@@ -1,0 +1,218 @@
+# Blender MTL File: 'None'
+# Material Count: 18
+
+newmtl back
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\back_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\back_baseColor.jpeg
+
+newmtl base
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\base_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\base_baseColor.jpeg
+
+newmtl base_2
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\base_2_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\base_2_baseColor.jpeg
+
+newmtl metal
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_baseColor.jpeg
+
+newmtl metal_10
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_10_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_10_baseColor.jpeg
+
+newmtl metal_2
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_2_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_2_baseColor.jpeg
+
+newmtl metal_3
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_3_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_3_baseColor.jpeg
+
+newmtl metal_4
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_4_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_4_baseColor.jpeg
+
+newmtl metal_5
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_5_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_5_baseColor.jpeg
+
+newmtl metal_6
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_6_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_6_baseColor.jpeg
+
+newmtl metal_7
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_7_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_7_baseColor.jpeg
+
+newmtl metal_8
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_8_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_8_baseColor.jpeg
+
+newmtl metal_9
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\metal_9_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\metal_9_baseColor.jpeg
+
+newmtl renk
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\renk_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\renk_baseColor.jpeg
+
+newmtl rope
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\rope_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\rope_baseColor.jpeg
+
+newmtl taban
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\taban_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\taban_baseColor.jpeg
+
+newmtl teker
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\teker_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\teker_baseColor.jpeg
+
+newmtl tutmak
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump 70s_-_80s_roller_skate\\textures\\tutmak_normal.png
+map_Kd 70s_-_80s_roller_skate\\textures\\tutmak_baseColor.jpeg
