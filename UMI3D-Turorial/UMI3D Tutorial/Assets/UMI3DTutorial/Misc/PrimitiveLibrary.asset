@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4e96ed5059f8a4e885d6517ed02dd2, type: 3}
+  m_Name: PrimitiveLibrary
+  m_EditorClassIdentifier: 
+  id: com.gfi.primitive_public
+  date:
+    _dateTime: 11/03/2022 09:52:59
+    day: 11
+    month: 3
+    year: 2022
+    hours: 9
+    minutes: 52
+    seconds: 59
+    setNow: 0
+    culture: en-US
+    format: dd/MM/yyyy  HH:mm:ss
+  variants:
+  - name: default
+    path: public\com.gfi.primitive_public\default
+    metrics:
+      resolution: 0
+      size: 0
+    formats: []
