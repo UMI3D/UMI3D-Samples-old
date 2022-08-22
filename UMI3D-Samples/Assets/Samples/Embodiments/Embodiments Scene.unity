@@ -561,6 +561,7 @@ MonoBehaviour:
   globalLibraries:
   - {fileID: 11400000, guid: 1cf18b03bbea54f4f84e7b4e1bb2b9de, type: 2}
   - {fileID: 11400000, guid: eb88a75c6fb46e74ea6477d40a198cbb, type: 2}
+  - {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
   defaultStartPosition: {x: 0, y: 0, z: -5.96}
   defaultStartOrientation: {x: 0, y: 0, z: 0}
   preloadedScenes: []
@@ -736,6 +737,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865646733}
   m_CullTransparentMesh: 0
+--- !u!1 &952861453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952861455}
+  - component: {fileID: 952861454}
+  m_Layer: 0
+  m_Name: Tests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &952861454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952861453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a2ceb0595c31641a1f1b4b7a1b4607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emoteConfig: {fileID: 11400000, guid: 55b7a12dea5d38048875ef240b57bdf4, type: 2}
+  startTest: 0
+--- !u!4 &952861455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952861453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4720453, y: 2.6415665, z: -8.2357855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &982984506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1665,9 +1711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActivateEmbodiments: 1
   EmbodimentsScene: {fileID: 286572993}
   SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
     type: 3}
+  emotesConfig: {fileID: 11400000, guid: 55b7a12dea5d38048875ef240b57bdf4, type: 2}
   handPoseIds: 
   PreloadedHandPoses: []
 --- !u!114 &1589337215

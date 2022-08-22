@@ -10,32 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4e96ed5059f8a4e885d6517ed02dd2, type: 3}
-  m_Name: AvatarLibrary
+  m_Name: EmotesLibrary
   m_EditorClassIdentifier: 
-  id: com.gfi.avatar
+  id: com.inetum.emotes
   date:
-    _dateTime: 13/07/2022 17:32:16
-    day: 13
+    _dateTime: 20/07/2022 12:53:26
+    day: 20
     month: 7
     year: 2022
-    hours: 17
-    minutes: 32
-    seconds: 16
+    hours: 12
+    minutes: 53
+    seconds: 26
     setNow: 0
     culture: en-US
     format: dd/MM/yyyy  HH:mm:ss
   variants:
   - name: default
-    path: private\com.gfi.avatar\default
+    path: private\com.inetum.emotes\default
     metrics:
       resolution: 0
       size: 0
     formats:
-    - unity_standalone
-  - name: android_quest
-    path: private/com.gfi.avatar/android
-    metrics:
-      resolution: 0
-      size: 0
-    formats:
-    - unity_android
+    - png
