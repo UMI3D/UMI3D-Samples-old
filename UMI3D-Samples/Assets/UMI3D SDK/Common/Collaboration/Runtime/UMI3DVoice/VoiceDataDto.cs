@@ -14,19 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-namespace umi3d.common.interaction
+namespace umi3d.common.collaboration
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    [System.Serializable]
-    public class ConnectionFormDto : FormDto
+    public class VoiceDataDto : UMI3DDto
     {
-        /// <summary>
-        /// An id used during the connection 
-        /// </summary>
-        public string globalToken;
-
-        public ConnectionFormDto() : base() { }
+        public uint senderId;
+        public int length;
+        public byte[] data;
     }
 }
