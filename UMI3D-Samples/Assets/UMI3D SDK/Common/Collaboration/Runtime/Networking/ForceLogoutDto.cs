@@ -14,14 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-namespace umi3d.common.interaction
+using System.Collections;
+using System.Collections.Generic;
+using umi3d.common;
+using UnityEngine;
+
+namespace umi3d.common.collaboration
 {
-    /// <summary>
-    /// DTO describing a global tool. It is a direct instanciation of <see cref="AbstractToolDto"/>. <br/>
-    /// For several tools, see <see cref="ToolboxDto"/>.
-    /// </summary>
-    public class GlobalToolDto : AbstractToolDto
+    public class ForceLogoutDto : UMI3DDto
     {
-        public GlobalToolDto() : base() { }
+        /// <summary>
+        /// reason for force logout
+        /// </summary>
+        public string reason;
     }
 }

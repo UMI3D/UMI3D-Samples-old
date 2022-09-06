@@ -34,7 +34,7 @@ namespace umi3d.edk.collaboration.murmur
 
         public static async Task<MumbleManager> Create(string ip)
         {
-            if (ip == null)
+            if (string.IsNullOrEmpty(ip))
                 return null;
             var mm = new MumbleManager(ip);
             mm.serv = await MurmurAPI.Server.Create(mm.m, 1);
@@ -91,7 +91,7 @@ namespace umi3d.edk.collaboration.murmur
             {
                 if (!local && room == defaultRoom) return;
                 localRoom.Remove(room);
-                await serv.Channels.FirstOrDefault(c => c.data.id == room)?.DeleteChannel();
+                await (serv.Channels.FirstOrDefault(c => c.data.id == room)?.DeleteChannel() ?? Task.CompletedTask);
             }
             catch { };
         }
