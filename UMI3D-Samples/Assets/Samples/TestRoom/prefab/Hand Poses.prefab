@@ -1,66 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4391323534800945837
+--- !u!114 &4391323535687612583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStatic: 0
-  active: 1
-  UMI3DAnchor: {fileID: 0}
-  immersiveOnly: 0
-  VolumeId: 0
-  xBillboard: 0
-  yBillboard: 0
-  hasCollider: 1
-  colliderType: 3
-  convex: 1
-  colliderCenter: {x: 0, y: 0, z: 0}
-  colliderRadius: 1
-  colliderBoxSize: {x: 1, y: 1, z: 1}
-  colliderHeight: 1
-  colliderDirection: 1
-  isMeshCustom: 0
-  customMeshCollider:
-    variants: []
-  overrideModelMaterials: 0
-  materialsOverrider: []
-  castShadow: 1
-  receiveShadow: 1
-  lockColliders: 0
-  model:
-    variants:
-    - isLocalFile: 1
-      domain: 
-      path: private\com.gfi.test_room\default\dummy_obj.obj
-      format: obj
-      extension: .obj
-      isInBundle: 0
-      pathIfInBundle: 
-      metrics:
-        resolution: 0
-        size: 2286.2
-      isInLibrary: 1
-      libraryKey: {fileID: 11400000, guid: eb88a75c6fb46e74ea6477d40a198cbb, type: 2}
-  idGenerator: '{{pid}}_[{{name}}]'
-  areSubobjectsTracked: 0
-  isRightHanded: 1
-  isPartOfNavmesh: 0
-  isTraversable: 1
---- !u!114 &4391323534800945839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
+  m_GameObject: {fileID: 3472403597645694444}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
@@ -83,7 +29,7 @@ MonoBehaviour:
       m_Calls: []
   NotifyHoverPosition: 0
   NotifySubObject: 0
-  Node: {fileID: 4391323534800945837}
+  Node: {fileID: 4391323535687612607}
   HasPriority: 0
   onHoverEnter:
     m_PersistentCalls:
@@ -95,105 +41,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   UseAnimations: 1
-  HoverEnterAnimation: {fileID: 4391323534800945834}
-  HoverExitAnimation: {fileID: 4391323534800945832}
+  HoverEnterAnimation: {fileID: 4391323535687612602}
+  HoverExitAnimation: {fileID: 4391323535687612580}
   hoveringBones: []
---- !u!114 &4391323534800945832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323534800945833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323534800945834}
-  ActivePose: 1
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
---- !u!114 &4391323534800945834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323534800945835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b875e853635ee0a41a07077cfef2d12a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PoseName: Thumb Up
-  IsRelativeToNode: 0
-  ShowRightHand: 1
-  ShowLeftHand: 1
-  EditHandPosition: 0
-  EditThumb: 0
-  EditIndex: 0
-  EditMiddle: 0
-  EditRing: 0
-  EditLittle: 0
-  DrawLine: 0
-  HandColor: {r: 0, g: 0, b: 1, a: 1}
-  PhalanxColor: {r: 1, g: 0.5, b: 0, a: 1}
-  LineColor: {r: 0, g: 1, b: 0, a: 1}
-  ScriptableHand: {fileID: 0}
-  HandPose: {fileID: 11400000, guid: 929b0def838cca5479deaa9e8c44c5e0, type: 2}
---- !u!114 &4391323534800945748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403599040102386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323534800945832}
-  ActivePose: 1
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: 929b0def838cca5479deaa9e8c44c5e0, type: 2}
 --- !u!114 &4391323535687612607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +100,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: eb88a75c6fb46e74ea6477d40a198cbb, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -281,40 +132,7 @@ MonoBehaviour:
   LineColor: {r: 0, g: 1, b: 0, a: 1}
   ScriptableHand: {fileID: 0}
   HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
---- !u!114 &4391323535687612602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597645694444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323535687612603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597645694444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535687612602}
-  ActivePose: 1
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+  tempValueForTest: 1
 --- !u!114 &4391323535687612580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,10 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535687612580}
-  ActivePose: 0
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+  nodeAnimation: {fileID: 4391323535687612582}
+  activePose: 0
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
 --- !u!114 &4391323535687612582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +185,7 @@ MonoBehaviour:
   pauseFrame: 0
   duration: 10
   animationChain: []
---- !u!114 &4391323535687612583
+--- !u!114 &4391323535687612603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -376,41 +194,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 3472403597645694444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Display:
-    name: new tool
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Interactions: []
-  Active: 1
-  onProjection:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
-  NotifyHoverPosition: 0
-  NotifySubObject: 0
-  Node: {fileID: 4391323535687612607}
-  HasPriority: 0
-  onHoverEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onHovered:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  UseAnimations: 1
-  HoverEnterAnimation: {fileID: 4391323535687612602}
-  HoverExitAnimation: {fileID: 4391323535687612580}
-  hoveringBones: []
+  nodeAnimation: {fileID: 4391323535687612602}
+  activePose: 1
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+--- !u!114 &4391323535687612602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597645694444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
 --- !u!114 &4391323535956915928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,25 +270,10 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: eb88a75c6fb46e74ea6477d40a198cbb, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
---- !u!114 &4391323535956915929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535956915931}
-  ActivePose: 0
-  HoverPose: 0
-  HandPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
 --- !u!114 &4391323535956915930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +319,84 @@ MonoBehaviour:
   HoverEnterAnimation: {fileID: 4391323535956915906}
   HoverExitAnimation: {fileID: 4391323535956915904}
   hoveringBones: []
---- !u!114 &4391323535956915931
+--- !u!114 &4391323535956915910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsSubInteraction: 0
+  Display:
+    name: 
+    description: 
+    icon2D:
+      variants: []
+    icon3D:
+      variants: []
+  Hold: 0
+  onHold:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerAnimation: {fileID: 4391323535956915909}
+  ReleaseAnimation: {fileID: 4391323535956915931}
+--- !u!114 &4391323535956915907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b875e853635ee0a41a07077cfef2d12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoseName: Metal Hand
+  IsRelativeToNode: 0
+  ShowRightHand: 1
+  ShowLeftHand: 0
+  EditHandPosition: 0
+  EditThumb: 0
+  EditIndex: 0
+  EditMiddle: 0
+  EditRing: 0
+  EditLittle: 0
+  DrawLine: 0
+  HandColor: {r: 0, g: 0, b: 1, a: 1}
+  PhalanxColor: {r: 1, g: 0.5, b: 0, a: 1}
+  LineColor: {r: 0, g: 1, b: 0, a: 1}
+  ScriptableHand: {fileID: 0}
+  HandPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
+  tempValueForTest: 1
+--- !u!114 &4391323535956915905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323535956915904}
+  activePose: 1
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+--- !u!114 &4391323535956915904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -556,110 +426,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535956915909}
-  ActivePose: 1
-  HoverPose: 0
-  HandPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
---- !u!114 &4391323535956915909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323535956915910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f97b38d5043969c46b75af5d8abce74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsSubInteraction: 0
-  Display:
-    name: 
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  TriggerAnimation: {fileID: 4391323535956915909}
-  ReleaseAnimation: {fileID: 4391323535956915931}
-  Hold: 0
-  onHold:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4391323535956915911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535956915904}
-  ActivePose: 0
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
---- !u!114 &4391323535956915904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323535956915905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472403597915523983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323535956915906}
-  ActivePose: 1
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+  nodeAnimation: {fileID: 4391323535956915906}
+  activePose: 1
+  hoverPose: 0
+  handPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
 --- !u!114 &4391323535956915906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +448,7 @@ MonoBehaviour:
   pauseFrame: 0
   duration: 10
   animationChain: []
---- !u!114 &4391323535956915907
+--- !u!114 &4391323535956915911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -687,13 +457,180 @@ MonoBehaviour:
   m_GameObject: {fileID: 3472403597915523983}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323535956915909}
+  activePose: 1
+  hoverPose: 0
+  handPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+--- !u!114 &4391323535956915909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
+--- !u!114 &4391323535956915929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323535956915931}
+  activePose: 0
+  hoverPose: 0
+  handPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
+--- !u!114 &4391323535956915931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403597915523983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
+--- !u!114 &4391323534800945837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6071f500297a64496afaea9a966c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatic: 0
+  active: 1
+  UMI3DAnchor: {fileID: 0}
+  immersiveOnly: 0
+  VolumeId: 0
+  xBillboard: 0
+  yBillboard: 0
+  hasCollider: 1
+  colliderType: 3
+  convex: 1
+  colliderCenter: {x: 0, y: 0, z: 0}
+  colliderRadius: 1
+  colliderBoxSize: {x: 1, y: 1, z: 1}
+  colliderHeight: 1
+  colliderDirection: 1
+  isMeshCustom: 0
+  customMeshCollider:
+    variants: []
+  overrideModelMaterials: 0
+  materialsOverrider: []
+  castShadow: 1
+  receiveShadow: 1
+  lockColliders: 0
+  model:
+    variants:
+    - isLocalFile: 1
+      domain: 
+      path: private\com.gfi.test_room\default\dummy_obj.obj
+      format: obj
+      extension: .obj
+      isInBundle: 0
+      pathIfInBundle: 
+      metrics:
+        resolution: 0
+        size: 2286.2
+      isInLibrary: 1
+      libraryKey: {fileID: 11400000, guid: eb88a75c6fb46e74ea6477d40a198cbb, type: 2}
+  idGenerator: '{{pid}}_[{{name}}]'
+  areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
+  isRightHanded: 1
+  isPartOfNavmesh: 0
+  isTraversable: 1
+--- !u!114 &4391323534800945839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Display:
+    name: new tool
+    description: 
+    icon2D:
+      variants: []
+    icon3D:
+      variants: []
+  Interactions: []
+  Active: 1
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  NotifyHoverPosition: 0
+  NotifySubObject: 0
+  Node: {fileID: 4391323534800945837}
+  HasPriority: 0
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHovered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  UseAnimations: 1
+  HoverEnterAnimation: {fileID: 4391323534800945834}
+  HoverExitAnimation: {fileID: 4391323534800945832}
+  hoveringBones: []
+--- !u!114 &4391323534800945835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b875e853635ee0a41a07077cfef2d12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PoseName: Metal Hand
+  PoseName: Thumb Up
   IsRelativeToNode: 0
   ShowRightHand: 1
-  ShowLeftHand: 0
+  ShowLeftHand: 1
   EditHandPosition: 0
   EditThumb: 0
   EditIndex: 0
@@ -705,7 +642,76 @@ MonoBehaviour:
   PhalanxColor: {r: 1, g: 0.5, b: 0, a: 1}
   LineColor: {r: 0, g: 1, b: 0, a: 1}
   ScriptableHand: {fileID: 0}
-  HandPose: {fileID: 11400000, guid: 440a6f61c0cafc44e8f06b4ce3d8ae09, type: 2}
+  HandPose: {fileID: 11400000, guid: 929b0def838cca5479deaa9e8c44c5e0, type: 2}
+  tempValueForTest: 1
+--- !u!114 &4391323534800945748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323534800945832}
+  activePose: 1
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: 929b0def838cca5479deaa9e8c44c5e0, type: 2}
+--- !u!114 &4391323534800945832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
+--- !u!114 &4391323534800945833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323534800945834}
+  activePose: 1
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: f124abb326233d14babbc96540f6f5bc, type: 2}
+--- !u!114 &4391323534800945834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472403599040102386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
 --- !u!1 &4391323536028977959
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +774,147 @@ MonoBehaviour:
   isMeshCustom: 0
   customMeshCollider:
     variants: []
+--- !u!114 &4391323536371306084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Display:
+    name: new tool
+    description: 
+    icon2D:
+      variants: []
+    icon3D:
+      variants: []
+  Interactions: []
+  Active: 1
+  onProjection:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  NotifyHoverPosition: 0
+  NotifySubObject: 0
+  Node: {fileID: 4391323536371306106}
+  HasPriority: 0
+  onHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onHovered:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  UseAnimations: 1
+  HoverEnterAnimation: {fileID: 4391323536371306085}
+  HoverExitAnimation: {fileID: 4391323536371306087}
+  hoveringBones: []
+--- !u!114 &4391323536371306081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b875e853635ee0a41a07077cfef2d12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoseName: Grab
+  IsRelativeToNode: 1
+  ShowRightHand: 1
+  ShowLeftHand: 1
+  EditHandPosition: 0
+  EditThumb: 0
+  EditIndex: 0
+  EditMiddle: 0
+  EditRing: 0
+  EditLittle: 0
+  DrawLine: 0
+  HandColor: {r: 0, g: 0, b: 1, a: 1}
+  PhalanxColor: {r: 1, g: 0.5, b: 0, a: 1}
+  LineColor: {r: 0, g: 1, b: 0, a: 1}
+  ScriptableHand: {fileID: 0}
+  HandPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
+  tempValueForTest: 1
+--- !u!114 &4391323536371306080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323536371306085}
+  activePose: 0
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
+--- !u!114 &4391323536371306085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
+--- !u!114 &4391323536371306086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeAnimation: {fileID: 4391323536371306087}
+  activePose: 0
+  hoverPose: 1
+  handPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
+--- !u!114 &4391323536371306087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751361066927265649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playing: 0
+  looping: 0
+  startTime: 0
+  pauseFrame: 0
+  duration: 10
+  animationChain: []
 --- !u!114 &4391323536371306106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,149 +966,10 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
---- !u!114 &4391323536371306084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a302a3c7ed4cc44193691fe133af4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Display:
-    name: new tool
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Interactions: []
-  Active: 1
-  onProjection:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
-  NotifyHoverPosition: 0
-  NotifySubObject: 0
-  Node: {fileID: 4391323536371306106}
-  HasPriority: 0
-  onHoverEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onHovered:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverExit:
-    m_PersistentCalls:
-      m_Calls: []
-  UseAnimations: 1
-  HoverEnterAnimation: {fileID: 4391323536371306085}
-  HoverExitAnimation: {fileID: 4391323536371306087}
-  hoveringBones: []
---- !u!114 &4391323536371306085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323536371306086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323536371306085}
-  ActivePose: 1
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
---- !u!114 &4391323536371306087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playing: 0
-  looping: 0
-  startTime: 0
-  pauseFrame: 0
-  duration: 10
-  animationChain: []
---- !u!114 &4391323536371306080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c57fafa2edee404986c9573eca47a55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeAnimation: {fileID: 4391323536371306087}
-  ActivePose: 0
-  HoverPose: 1
-  HandPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
---- !u!114 &4391323536371306081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751361066927265649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b875e853635ee0a41a07077cfef2d12a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PoseName: Grab
-  IsRelativeToNode: 1
-  ShowRightHand: 1
-  ShowLeftHand: 1
-  EditHandPosition: 0
-  EditThumb: 0
-  EditIndex: 0
-  EditMiddle: 0
-  EditRing: 0
-  EditLittle: 0
-  DrawLine: 0
-  HandColor: {r: 0, g: 0, b: 1, a: 1}
-  PhalanxColor: {r: 1, g: 0.5, b: 0, a: 1}
-  LineColor: {r: 0, g: 1, b: 0, a: 1}
-  ScriptableHand: {fileID: 0}
-  HandPose: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e, type: 2}
 --- !u!1001 &4391323534800945827
 PrefabInstance:
   m_ObjectHideFlags: 0

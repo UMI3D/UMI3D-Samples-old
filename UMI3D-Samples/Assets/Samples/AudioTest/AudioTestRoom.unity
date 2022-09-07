@@ -867,6 +867,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 1
   isTraversable: 0
@@ -2034,17 +2035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e5dd33bbb4ce44ba917ec7c829477c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display:
-    name: Frequency Setter
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Scene: {fileID: 133817799}
-  tools:
-  - {fileID: 1123676074}
-  Active: 0
 --- !u!1 &972520207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2118,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -2214,6 +2205,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -2399,7 +2391,13 @@ MonoBehaviour:
   OnUserJoin:
     m_PersistentCalls:
       m_Calls: []
+  OnUserRegistered:
+    m_PersistentCalls:
+      m_Calls: []
   OnUserCreated:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUserRecreated:
     m_PersistentCalls:
       m_Calls: []
   OnUserReady:
@@ -2417,9 +2415,14 @@ MonoBehaviour:
   OnUserLeave:
     m_PersistentCalls:
       m_Calls: []
+  OnUserUnregistered:
+    m_PersistentCalls:
+      m_Calls: []
   useIp: 0
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
+  WorldController: {fileID: 11400000, guid: 84a2fe2dd60104f4aa9ec8b69935580d, type: 2}
+  mumbleIp: 
   useRandomForgePort: 0
   forgePort: 0
   forgeMasterServerHost: 
@@ -2429,10 +2432,10 @@ MonoBehaviour:
   forgeMaxNbPlayer: 32
   useRandomHttpPort: 0
   httpPort: 50043
+  resourcesUrl: 
   iconServerUrl: 
   sessionId: 
   descriptionComment: 
-  Authentication: 0
   WaitTimeForPingAnswer: 1
   MaxPingingTry: 3
   OnServerStart:
@@ -2524,6 +2527,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -2570,21 +2574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0a5bf563083094ca3a154b89be28a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Display:
-    name: Frequency Tool
-    description: 
-    icon2D:
-      variants: []
-    icon3D:
-      variants: []
-  Interactions: []
-  Active: 1
-  onProjection:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1126093533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2657,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -3216,6 +3206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 0
   max: 0
+  SetNodes:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1294359969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3292,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -3556,6 +3550,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -3602,11 +3597,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cbb502d5bc514f9ce040afe8ecead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ActivateEmbodiments: 1
   EmbodimentsScene: {fileID: 1183297983}
   SkeletonPrefab: {fileID: 8434539890996593422, guid: ad7dcd6763ef0174a8426ea187e0bc12,
     type: 3}
+  emotesConfig: {fileID: 0}
   handPoseIds: 
   PreloadedHandPoses: []
+  bodyPoseIds: 
+  PreloadedBodyPoses: []
 --- !u!1 &1533938717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,6 +3689,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -3776,6 +3776,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -3863,6 +3864,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1
@@ -4783,6 +4785,7 @@ MonoBehaviour:
       libraryKey: {fileID: 11400000, guid: 43977a7a50b7c234a9a7845d4f06bc69, type: 2}
   idGenerator: '{{pid}}_[{{name}}]'
   areSubobjectsTracked: 0
+  areSubobjectsAlreadyMarked: 0
   isRightHanded: 1
   isPartOfNavmesh: 0
   isTraversable: 1

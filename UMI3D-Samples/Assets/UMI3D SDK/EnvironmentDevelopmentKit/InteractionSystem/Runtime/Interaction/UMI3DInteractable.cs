@@ -141,16 +141,17 @@ namespace umi3d.edk.interaction
         /// </summary>
         [Tooltip("Should specific animations be played on hover enter / exit ?")]
         public bool UseAnimations = false;
+
         // <summary>
         /// Triggered when the object is hovered by a user.
         /// </summary>
-        [Tooltip("Triggered when the object is hovered by a user.")]
-        public UMI3DNodeAnimation HoverEnterAnimation;
+        [SerializeField, EditorReadOnly, Tooltip("Triggered when the object is hovered by a user.")]
+        protected UMI3DAbstractAnimation HoverEnterAnimation;
         /// <summary>
         /// Triggered when the object stops to be hovered by a user.
         /// </summary>
-        [Tooltip("Triggered when the object stops to be hovered by a user.")]
-        public UMI3DNodeAnimation HoverExitAnimation;
+        [SerializeField, EditorReadOnly, Tooltip("Triggered when the object stops to be hovered by a user.")]
+        protected UMI3DAbstractAnimation HoverExitAnimation;
 
         /// <summary>
         /// List of bones hovering this object (if any).
@@ -160,6 +161,8 @@ namespace umi3d.edk.interaction
         private UMI3DAsyncProperty<bool> objectNotifySubObject1;
         private UMI3DAsyncProperty<UMI3DNode> objectNodeId1;
         private UMI3DAsyncProperty<bool> _hasPriority;
+        private UMI3DAsyncProperty<UMI3DAbstractAnimation> _hoverEnterAnimation;
+        private UMI3DAsyncProperty<UMI3DAbstractAnimation> _hoverExitAnimation;
 
         /// <summary>
         /// True if the object is hovered by at least one bone
@@ -170,6 +173,8 @@ namespace umi3d.edk.interaction
         public UMI3DAsyncProperty<bool> objectNotifySubObject { get { Register(); return objectNotifySubObject1; } protected set => objectNotifySubObject1 = value; }
         public UMI3DAsyncProperty<UMI3DNode> objectNodeId { get { Register(); return objectNodeId1; } protected set => objectNodeId1 = value; }
         public UMI3DAsyncProperty<bool> hasPriority { get { Register(); return _hasPriority; } protected set => _hasPriority = value; }
+        public UMI3DAsyncProperty<UMI3DAbstractAnimation> hoverEnterAnimation { get { Register(); return _hoverEnterAnimation; } set => _hoverEnterAnimation = value; }
+        public UMI3DAsyncProperty<UMI3DAbstractAnimation> hoverExitAnimation { get { Register(); return _hoverExitAnimation; } set => _hoverExitAnimation = value; }
 
         /// <summary>
         /// Create an empty Dto.
@@ -194,8 +199,8 @@ namespace umi3d.edk.interaction
             Idto.notifySubObject = objectNotifySubObject.GetValue(user);
             Idto.nodeId = objectNodeId.GetValue(user).Id();
             Idto.hasPriority = hasPriority.GetValue(user);
-            Idto.HoverEnterAnimationId = HoverEnterAnimation != null ? HoverEnterAnimation.Id() : 0;
-            Idto.HoverExitAnimationId = HoverExitAnimation != null ? HoverExitAnimation.Id() : 0;
+            Idto.HoverEnterAnimationId =  hoverEnterAnimation.GetValue(user)?.Id() ?? 0 ;
+            Idto.HoverExitAnimationId =  hoverExitAnimation.GetValue(user)?.Id() ?? 0 ;
         }
 
         /// <inheritdoc/>
@@ -210,6 +215,10 @@ namespace umi3d.edk.interaction
             objectNotifySubObject.OnValueChanged += (b) => NotifySubObject = b;
             objectNodeId.OnValueChanged += (n) => Node = n;
             hasPriority = new UMI3DAsyncProperty<bool>(toolId, UMI3DPropertyKeys.InteractableHasPriority, HasPriority);
+
+            hoverEnterAnimation = new UMI3DAsyncProperty<UMI3DAbstractAnimation>(id, UMI3DPropertyKeys.InteractableHoverEnterAnimation, HoverEnterAnimation, (v, u) => v?.Id());
+            hoverExitAnimation = new UMI3DAsyncProperty<UMI3DAbstractAnimation>(id, UMI3DPropertyKeys.InteractableHoverExitAnimation, HoverExitAnimation, (v, u) => v?.Id());
+
         }
 
         /// <summary>
