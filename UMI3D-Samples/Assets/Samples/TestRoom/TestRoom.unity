@@ -710,8 +710,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 0
   min: 0
@@ -1026,8 +1024,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: aze
   onChange:
@@ -1329,8 +1325,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: aze
   onChange:
@@ -2152,8 +2146,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -2291,8 +2283,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: B
   options:
@@ -2685,8 +2675,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: aze
   onChange:
@@ -2754,8 +2742,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 42
   min: 0
@@ -3090,8 +3076,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 42
   min: 0
@@ -3162,8 +3146,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -3324,8 +3306,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -3399,8 +3379,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: B
   options:
@@ -3715,10 +3693,14 @@ MonoBehaviour:
   OnUserLeave:
     m_PersistentCalls:
       m_Calls: []
+  OnUserUnregistered:
+    m_PersistentCalls:
+      m_Calls: []
   useIp: 0
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
   WorldController: {fileID: 11400000, guid: 84a2fe2dd60104f4aa9ec8b69935580d, type: 2}
+  mumbleIp: 20.199.41.101:64738
   useRandomForgePort: 0
   forgePort: 0
   forgeMasterServerHost: 
@@ -4200,8 +4182,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -4505,8 +4485,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -4580,8 +4558,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: B
   options:
@@ -5242,8 +5218,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: B
   options:
@@ -5462,8 +5436,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -5964,8 +5936,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -6901,8 +6871,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -6976,8 +6944,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 42
   min: 0
@@ -7245,8 +7211,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: aze
   onChange:
@@ -7401,8 +7365,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 1
   onChange:
@@ -7770,8 +7732,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   Hold: 0
   onHold:
     m_PersistentCalls:
@@ -7793,6 +7753,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  TriggerAnimation: {fileID: 0}
+  ReleaseAnimation: {fileID: 0}
 --- !u!114 &2037274859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8206,8 +8168,6 @@ MonoBehaviour:
       variants: []
     icon3D:
       variants: []
-  TriggerAnimation: {fileID: 0}
-  ReleaseAnimation: {fileID: 0}
   isPrivate: 0
   value: 42
   min: 0
@@ -8804,6 +8764,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand Poses
       objectReference: {fileID: 0}
+    - target: {fileID: 4391323536371306080, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: handPose
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e,
+        type: 2}
     - target: {fileID: 4391323536371306081, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: ScriptableHand
