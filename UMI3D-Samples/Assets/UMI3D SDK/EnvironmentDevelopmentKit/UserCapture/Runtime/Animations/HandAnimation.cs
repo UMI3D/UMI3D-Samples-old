@@ -45,7 +45,7 @@ namespace umi3d.edk.userCapture
         /// <summary>
         /// Hand pose associated with the animation.
         /// </summary>
-        [SerializeField,EditorReadOnly]
+        [SerializeField, EditorReadOnly]
         protected UMI3DHandPose handPose;
 
         /// <summary>
@@ -96,9 +96,8 @@ namespace umi3d.edk.userCapture
 
         private void Start()
         {
-            if (NodeAnimation == null )
+            if (NodeAnimation == null)
                 NodeAnimation = GetComponent<UMI3DNodeAnimation>();
-
 
             if (NodeAnimation != null && HandPose != null)
             {
