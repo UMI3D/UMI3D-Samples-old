@@ -14,8 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using System.Collections;
-using System.Collections.Generic;
 using umi3d.edk;
 using umi3d.edk.userCapture;
 using umi3d.common.userCapture;
@@ -75,6 +73,8 @@ public class BindingActivation : MonoBehaviour
     UMI3DNode node;
 
     #endregion
+
+    #region Methods
 
     void Start()
     {
@@ -153,4 +153,6 @@ public class BindingActivation : MonoBehaviour
             UMI3DServer.Dispatch(transaction);
         }
     }
+
+    #endregion
 }
