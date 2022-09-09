@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using umi3d.cdk.collaboration;
 using umi3d.common;
 using umi3d.common.collaboration;
+using umi3d.common.userCapture;
 using umi3d.edk.interaction;
 using umi3d.edk.userCapture;
 using umi3d.edk.volume;
@@ -301,7 +302,6 @@ namespace umi3d.edk.collaboration
                             UMI3DCollaborationServer.Collaboration.CollaborationRequest(user, conferencedto);
                         });
                         break;
-
                     default:
                         MainThreadManager.Run(() =>
                         {
@@ -339,6 +339,15 @@ namespace umi3d.edk.collaboration
                         MainThreadManager.Run(() =>
                         {
                             UMI3DCollaborationServer.Collaboration.CollaborationRequest(user, id, container);
+                        });
+                        break;
+                    case UMI3DOperationKeys.EmoteRequest:
+                        MainThreadManager.Run(() =>
+                        {
+                            Debug.Log("Received emote request.");
+                            var emoteToTriggerId = UMI3DNetworkingHelper.Read<ulong>(container);
+                            var trigger = UMI3DNetworkingHelper.Read<bool>(container);
+                            UMI3DEmbodimentManager.Instance.DispatchChangeEmoteReception(emoteToTriggerId, user, trigger);
                         });
                         break;
 
@@ -420,6 +429,7 @@ namespace umi3d.edk.collaboration
                     trackingFrame.position = UMI3DNetworkingHelper.Read<SerializableVector3>(container);
                     trackingFrame.rotation = UMI3DNetworkingHelper.Read<SerializableVector4>(container);
                     trackingFrame.refreshFrequency = UMI3DNetworkingHelper.Read<float>(container);
+                    trackingFrame.timestamp = UMI3DNetworkingHelper.Read<long>(container);
                     trackingFrame.bones = UMI3DNetworkingHelper.ReadList<common.userCapture.BoneDto>(container);
 
                     avatarFrameEvent.Invoke(trackingFrame, server.Time.Timestep);

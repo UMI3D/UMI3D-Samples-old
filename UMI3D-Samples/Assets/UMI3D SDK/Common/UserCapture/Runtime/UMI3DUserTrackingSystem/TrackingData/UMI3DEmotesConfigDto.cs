@@ -16,7 +16,7 @@ using System.Collections.Generic;
 namespace umi3d.common.userCapture
 {
     /// <summary>
-    /// Emote configuration file packaged in a dto
+    /// Emote configuration file packaged in a DTO
     /// </summary>
     [System.Serializable]
     public class UMI3DEmotesConfigDto : AbstractEntityDto, IEntity
@@ -30,6 +30,11 @@ namespace umi3d.common.userCapture
         /// Should the emotes be available by default to users ? When set to true, all emotes are available at start, no matter the configuration
         /// </summary>
         public bool allAvailableByDefault = true;
+
+        /// <summary>
+        /// Default animation state name in the normal avatar animator.
+        /// </summary>
+        public string defaultStateName;
     }
 }
 

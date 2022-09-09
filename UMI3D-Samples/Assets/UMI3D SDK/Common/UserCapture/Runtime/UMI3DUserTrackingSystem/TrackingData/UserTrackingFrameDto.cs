@@ -37,6 +37,8 @@ namespace umi3d.common.userCapture
 
         public float refreshFrequency;
 
+        public long timestamp;
+
         protected override uint GetOperationId() { return UMI3DOperationKeys.UserTrackingFrame; }
 
         public override Bytable ToBytableArray(params object[] parameters)
@@ -47,6 +49,7 @@ namespace umi3d.common.userCapture
                 + UMI3DNetworkingHelper.Write(position)
                 + UMI3DNetworkingHelper.Write(rotation)
                 + UMI3DNetworkingHelper.Write(refreshFrequency)
+                + UMI3DNetworkingHelper.Write(timestamp)
                 + UMI3DNetworkingHelper.WriteIBytableCollection(bones);
         }
     }

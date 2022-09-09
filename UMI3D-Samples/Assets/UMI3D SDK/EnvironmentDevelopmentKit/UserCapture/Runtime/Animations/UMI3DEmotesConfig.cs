@@ -28,6 +28,30 @@ namespace umi3d.edk.userCapture
     [CreateAssetMenu(fileName = "UMI3DEmotesConfig", menuName = "UMI3D/Emotes Config")]
     public class UMI3DEmotesConfig : ScriptableObject, UMI3DLoadableEntity
     {
+        /// <summary>
+        /// Entity id
+        /// </summary>
+        [HideInInspector]
+        private ulong id;
+
+        /// <summary>
+        /// Default animation state name in the normal avatar animator.
+        /// </summary>
+        [Tooltip("Default state name in the avatar animator.")]
+        public string defaultStateName = "Idle";
+
+        /// <summary>
+        /// Should the emotes be available by default to users ?
+        /// </summary>
+        [Tooltip("Should the emotes be available by default to users ?")]
+        public bool allAvailableAtStartByDefault = false;
+
+        /// <summary>
+        /// List of included emotes
+        /// </summary>
+        [Tooltip("List of included emotes.")]
+        public List<UMI3DEmote> IncludedEmotes;
+
         private void Awake()
         {
             id = default;
@@ -41,21 +65,6 @@ namespace umi3d.edk.userCapture
                 }
             }
         }
-        /// <summary>
-        /// Should the emotes be available by default to users ?
-        /// </summary>
-        public bool allAvailableAtStartByDefault = false;
-
-        /// <summary>
-        /// Entity id
-        /// </summary>
-        [HideInInspector]
-        private ulong id;
-
-        /// <summary>
-        /// List of included emotes
-        /// </summary>
-        public List<UMI3DEmote> IncludedEmotes;
 
         /// <inheritdoc/>
         public LoadEntity GetLoadEntity(HashSet<UMI3DUser> users = null)
@@ -86,7 +95,8 @@ namespace umi3d.edk.userCapture
             return new UMI3DEmotesConfigDto()
             {
                 emotes = this.IncludedEmotes.Select(x => (UMI3DEmoteDto)x.ToEntityDto(user)).ToList(),
-                allAvailableByDefault = this.allAvailableAtStartByDefault
+                allAvailableByDefault = this.allAvailableAtStartByDefault,
+                defaultStateName = this.defaultStateName
             };
         }
 
@@ -94,7 +104,7 @@ namespace umi3d.edk.userCapture
         public Bytable ToBytes(UMI3DUser user)
         {
             Bytable bytable = UMI3DNetworkingHelper.Write(allAvailableAtStartByDefault);
-
+            bytable += UMI3DNetworkingHelper.Write(defaultStateName);
             UMI3DNetworkingHelper.Write(IncludedEmotes.Count);
             foreach (UMI3DEmote emote in IncludedEmotes)
             {
