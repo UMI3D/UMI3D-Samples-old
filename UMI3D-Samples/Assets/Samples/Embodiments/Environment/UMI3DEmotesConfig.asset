@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allAvailableAtStartByDefault: 1
   IncludedEmotes:
-  - name: Waving
-    id: 100019
+  - label: Hello
+    stateName: Waving
+    id: 0
     availableAtStart: 1
     iconResource:
       isLocalFile: 1
@@ -30,9 +31,10 @@ MonoBehaviour:
         size: 1.5
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 1
-  - name: Dancing
-    id: 100020
+    registered: 0
+  - label: Dance
+    stateName: Dancing
+    id: 0
     availableAtStart: 1
     iconResource:
       isLocalFile: 1
@@ -47,9 +49,10 @@ MonoBehaviour:
         size: 1.224
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 1
-  - name: Yes
-    id: 100021
+    registered: 0
+  - label: Approve
+    stateName: Yes
+    id: 0
     availableAtStart: 0
     iconResource:
       isLocalFile: 1
@@ -64,4 +67,4 @@ MonoBehaviour:
         size: 1.457
       isInLibrary: 1
       libraryKey: {fileID: 11400000, guid: c5357c4349584bf4687f8284d998ff9f, type: 2}
-    registered: 1
+    registered: 0

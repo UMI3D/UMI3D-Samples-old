@@ -175,6 +175,9 @@ namespace umi3d.edk.userCapture
                 StartCoroutine(_UserCameraReception(dto, user));
         }
 
+
+
+
         public void UserCameraReception(uint operationKey, ByteContainer container, UMI3DUser user)
         {
             if (ActivateEmbodiments)
@@ -203,6 +206,28 @@ namespace umi3d.edk.userCapture
 
             UMI3DAvatarNode userEmbd = embodimentInstances[user.Id()];
             userEmbd.userCameraPropertiesDto = UMI3DNetworkingHelper.Read<UserCameraPropertiesDto>(container);
+        }
+
+        /// <summary>
+        /// Request the other browsers than the user's one to trigger/interrupt the emote of the corresponding id.
+        /// </summary>
+        /// <param name="emoteId">Emote to trigger UMI3D id.</param>
+        /// <param name="user">Sending emote user.</param>
+        /// <param name="trigger">True for triggering, false to interrupt.</param>
+        public void DispatchChangeEmoteReception(ulong emoteId, UMI3DUser user, bool trigger)
+        {
+            //? avoid the data channel filtering
+            var targetUsers = new HashSet<UMI3DUser>(UMI3DServer.Instance.Users());
+            targetUsers.Remove(user);
+            var req = new EmoteDispatchRequest(reliable: true, users: targetUsers)
+            {
+                sendingUserId = user.Id(),
+                shouldTrigger = trigger,
+                emoteId = emoteId
+            };
+
+            req.Dispatch();
+            Debug.Log($"Emote {emotesConfig.IncludedEmotes.Find(x=>x.id==emoteId).label} was asked to be played on clients.");
         }
 
         /// <summary>
