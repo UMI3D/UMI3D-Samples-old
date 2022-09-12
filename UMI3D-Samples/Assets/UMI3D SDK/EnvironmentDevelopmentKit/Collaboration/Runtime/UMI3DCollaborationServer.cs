@@ -53,6 +53,7 @@ namespace umi3d.edk.collaboration
 
         public static murmur.MumbleManager MumbleManager => Exists ? Instance.mumbleManager : null;
 
+
         public float tokenLifeTime = 10f;
 
         public IdentifierApi Identifier;
@@ -184,7 +185,7 @@ namespace umi3d.edk.collaboration
             UMI3DLogger.Log($"Server Init", scope);
             base.Init();
 
-            InitMumble();
+            mumbleManager = murmur.MumbleManager.Create(mumbleIp);
 
             if (collaborativeModule == null)
                 collaborativeModule = new List<Umi3dNetworkingHelperModule>() { new UMI3DEnvironmentNetworkingCollaborationModule(), new common.collaboration.UMI3DCollaborationNetworkingModule() };
@@ -223,11 +224,6 @@ namespace umi3d.edk.collaboration
 
             WorldController.SetupAfterServerStart();
             OnServerStart.Invoke();
-        }
-
-        private async void InitMumble()
-        {
-            mumbleManager = await murmur.MumbleManager.Create(mumbleIp);
         }
 
         private void ShouldAcceptPlayer(string identity, NetworkingPlayer player, Action<bool> action)
@@ -355,7 +351,7 @@ namespace umi3d.edk.collaboration
                 mumbleManager.Delete();
         }
 
-        private void Clear()
+        private async void Clear()
         {
             http?.Stop();
             forgeServer?.Stop();
