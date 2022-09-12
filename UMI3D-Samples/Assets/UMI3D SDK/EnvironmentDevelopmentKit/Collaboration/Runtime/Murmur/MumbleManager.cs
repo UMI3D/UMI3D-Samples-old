@@ -370,7 +370,7 @@ namespace umi3d.edk.collaboration.murmur
             return op;
         }
 
-        public async Task<List<Operation>> RemoveUser(UMI3DCollaborationUser user)
+        public List<Operation> RemoveUser(UMI3DCollaborationUser user)
         {
             var ops = new List<Operation>();
             var _user = userList.FirstOrDefault(us => us.login == user.audioLogin.GetValue());
@@ -402,7 +402,7 @@ namespace umi3d.edk.collaboration.murmur
             return ops;
         }
 
-        public async void Delete()
+        public void Delete()
         {
             foreach (var room in roomList)
             {
