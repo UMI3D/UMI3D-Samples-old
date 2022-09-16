@@ -3700,7 +3700,7 @@ MonoBehaviour:
   tokenLifeTime: 10
   Identifier: {fileID: 11400000, guid: 23cd79f55f3bb4544a19e17dbca7316f, type: 2}
   WorldController: {fileID: 11400000, guid: 84a2fe2dd60104f4aa9ec8b69935580d, type: 2}
-  mumbleIp: 20.199.41.101:64738
+  mumbleIp: 
   useRandomForgePort: 0
   forgePort: 0
   forgeMasterServerHost: 
@@ -7787,6 +7787,7 @@ MonoBehaviour:
   NotifySubObject: 0
   Node: {fileID: 2037274860}
   HasPriority: 0
+  InteractionDistance: -1
   onHoverEnter:
     m_PersistentCalls:
       m_Calls: []
