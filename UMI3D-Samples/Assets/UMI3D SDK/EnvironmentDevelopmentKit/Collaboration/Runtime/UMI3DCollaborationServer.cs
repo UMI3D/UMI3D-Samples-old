@@ -260,11 +260,11 @@ namespace umi3d.edk.collaboration
             forgeServer.SendSignalingMessage(user.networkPlayer, user.ToStatusDto());
         }
 
-        private async void AddUserAudio(UMI3DCollaborationUser user)
+        private void AddUserAudio(UMI3DCollaborationUser user)
         {
             if (mumbleManager == null)
                 return;
-            List<Operation> op = await mumbleManager.AddUser(user);
+            List<Operation> op = mumbleManager.AddUser(user);
             var t = new Transaction() { reliable = true };
             t.AddIfNotNull(op);
             t.Dispatch();
@@ -642,6 +642,11 @@ namespace umi3d.edk.collaboration
         public override HashSet<UMI3DUser> UserSetWhenHasJoined()
         {
             return new HashSet<UMI3DUser>(Collaboration.Users.Where((u) => u.hasJoined));
+        }
+
+        public override float ReturnServerTime()
+        {
+            return NetworkManager.Instance?.Networker?.Time?.Timestep ?? 0;
         }
 
         #region session
