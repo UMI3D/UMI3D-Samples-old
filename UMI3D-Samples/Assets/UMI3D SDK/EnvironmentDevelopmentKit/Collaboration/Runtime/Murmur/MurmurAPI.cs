@@ -19,6 +19,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using umi3d.common;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -26,6 +27,7 @@ namespace umi3d.edk.collaboration.murmur
 {
     public class MurmurAPI
     {
+        private const DebugScope scope = DebugScope.EDK | DebugScope.Collaboration | DebugScope.Mumble;
         private string url = "";
 
         public MurmurAPI(string url)
@@ -43,8 +45,15 @@ namespace umi3d.edk.collaboration.murmur
         private string RequestToString(UnityWebRequest www)
         {
             if (www.isHttpError || www.isNetworkError)
+            {
+                www.Dispose();
                 throw new System.Exception("Error" + www.error);
-            return www?.downloadHandler?.text;
+            }
+
+            string res = www?.downloadHandler?.text;
+            www?.Dispose();
+
+            return res;
         }
 
         public async Task<string> GetRequest(string url)
@@ -371,14 +380,14 @@ namespace umi3d.edk.collaboration.murmur
                 string info = await murmur.GetServerInfo(id);
                 data = Convert<ServerData>(info);
 
-                Debug.Log(info);
+                UMI3DLogger.Log(info, scope);
 
-                Channels.Where(c => !data.sub_channels.Any(d => d.c.id == c.data.id)).ForEach(c => Channels.Remove(c));
+                Channels.Where(c => !data.sub_channels.Any(d => d.c.id == c.data.id)).ToList().ForEach(c => Channels.Remove(c));
 
                 IEnumerable<SubChannelData> toAdd = data.sub_channels.Where(d => !Channels.Any(c => d.c.id == c.data.id));
 
                 if (toAdd.Count() > 0)
-                    Channels.AddRange(toAdd.Select(d => Channel.Create(murmur, this, d.c)));
+                    toAdd.ForEach(d => Channel.Create(murmur, this, d.c));
 
                 RegisteredUsers.Clear();
                 if (data.registered_users != null)
@@ -516,9 +525,10 @@ namespace umi3d.edk.collaboration.murmur
 
             public async Task<User> AddUser(string name, string password)
             {
-                string info = await murmur.AddUser(data.id, name, password);
                 try
                 {
+                    string info = await murmur.AddUser(data.id, name, password);
+
                     NewUserData dt = Convert<NewUserData>(info);
                     var r = new User(dt.user_id.ToString(), dt.username);
                     RegisteredUsers.Add(r);
@@ -532,12 +542,19 @@ namespace umi3d.edk.collaboration.murmur
 
             public async Task<bool> RemoveUser(int user)
             {
-                if (user == 0) return false;
-                User r = RegisteredUsers.FirstOrDefault(u => u.id == user);
-                if (r != null)
-                    RegisteredUsers.Remove(r);
-                string info = await murmur.DeleteUser(data.id, user);
-                return info == null;
+                try
+                {
+                    if (user == 0) return false;
+                    User r = RegisteredUsers.FirstOrDefault(u => u.id == user);
+                    if (r != null)
+                        RegisteredUsers.Remove(r);
+                    string info = await murmur.DeleteUser(data.id, user);
+                    return info == null;
+                }
+                catch
+                {
+                    return false;
+                }
             }
         }
     }
