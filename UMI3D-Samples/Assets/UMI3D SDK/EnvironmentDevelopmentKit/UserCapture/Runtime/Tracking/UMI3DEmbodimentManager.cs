@@ -25,14 +25,26 @@ using UnityEngine.Events;
 
 namespace umi3d.edk.userCapture
 {
+    /// <summary>
+    /// Manager for al embodiment related events. Handles skeletons, avatars, animations, and poses.
+    /// </summary>
     public class UMI3DEmbodimentManager : PersistentSingleBehaviour<UMI3DEmbodimentManager>
     {
         private const DebugScope scope = DebugScope.EDK | DebugScope.UserCapture | DebugScope.User;
 
-        [Tooltip("Should not be changed when Play Mode is running.")]
+        /// <summary>
+        /// Should the embodiment system be active?
+        /// </summary>
+        /// Should not be changed at runtime.
+        [Tooltip("Should the embodiment system be active?\n" +
+            "Warning: Should not be changed when Play Mode is running.")]
         public bool ActivateEmbodiments = true;
 
         public UMI3DScene EmbodimentsScene;
+        /// <summary>
+        /// Unity's prefab of the skeleton.
+        /// </summary>
+        [Tooltip("Prefab of the skeleton of the user.")]
         public GameObject SkeletonPrefab;
 
         public Dictionary<ulong, UMI3DAvatarNode> embodimentInstances = new Dictionary<ulong, UMI3DAvatarNode>();
@@ -48,9 +60,13 @@ namespace umi3d.edk.userCapture
         public EmbodimentBoneEvent UpdateEvent;
         public EmbodimentBoneEvent DeletionEvent;
 
+        /// <summary>
+        /// Emote configuration for the environment.
+        /// </summary>
+        [SerializeField, Tooltip("Emote configuration for the environment.")]
         public UMI3DEmotesConfig emotesConfig;
 
-        ///<inheritdoc/>
+        /// <inheritdoc/>
         protected override void Awake()
         {
             base.Awake();
@@ -60,7 +76,7 @@ namespace umi3d.edk.userCapture
             DeletionEvent = new EmbodimentBoneEvent();
         }
 
-        ///<inheritdoc/>
+        /// <inheritdoc/>
         protected virtual void Start()
         {
             if (ActivateEmbodiments)
@@ -142,11 +158,11 @@ namespace umi3d.edk.userCapture
         /// Update the Embodiment from the received Dto.
         /// </summary>
         /// <param name="dto">a dto containing the tracking data</param>
-        public void UserTrackingReception(UserTrackingFrameDto dto, ulong userId)
+        public void UserTrackingReception(UserTrackingFrameDto dto, ulong userId, float timestep)
         {
             if (ActivateEmbodiments)
             {
-                if (!embodimentInstances.ContainsKey(userId))
+                if (!embodimentInstances.ContainsKey(userId) || (Embarkments.ContainsKey(userId) && Embarkments[userId] >= timestep - 20))
                 {
                     UMI3DLogger.LogWarning($"Internal error : the user [{userId}] is not registered", scope);
                     return;
@@ -203,6 +219,27 @@ namespace umi3d.edk.userCapture
 
             UMI3DAvatarNode userEmbd = embodimentInstances[user.Id()];
             userEmbd.userCameraPropertiesDto = UMI3DNetworkingHelper.Read<UserCameraPropertiesDto>(container);
+        }
+
+        /// <summary>
+        /// Request the other browsers than the user's one to trigger/interrupt the emote of the corresponding id.
+        /// </summary>
+        /// <param name="emoteId">Emote to trigger UMI3D id.</param>
+        /// <param name="user">Sending emote user.</param>
+        /// <param name="trigger">True for triggering, false to interrupt.</param>
+        public void DispatchChangeEmoteReception(ulong emoteId, UMI3DUser user, bool trigger)
+        {
+            //? avoid the data channel filtering
+            var targetUsers = new HashSet<UMI3DUser>(UMI3DServer.Instance.Users());
+            targetUsers.Remove(user);
+            var req = new EmoteDispatchRequest(reliable: true, users: targetUsers)
+            {
+                sendingUserId = user.Id(),
+                shouldTrigger = trigger,
+                emoteId = emoteId
+            };
+
+            req.Dispatch();
         }
 
         /// <summary>
@@ -510,10 +547,14 @@ namespace umi3d.edk.userCapture
 
         #region BoardedVehicle
 
+        Dictionary<ulong, float> Embarkments = new Dictionary<ulong, float>();
+
         public void VehicleEmbarkment(UMI3DUser user, UMI3DAbstractNode vehicle = null)
         {
             if (user == null)
                 return;
+
+            Embarkments[user.Id()] = UMI3DServer.Instance.ReturnServerTime();
 
             VehicleRequest vr;
 
@@ -546,6 +587,8 @@ namespace umi3d.edk.userCapture
         {
             if (user == null)
                 return;
+
+            Embarkments[user.Id()] = UMI3DServer.Instance.ReturnServerTime();
 
             BoardedVehicleRequest vr;
 

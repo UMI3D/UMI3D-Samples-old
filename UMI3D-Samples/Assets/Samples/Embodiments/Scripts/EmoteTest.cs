@@ -32,7 +32,7 @@ public class EmoteTest : MonoBehaviour
 
     void ChangeEmoteAvailabilityTest(bool value)
     {
-        UMI3DEmote emote = emoteConfig.IncludedEmotes.Find(x => x.name.Contains("Waving"));
+        UMI3DEmote emote = emoteConfig.IncludedEmotes.Find(x => x.stateName.Contains("Waving"));
         SetEntityProperty op = emote.Available.SetValue(value);
         Transaction tr = new Transaction()
         {

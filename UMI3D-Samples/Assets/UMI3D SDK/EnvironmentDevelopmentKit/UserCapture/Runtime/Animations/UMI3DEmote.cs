@@ -22,14 +22,11 @@ namespace umi3d.edk.userCapture
     /// <summary>
     /// Emote data, including a reference to the icon resource
     /// </summary>
+    /// An emote is a short animation that is played to convey a specific communication, often an emotion.
+    /// Emotes are used on non-immersive devices to allow the user to communicate non-verbally.
     [System.Serializable]
     public class UMI3DEmote : UMI3DLoadableEntity
     {
-        /// <summary>
-        /// Emote name
-        /// </summary>
-        public string name;
-
         /// <summary>
         /// Emote entity id
         /// </summary>
@@ -37,7 +34,20 @@ namespace umi3d.edk.userCapture
         public ulong id;
 
         /// <summary>
-        /// If  the user can see and play the emote
+        /// Emote state name in Animator
+        /// </summary>
+        [Tooltip("Emote state name in Animator.")]
+        public string stateName;
+
+        /// <summary>
+        /// Emote name displayed to players
+        /// </summary>
+        [Tooltip("Emote name displayed to players. If let empty, take the value of the state name.")]
+        public string label;
+
+
+        /// <summary>
+        /// If the user can see and play the emote.
         /// </summary>
         public UMI3DAsyncProperty<bool> Available
         {
@@ -57,14 +67,16 @@ namespace umi3d.edk.userCapture
         public UMI3DAsyncProperty<bool> _available;
 
         /// <summary>
-        /// If  the user can see and play the emote at the start
+        /// True if the user can see and play the emote at the start.
         /// </summary>
+        [Tooltip("True if the user can see and play the emote at the start.")]
         public bool availableAtStart;
 
         /// <summary>
-        /// Icon ressource details
+        /// Icon illustrating the emote ressource details.
         /// </summary>
-        [Header("Icon")]
+        /// It illustrates the emote to be displayed on the client side.
+        [Header("Icon"), Tooltip("Icon illustrating the emote to be displayed on the client side.")]
         public UMI3DResourceFile iconResource;
 
         /// <summary>
@@ -93,10 +105,11 @@ namespace umi3d.edk.userCapture
         {
             return new UMI3DEmoteDto()
             {
-                name = this.name,
+                label = string.IsNullOrEmpty(this.label) ? this.stateName : this.label,
+                stateName = this.stateName,
                 id = this.Id(),
                 available = this.availableAtStart,
-                iconResource = this.iconResource.ToDto()
+                iconResource = this.iconResource.ToDto(),
             };
         }
 
@@ -104,8 +117,10 @@ namespace umi3d.edk.userCapture
         /// <inheritdoc/>
         public Bytable ToBytes(UMI3DUser user)
         {
+            var label = string.IsNullOrEmpty(this.label) ? this.stateName : this.label;
             Bytable bytable = UMI3DNetworkingHelper.Write<ulong>(id)
-                            + UMI3DNetworkingHelper.Write<string>(name)
+                            + UMI3DNetworkingHelper.Write<string>(label)
+                            + UMI3DNetworkingHelper.Write<string>(stateName)
                             + UMI3DNetworkingHelper.Write<bool>(availableAtStart)
                             + UMI3DNetworkingHelper.Write<FileDto>(iconResource.ToDto());
 
