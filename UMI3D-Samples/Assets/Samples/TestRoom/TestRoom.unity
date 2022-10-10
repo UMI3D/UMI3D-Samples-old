@@ -973,6 +973,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 326592199}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &331114674 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535956915931, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331114680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535956915909, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331114683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535956915906, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331114685 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535956915904, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &336792916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,6 +2877,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 452904069}
     m_Modifications:
+    - target: {fileID: 498512808110883438, guid: a327a3c5fe21b904381ab9e5957d8fed,
+        type: 3}
+      propertyPath: model.variants.Array.data[0].path
+      value: private\com.gfi.test_room\default\room\plot.obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 498512808110883438, guid: a327a3c5fe21b904381ab9e5957d8fed,
+        type: 3}
+      propertyPath: model.variants.Array.data[0].extension
+      value: .obj
+      objectReference: {fileID: 0}
     - target: {fileID: 2083940091150961411, guid: a327a3c5fe21b904381ab9e5957d8fed,
         type: 3}
       propertyPath: m_Name
@@ -3240,7 +3298,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3472,7 +3530,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3859,7 +3917,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -3946,7 +4004,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -5091,7 +5149,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -5458,6 +5516,30 @@ MonoBehaviour:
   onChangeFalse:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1355657195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535687612582, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1355657197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4391323535687612580, guid: 8d55352bcc906fb478df3f31e17be3cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4391323535506847188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227935805aa868343b8f29a1936a6cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1426578666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8634133687493381513, guid: b45ed22fbbc5e4d48a9949dc1af5106d,
@@ -5533,7 +5615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStatic: 0
-  active: 0
+  active: 1
   UMI3DAnchor: {fileID: 0}
   immersiveOnly: 0
   VolumeId: 0
@@ -5622,7 +5704,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -5771,7 +5853,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -5870,7 +5952,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -7299,7 +7381,7 @@ MonoBehaviour:
     - isLocalFile: 1
       domain: 
       path: private\com.gfi.test_room\default\room\plot.obj
-      format: gltf
+      format: obj
       extension: .obj
       isInBundle: 0
       pathIfInBundle: 
@@ -8607,10 +8689,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1339967391729598373, guid: 3bbdc520aaa269649a13b91fd7635277,
+        type: 3}
+      propertyPath: active
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1339967391729598375, guid: 3bbdc520aaa269649a13b91fd7635277,
         type: 3}
       propertyPath: m_Name
       value: Models
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339967391729598375, guid: 3bbdc520aaa269649a13b91fd7635277,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bbdc520aaa269649a13b91fd7635277, type: 3}
@@ -8695,16 +8787,111 @@ PrefabInstance:
       propertyPath: ScriptableHand
       value: 
       objectReference: {fileID: 1242417107}
+    - target: {fileID: 4391323535687612581, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: nodeAnimation
+      value: 
+      objectReference: {fileID: 1355657197}
+    - target: {fileID: 4391323535687612583, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: HoverEnterAnimation
+      value: 
+      objectReference: {fileID: 1355657195}
     - target: {fileID: 4391323535687612601, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: ScriptableHand
       value: 
       objectReference: {fileID: 1192205754}
+    - target: {fileID: 4391323535687612603, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: nodeAnimation
+      value: 
+      objectReference: {fileID: 1355657195}
+    - target: {fileID: 4391323535956915904, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: playing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915905, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: nodeAnimation
+      value: 
+      objectReference: {fileID: 331114685}
+    - target: {fileID: 4391323535956915905, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: hoverPose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915905, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: activePose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915906, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: playing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4391323535956915907, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: ScriptableHand
       value: 
       objectReference: {fileID: 512428876}
+    - target: {fileID: 4391323535956915908, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: nodeAnimation
+      value: 
+      objectReference: {fileID: 331114683}
+    - target: {fileID: 4391323535956915908, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: activePose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915908, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: hoverPose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915909, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: playing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915910, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: TriggerAnimation
+      value: 
+      objectReference: {fileID: 331114683}
+    - target: {fileID: 4391323535956915910, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: ReleaseAnimation
+      value: 
+      objectReference: {fileID: 331114674}
+    - target: {fileID: 4391323535956915911, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: hoverPose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915929, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: hoverPose
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391323535956915930, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: HoverEnterAnimation
+      value: 
+      objectReference: {fileID: 331114680}
+    - target: {fileID: 4391323535956915930, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: HoverExitAnimation
+      value: 
+      objectReference: {fileID: 331114685}
+    - target: {fileID: 4391323535956915931, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: playing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4391323536028977952, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8771,6 +8958,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4e4225ff0807edc41a16c2c1a1c89f7e,
         type: 2}
+    - target: {fileID: 4391323536371306080, guid: 8d55352bcc906fb478df3f31e17be3cd,
+        type: 3}
+      propertyPath: activePose
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4391323536371306081, guid: 8d55352bcc906fb478df3f31e17be3cd,
         type: 3}
       propertyPath: ScriptableHand
