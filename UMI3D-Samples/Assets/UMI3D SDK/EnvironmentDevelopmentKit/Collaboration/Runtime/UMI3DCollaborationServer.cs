@@ -53,7 +53,6 @@ namespace umi3d.edk.collaboration
 
         public static murmur.MumbleManager MumbleManager => Exists ? Instance.mumbleManager : null;
 
-
         public float tokenLifeTime = 10f;
 
         public IdentifierApi Identifier;
@@ -64,6 +63,12 @@ namespace umi3d.edk.collaboration
 
         [EditorReadOnly]
         public string mumbleIp = "";
+
+        [EditorReadOnly]
+        public string mumbleHttpIp = "";
+
+        [EditorReadOnly]
+        public string guid = "";
 
         [EditorReadOnly]
         public bool useRandomForgePort;
@@ -185,7 +190,10 @@ namespace umi3d.edk.collaboration
             UMI3DLogger.Log($"Server Init", scope);
             base.Init();
 
-            mumbleManager = murmur.MumbleManager.Create(mumbleIp);
+            if (string.IsNullOrEmpty(guid))
+                guid = System.Guid.NewGuid().ToString();
+
+            mumbleManager = murmur.MumbleManager.Create(mumbleIp, mumbleHttpIp, guid);
 
             if (collaborativeModule == null)
                 collaborativeModule = new List<Umi3dNetworkingHelperModule>() { new UMI3DEnvironmentNetworkingCollaborationModule(), new common.collaboration.UMI3DCollaborationNetworkingModule() };
@@ -275,14 +283,14 @@ namespace umi3d.edk.collaboration
         /// Create new peers connection for a new user
         /// </summary>
         /// <param name="user"></param>
-        public static void NotifyUserJoin(UMI3DCollaborationUser user)
+        public static async Task NotifyUserJoin(UMI3DCollaborationUser user)
         {
             user.hasJoined = true;
             Collaboration.UserJoin(user);
-            MainThreadManager.Run(() =>
+            MainThreadManager.Run(async () =>
             {
                 UMI3DLogger.Log($"<color=magenta>User Join [{user.Id()}] [{user.login}]</color>", scope);
-                Instance.NotifyUserJoin(user);
+                await Instance.NotifyUserJoin(user);
             });
         }
 
@@ -290,10 +298,10 @@ namespace umi3d.edk.collaboration
         /// Call To Notify a user join.
         /// </summary>
         /// <param name="user">user that join</param>
-        public void NotifyUserJoin(UMI3DUser user)
+        public async Task NotifyUserJoin(UMI3DUser user)
         {
             if (user is UMI3DCollaborationUser _user)
-                WorldController.NotifyUserJoin(_user);
+                await WorldController.NotifyUserJoin(_user);
             OnUserJoin.Invoke(user);
         }
 
