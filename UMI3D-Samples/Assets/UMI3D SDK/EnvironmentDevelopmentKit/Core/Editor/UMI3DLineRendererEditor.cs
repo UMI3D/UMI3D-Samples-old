@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2019 - 2021 Inetum
+Copyright 2019 - 2022 Inetum
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,13 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-namespace umi3d.common
+#if UNITY_EDITOR
+
+using UnityEditor;
+
+namespace umi3d.edk.editor
 {
-    public class AudioDto : UMI3DDto
+    [CustomEditor(typeof(UMI3DLineRenderer), true)]
+    [CanEditMultipleObjects]
+    public class UMI3DLineRendererEditor : RenderedNodeEditor
     {
-        public string userId;
-        public int frequency;
-        public float[] sample;
-        public int pos;
+        ///<inheritdoc/>
+        protected override void InspectorForMeshCollider()
+        {
+            EditorGUILayout.PropertyField(isMeshCustom);
+        }
     }
 }
+#endif
