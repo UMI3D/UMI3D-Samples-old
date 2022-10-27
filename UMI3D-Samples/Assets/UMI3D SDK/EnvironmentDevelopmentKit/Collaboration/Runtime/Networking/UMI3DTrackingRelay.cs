@@ -109,6 +109,11 @@ namespace umi3d.edk.collaboration
                 sendAvatarFramesThread = null;
             });
 
+            QuittingManager.OnApplicationIsQuitting.AddListener(() => {
+                running = false;
+                sendAvatarFramesThread = null;
+            });
+
             UMI3DCollaborationServer.Instance.OnUserLeave.AddListener((user) =>
             {
                 lock (framesPerPlayer)
