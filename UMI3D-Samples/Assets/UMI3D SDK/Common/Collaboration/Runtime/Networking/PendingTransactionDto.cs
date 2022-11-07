@@ -14,24 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-namespace umi3d.common
+namespace umi3d.common.collaboration
 {
-    public class DofType : GenericEnumString
+
+    public class PendingTransactionDto : UMI3DDto
     {
-        public DofType(string value) : base(value)
-        {
-        }
-
-        public static DofType Translation => new DofType("Translation");
-        public static DofType Rotation => new DofType("Rotation");
-
-        public static implicit operator DofType(string str)
-        {
-            if (str == Translation)
-                return Translation;
-            if (str == Rotation)
-                return Rotation;
-            return Translation;
-        }
+        public bool areTransactionPending { get; set; }
+        public bool areDispatchableRequestPending { get; set; }
     }
 }
