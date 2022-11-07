@@ -33,6 +33,8 @@ namespace umi3d.edk
 
         #region properties
 
+        public string nodeName;
+
         /// <summary>
         /// Indicates if the object is permanently facing the users XBillboard
         /// </summary>
@@ -159,22 +161,13 @@ namespace umi3d.edk
         #region initialization
 
         /// <summary>
-        /// Unity MonoBehaviour Start method.
-        /// </summary>
-        //protected virtual void Start()
-        //{
-        //    //SyncProperties();
-        //}
-
-        /// <summary>
         /// Initialize object's properties.
         /// </summary>
         protected override void InitDefinition(ulong id)
         {
-            //PropertiesHandler = new AsyncPropertiesHandler();
-            //PropertiesHandler.DelegateBroadcastUpdate += BroadcastUpdates;
-            //PropertiesHandler.DelegatebroadcastUpdateForUser += BroadcastUpdates;
             base.InitDefinition(id);
+
+            nodeName = gameObject.name;
 
             objectXBillboard = new UMI3DAsyncProperty<bool>(objectId, UMI3DPropertyKeys.XBillboard, this.xBillboard);
             objectXBillboard.OnValueChanged += (bool b) => xBillboard = b;
@@ -225,15 +218,19 @@ namespace umi3d.edk
         /// <returns></returns>
         internal GlTFNodeDto ToGlTFNodeDto(UMI3DUser user)
         {
+            if (gameObject == null)
+                UMI3DLogger.LogError($"UMI3DNode.ToGLTFNodeDto(userId: {user.Id()}) : Gameobject null for {name}, should not happen. \n {Environment.StackTrace}", DebugScope.EDK);
+
             var dto = new GlTFNodeDto
             {
-                name = gameObject.name,
+                name = nodeName,
                 position = objectPosition.GetValue(user),
                 scale = objectScale.GetValue(user),
                 rotation = objectRotation.GetValue(user)
             };
             dto.extensions.umi3d = ToUMI3DNodeDto(user);
             dto.extensions.KHR_lights_punctual = objectLight.GetValue(user)?.ToDto(user);
+
             return dto;
         }
 
@@ -434,8 +431,6 @@ namespace umi3d.edk
 
                     default:
                         //hasCollider = false;
-
-
                         break;
                 }
             }
