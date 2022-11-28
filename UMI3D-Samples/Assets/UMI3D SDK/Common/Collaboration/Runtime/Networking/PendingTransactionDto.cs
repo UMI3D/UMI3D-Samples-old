@@ -14,9 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-public class MasterServerRest
+namespace umi3d.common.collaboration
 {
 
-
-
+    public class PendingTransactionDto : UMI3DDto
+    {
+        public bool areTransactionPending { get; set; }
+        public bool areDispatchableRequestPending { get; set; }
+    }
 }
